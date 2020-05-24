@@ -50,7 +50,7 @@
     <!--                                PROPERTIES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <properties>
-        <version.jdk>1.8</version.jdk>
+        <version.jdk>11</version.jdk>
 
         <jacoco.lineCoverage>1.00000</jacoco.lineCoverage>
         <jacoco.skip>false</jacoco.skip>
@@ -104,12 +104,18 @@
     <!-- https://maven.apache.org/pom.html#Dependencies -->
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.jdt</groupId>
-            <artifactId>org.eclipse.jdt.annotation</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
