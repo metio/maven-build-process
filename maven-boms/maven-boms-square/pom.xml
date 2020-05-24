@@ -43,7 +43,10 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.okhttp>2.7.5</version.okhttp>
-        <version.okhttp3>3.6.0</version.okhttp3>
+        <version.okhttp3>3.13.1</version.okhttp3>
+        <version.okhttp3-testing>3.14.9</version.okhttp3-testing>
+        <version.okhttp3-ws>3.4.2</version.okhttp3-ws>
+        <version.okhttp4>4.7.2</version.okhttp4>
         <version.javapoet>1.12.1</version.javapoet>
         <version.retrofit>2.9.0</version.retrofit>
     </properties>
@@ -73,11 +76,6 @@
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-urlconnection</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp-mockwebserver</artifactId>
                 <version>${version.okhttp}</version>
             </dependency>
@@ -91,18 +89,13 @@
                 <artifactId>okhttp-testing-support</artifactId>
                 <version>${version.okhttp}</version>
             </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okcurl</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
 
-            <!-- OkHttp3 -->
+            <!-- OkHttp3 / OkHttp3 -->
             <!-- https://square.github.io/okhttp/ -->
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
-                <version>${version.okhttp3}</version>
+                <version>${version.okhttp4}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
@@ -117,27 +110,27 @@
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp-urlconnection</artifactId>
-                <version>${version.okhttp3}</version>
+                <version>${version.okhttp4}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp-mockwebserver</artifactId>
-                <version>${version.okhttp3}</version>
+                <version>${version.okhttp4}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp-ws</artifactId>
-                <version>3.4.2</version>
+                <version>${version.okhttp3-ws}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp-testing-support</artifactId>
-                <version>${version.okhttp3}</version>
+                <version>${version.okhttp3-testing}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okcurl</artifactId>
-                <version>${version.okhttp3}</version>
+                <version>${version.okhttp4}</version>
             </dependency>
 
             <!-- JavaPoet -->
