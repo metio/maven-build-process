@@ -26,6 +26,8 @@ Inherit from one of the parents like this:
   </parent>
 ```
 
+Replace `${version.parent}` with either the latest [prototype](https://github.com/metio/maven-build-process/packages/239213) or [stable](https://github.com/metio/maven-build-process/packages/239190) version.
+
 Specify SCM, Issue Management, CI Management, and Distribution Management sections of your POM in case you want to deploy into [Maven Central](http://search.maven.org/) or other repositories.
 
 #### Prototype vs Stable
