@@ -46,7 +46,9 @@
         <version.guava>29.0-jre</version.guava>
         <version.guice>4.2.3</version.guice>
         <version.truth>1.0.1</version.truth>
-        <version.api>1.30.2</version.api>
+        <version.api-client>1.30.9</version.api-client>
+        <version.oauth-client>1.30.6</version.oauth-client>
+        <version.http-client>1.35.0</version.http-client>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -142,17 +144,17 @@
             <dependency>
                 <groupId>com.google.api-client</groupId>
                 <artifactId>google-api-client</artifactId>
-                <version>${version.api}</version>
+                <version>${version.api-client}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.oauth-client</groupId>
                 <artifactId>google-oauth-client</artifactId>
-                <version>${version.api}</version>
+                <version>${version.oauth-client}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.http-client</groupId>
                 <artifactId>google-http-client</artifactId>
-                <version>${version.api}</version>
+                <version>${version.http-client}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
