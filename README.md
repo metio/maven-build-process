@@ -42,7 +42,7 @@ Specify SCM, Issue Management, CI Management, and Distribution Management sectio
 | FindBugs             | ✘             | ✔       |
 | PMD                  | ✘             | ✔       |
 | Jacoco               | 0 %           | 100 %   |
-| Duplicate Finder     | 0 %           | 100 %   |
+| Duplicate Finder     | ✔             | ✔       |
 | Pitest               | ✘             | ✔       |
 | Dependency Scan      | ✔             | ✔       |
 | Analyse Dependencies | ✘             | ✔       |
