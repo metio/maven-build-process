@@ -20,10 +20,10 @@ jobs:
       id: release
       run: echo "::set-output name=version::$(date +'%Y.%m.%d-%H%M%S')"
     - name: Set release version
-      run: mvn --batch-mode --file pom.xml versions:set -DnewVersion=${{steps.release.outputs.version}} -DgenerateBackupPoms=false
+      run: mvn --batch-mode versions:set -DnewVersion=${{steps.release.outputs.version}} -DgenerateBackupPoms=false
     - name: Verify project
-      run: mvn --batch-mode --file pom.xml verify
+      run: mvn --batch-mode verify
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn --batch-mode --show-version deploy
+      run: mvn deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
