@@ -44,7 +44,7 @@
     <properties>
         <version.h2>1.4.200</version.h2>
         <version.postgres>42.2.12</version.postgres>
-        <version.mysql>8.0.19</version.mysql>
+        <version.mysql>8.0.20</version.mysql>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

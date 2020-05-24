@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.caffeine>2.8.1</version.caffeine>
+        <version.caffeine>2.8.4</version.caffeine>
         <version.ehcache>3.8.1</version.ehcache>
     </properties>
 
