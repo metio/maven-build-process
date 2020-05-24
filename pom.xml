@@ -266,7 +266,10 @@
                     <configuration>
                         <serverId>github</serverId>
                         <nexusUrl>https://maven.pkg.github.com/metio/maven-build-process</nexusUrl>
-                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                        <autoReleaseAfterClose>false</autoReleaseAfterClose>
+                        <skipRemoteStaging>true</skipRemoteStaging>
+                        <skipLocalStaging>true</skipLocalStaging>
+                        <skipStagingRepositoryClose>true</skipStagingRepositoryClose>
                     </configuration>
                 </plugin>
             </plugins>
