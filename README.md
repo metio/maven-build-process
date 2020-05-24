@@ -26,7 +26,27 @@ Inherit from one of the parents like this:
   </parent>
 ```
 
-Specify SCM, Issue Management, CI Management, and Distribution Management sections of your POM in case you want to deploy into [Maven Central](http://search.maven.org/).
+Specify SCM, Issue Management, CI Management, and Distribution Management sections of your POM in case you want to deploy into [Maven Central](http://search.maven.org/) or other repositories.
+
+### Maven BOMs
+
+This project defines multiple [Maven BOM](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#importing-dependencies)s. Include them like this:
+
+```xml
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>wtf.metio.maven.boms</groupId>
+      <artifactId>maven-boms-[TYPE]</artifactId>
+      <version>2020.05.24-141357</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+```
+
+Replace `[TYPE]` with one (or multiple) of the available [BOMs](./maven-boms)
 
 ### Docker Build Environment
 
