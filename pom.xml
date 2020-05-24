@@ -272,6 +272,28 @@
                         <skipStagingRepositoryClose>true</skipStagingRepositoryClose>
                     </configuration>
                 </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/enforcer/maven-enforcer-plugin/index.html -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>3.0.0-M3</version>
+                    <executions>
+                        <execution>
+                            <id>enforce-maven</id>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                            <configuration>
+                                <rules>
+                                    <requireMavenVersion>
+                                        <version>3.6.0</version>
+                                    </requireMavenVersion>
+                                </rules>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -293,6 +315,12 @@
                     <!-- http://www.mojohaus.org/versions-maven-plugin/rule.html -->
                     <rulesUri>file:maven-version-rules.xml</rulesUri>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <!-- https://maven.apache.org/enforcer/maven-enforcer-plugin/index.html -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
