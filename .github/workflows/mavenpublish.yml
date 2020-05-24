@@ -26,7 +26,7 @@ jobs:
         id: release
         run: echo "::set-output name=version::$(date +'%Y.%m.%d-%H%M%S')"
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B package
       - name: Publish to GitHub Packages Apache Maven
         run: mvn deploy
         env:
