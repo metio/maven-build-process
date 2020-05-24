@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of maven-build-process. It is subject to the license terms in the LICENSE file found in the top-level
+    directory of this distribution and at http://creativecommons.org/publicdomain/zero/1.0/. No part of maven-build-process,
+    including this file, may be copied, modified, propagated, or distributed except according to the terms contained
+    in the LICENSE file.
+
+-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ordering follows https://maven.apache.org/developers/conventions/code.html#POM_Code_Convention -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 PARENT                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Inheritance -->
+    <!-- <parent></parent> -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               COORDINATES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
+    <groupId>wtf.metio.maven</groupId>
+    <artifactId>maven-build-process</artifactId>
+    <version>9999.99.99-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               INFORMATIONS                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#More_Project_Information -->
+    <name>Maven Build Process</name>
+    <description>Standard Maven build process for projects @ metio.wtf</description>
+    <url>https://maven-build-process.projects.metio.wtf</url>
+    <inceptionYear>2020</inceptionYear>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               ORGANIZATION                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Organization -->
+    <organization>
+        <name>metio.wtf</name>
+        <url>https://metio.wtf/</url>
+    </organization>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 LICENSE                                 -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Licenses -->
+    <licenses>
+        <license>
+            <name>Creative Commons Zero</name>
+            <url>https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt</url>
+            <distribution>repo</distribution>
+            <comments>https://creativecommons.org/publicdomain/zero/1.0/</comments>
+        </license>
+    </licenses>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                DEVELOPERS                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Developers -->
+    <developers>
+        <developer>
+            <id>sebhoss</id>
+            <name>Sebastian Hoß</name>
+            <email>seb@hoß.de</email>
+            <url>https://seb.hoß.de/</url>
+            <organization>metio.wtf</organization>
+            <organizationUrl>https://metio.wtf/</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>Europe/Berlin</timezone>
+            <properties>
+                <github>@sebhoss</github>
+                <bitbucket>@sebhoss</bitbucket>
+                <gitlab>@sebastian.hoss</gitlab>
+            </properties>
+        </developer>
+    </developers>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               CONTRIBUTORS                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Contributors -->
+    <contributors/>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               MAILING LISTS                             -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Mailing_Lists -->
+    <mailingLists/>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               PREREQUISITES                             -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Prerequisites -->
+    <prerequisites>
+        <maven>3.6.0</maven>
+    </prerequisites>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 MODULES                                 -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Aggregation -->
+    <modules>
+        <!--<module>maven-resources</module>-->
+        <module>maven-boms</module>
+        <!-- <module>maven-extensions</module> -->
+        <module>maven-parents</module>
+        <!-- <module>maven-archetypes</module> -->
+        <!-- <module>maven-mixins</module> -->
+    </modules>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                    SCM                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#SCM -->
+    <scm>
+        <connection>scm:git:git://codeberg.org/metio.wtf/maven-build-process.git</connection>
+        <developerConnection>scm:git:git@codeberg.org:metio.wtf/maven-build-process.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://codeberg.org/metio.wtf/maven-build-process</url>
+    </scm>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                             ISSUE MANAGEMENT                            -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Issue_Management -->
+    <issueManagement>
+        <system>codeberg</system>
+        <url>https://codeberg.org/metio.wtf/maven-build-process/issues</url>
+    </issueManagement>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               CI MANAGEMENT                             -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Continuous_Integration_Management -->
+    <ciManagement>
+        <system>Jenkins</system>
+        <url>https://build.metio.wtf/job/sebhoss/job/maven-build-process/</url>
+    </ciManagement>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                          DISTRIBUTION MANAGEMENT                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Distribution_Management -->
+    <distributionManagement>
+        <site>
+            <id>metio</id>
+            <name>official website</name>
+            <url>https://maven-build-process.projects.metio.wtf</url>
+        </site>
+        <snapshotRepository>
+            <!-- http://central.sonatype.org/pages/apache-maven.html -->
+            <id>${staging-id}</id>
+            <url>${staging-url}</url>
+        </snapshotRepository>
+        <repository>
+            <id>${release-id}</id>
+            <url>${release-url}</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                PROPERTIES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Properties -->
+    <properties>
+        <!-- 'global' settings -->
+        <global.encoding>UTF-8</global.encoding>
+
+        <!-- project settings -->
+        <project.build.sourceEncoding>${global.encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
+
+        <!-- version declarations -->
+        <version.sonar-m-p>3.7.0.1746</version.sonar-m-p>
+        <version.pgp-m-p>1.1</version.pgp-m-p>
+        <version.nexus-stagig-m-p>1.6.8</version.nexus-stagig-m-p>
+        <version.m-enforcer-p>1.4.1</version.m-enforcer-p>
+        <version.m-scm-p>1.11.2</version.m-scm-p>
+        <version.versions-m-p>2.7</version.versions-m-p>
+
+        <!-- plugin settings -->
+        <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#secretkey -->
+        <pgp.secretKey></pgp.secretKey>
+        <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#passphrase -->
+        <pgp.passphrase></pgp.passphrase>
+        <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#skip -->
+        <pgp.skip>false</pgp.skip>
+        <!-- http://sonarsource.github.io/sonar-maven/sonar-mojo.html#skip -->
+        <sonar.skip>false</sonar.skip>
+    </properties>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                            DEPENDENCY MANAGEMENT                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependency_Management -->
+    <dependencyManagement/>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                DEPENDENCIES                             -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependencies -->
+    <dependencies/>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                   BUILD                                 -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Build -->
+    <build>
+        <!-- https://maven.apache.org/pom.html#Plugin_Management -->
+        <pluginManagement>
+            <!-- https://maven.apache.org/pom.html#Plugins -->
+            <plugins>
+                <plugin>
+                    <!-- https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Maven -->
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${version.sonar-m-p}</version>
+                    <configuration>
+                        <skip>${sonar.skip}</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>sonar-analysis</id>
+                            <goals>
+                                <goal>sonar</goal>
+                            </goals>
+                            <phase>verify</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- http://kohsuke.org/pgp-maven-plugin/ -->
+                    <groupId>org.kohsuke</groupId>
+                    <artifactId>pgp-maven-plugin</artifactId>
+                    <version>${version.pgp-m-p}</version>
+                    <configuration>
+                        <secretkey>${pgp.secretKey}</secretkey>
+                        <passphrase>${pgp.passphrase}</passphrase>
+                        <skip>${pgp.skip}</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html -->
+                                <goal>sign</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- http://maven.apache.org/scm/maven-scm-plugin/ -->
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>${version.m-scm-p}</version>
+                    <configuration>
+                        <!-- http://maven.apache.org/scm/maven-scm-plugin/tag-mojo.html#tag -->
+                        <tag>${project.artifactId}-${project.version}</tag>
+                        <message>[maven-scm] tag ${project.artifactId}-${project.version}</message>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin -->
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>${version.nexus-stagig-m-p}</version>
+                    <configuration>
+                        <!-- make sure that you have an appropriate entry in your settings.xml -->
+                        <serverId>${staging-id}</serverId>
+                        <nexusUrl>${nexus-url}</nexusUrl>
+                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <!-- https://maven.apache.org/pom.html#Plugins -->
+        <plugins>
+            <plugin>
+                <!-- https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin -->
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+
+            <plugin>
+                <!-- http://www.mojohaus.org/versions-maven-plugin/ -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>${version.versions-m-p}</version>
+                <configuration>
+                    <!-- http://www.mojohaus.org/versions-maven-plugin/rule.html -->
+                    <rulesUri>file:maven-version-rules.xml</rulesUri>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

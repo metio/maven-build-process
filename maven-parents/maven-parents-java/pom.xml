@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of maven-build-process. It is subject to the license terms in the LICENSE file found in the top-level
+    directory of this distribution and at http://creativecommons.org/publicdomain/zero/1.0/. No part of maven-build-process,
+    including this file, may be copied, modified, propagated, or distributed except according to the terms contained
+    in the LICENSE file.
+
+-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ordering follows https://maven.apache.org/developers/conventions/code.html#POM_Code_Convention -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 PARENT                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Inheritance -->
+    <parent>
+        <groupId>wtf.metio.maven.parents</groupId>
+        <artifactId>maven-parents</artifactId>
+        <version>9999.99.99-SNAPSHOT</version>
+    </parent>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               COORDINATES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
+    <artifactId>maven-parents-java</artifactId>
+    <packaging>pom</packaging>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               INFORMATIONS                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#More_Project_Information -->
+    <name>Maven Parents :: Java</name>
+    <description>Base Java parent POM</description>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 MODULES                                 -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Aggregation -->
+    <modules>
+        <module>maven-parents-java-prototype</module>
+        <module>maven-parents-java-stable</module>
+    </modules>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                PROPERTIES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <properties>
+        <version.jdk>1.8</version.jdk>
+
+        <jacoco.lineCoverage>1.00000</jacoco.lineCoverage>
+        <jacoco.skip>false</jacoco.skip>
+        <pit.mutationCoverage>100</pit.mutationCoverage>
+        <pit.threads>8</pit.threads>
+        <pit.skip>false</pit.skip>
+        <pmd.minimumTokens>50</pmd.minimumTokens>
+        <pmd.failurePriority>0</pmd.failurePriority>
+        <pmd.skip>false</pmd.skip>
+        <findbugs.skip>false</findbugs.skip>
+        <findbugs.effort>Max</findbugs.effort>
+        <findbugs.threshold>Low</findbugs.threshold>
+        <failBuildOnDuplicates>true</failBuildOnDuplicates>
+        <failBuildOnDependencyVersionProblem>true</failBuildOnDependencyVersionProblem>
+        <failBuildOnDependencyProblem>true</failBuildOnDependencyProblem>
+
+        <version.m-pmd-p>3.13.0</version.m-pmd-p>
+        <version.m-javadoc-p>3.2.0</version.m-javadoc-p>
+        <version.m-dependency-versions-check-p>2.0.4</version.m-dependency-versions-check-p>
+        <version.m-jar-p>3.2.0</version.m-jar-p>
+        <version.m-compiler-p>3.8.1</version.m-compiler-p>
+        <version.m-source-p>3.2.1</version.m-source-p>
+        <version.findbugs-m-p>3.0.5</version.findbugs-m-p>
+        <version.pittest-m-p>1.5.1</version.pittest-m-p>
+        <version.duplicate-finder-m-p>1.4.0</version.duplicate-finder-m-p>
+        <version.jacoco-m-p>0.8.5</version.jacoco-m-p>
+        <version.dependency-check-m>5.3.2</version.dependency-check-m>
+        <version.m-dependency-p>3.1.2</version.m-dependency-p>
+        <version.flatten-m-p>1.2.2</version.flatten-m-p>
+    </properties>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                            DEPENDENCY MANAGEMENT                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependency_Management -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-all</artifactId>
+                <version>9999.99.99-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                DEPENDENCIES                             -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.jdt</groupId>
+            <artifactId>org.eclipse.jdt.annotation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                   BUILD                                 -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Build -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-source-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${version.m-source-p}</version>
+                    <configuration>
+                        <!-- https://maven.apache.org/plugins/maven-source-plugin/jar-no-fork-mojo.html#archive -->
+                        <archive>
+                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                        </archive>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <!-- https://maven.apache.org/plugins/maven-source-plugin/jar-no-fork-mojo.html -->
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-javadoc-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${version.m-javadoc-p}</version>
+                    <configuration>
+                        <!-- https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html#archive -->
+                        <archive>
+                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                        </archive>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <!-- https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html -->
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-compiler-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${version.m-compiler-p}</version>
+                    <configuration>
+                        <!-- https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#release -->
+                        <release>${version.jdk}</release>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-jar-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${version.m-jar-p}</version>
+                    <configuration>
+                        <!-- https://maven.apache.org/plugins/maven-jar-plugin/jar-mojo.html#archive -->
+                        <archive>
+                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                        </archive>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- http://gleclaire.github.io/findbugs-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>${version.findbugs-m-p}</version>
+                    <configuration>
+                        <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html#effort -->
+                        <effort>${findbugs.effort}</effort>
+                        <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html#threshold -->
+                        <threshold>${findbugs.threshold}</threshold>
+                        <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html#skip -->
+                        <skip>${findbugs.skip}</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html -->
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-pmd-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-pmd-plugin</artifactId>
+                    <version>${version.m-pmd-p}</version>
+                    <configuration>
+                        <!-- https://maven.apache.org/plugins/maven-pmd-plugin/check-mojo.html#failurePriority -->
+                        <failurePriority>${pmd.failurePriority}</failurePriority>
+                        <!-- https://maven.apache.org/plugins/maven-pmd-plugin/cpd-mojo.html#minimumTokens -->
+                        <minimumTokens>${pmd.minimumTokens}</minimumTokens>
+                        <!-- https://maven.apache.org/plugins/maven-pmd-plugin/pmd-mojo.html#targetJdk -->
+                        <targetJdk>${version.jdk}</targetJdk>
+                        <!-- https://maven.apache.org/plugins/maven-pmd-plugin/check-mojo.html#skip -->
+                        <!-- https://maven.apache.org/plugins/maven-pmd-plugin/cpd-check-mojo.html#skip -->
+                        <skip>${pmd.skip}</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <!-- https://maven.apache.org/plugins/maven-pmd-plugin/check-mojo.html -->
+                                <goal>check</goal>
+                                <!-- https://maven.apache.org/plugins/maven-pmd-plugin/cpd-check-mojo.html -->
+                                <goal>cpd-check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- http://eclemma.org/jacoco/trunk/doc/maven.html -->
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>${version.jacoco-m-p}</version>
+                    <configuration>
+                        <skip>${jacoco.skip}</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>prepare-coverage-agent</id>
+                            <goals>
+                                <!-- http://eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html -->
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>check-coverage</id>
+                            <goals>
+                                <!-- http://eclemma.org/jacoco/trunk/doc/check-mojo.html -->
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                                <!-- http://eclemma.org/jacoco/trunk/doc/check-mojo.html#rules -->
+                                <rules>
+                                    <rule>
+                                        <element>CLASS</element>
+                                        <excludes>
+                                            <exclude>*Test</exclude>
+                                        </excludes>
+                                        <limits>
+                                            <limit>
+                                                <counter>LINE</counter>
+                                                <value>COVEREDRATIO</value>
+                                                <minimum>${jacoco.lineCoverage}</minimum>
+                                            </limit>
+                                        </limits>
+                                    </rule>
+                                </rules>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- https://github.com/basepom/duplicate-finder-maven-plugin -->
+                    <groupId>org.basepom.maven</groupId>
+                    <artifactId>duplicate-finder-maven-plugin</artifactId>
+                    <version>${version.duplicate-finder-m-p}</version>
+                    <executions>
+                        <execution>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <!-- https://github.com/basepom/duplicate-finder-maven-plugin/wiki#configuration-overview -->
+                        <ignoredResourcePatterns>
+                            <ignoredResourcePattern>.*\.html</ignoredResourcePattern>
+                        </ignoredResourcePatterns>
+                        <failBuildInCaseOfConflict>${failBuildOnDuplicates}</failBuildInCaseOfConflict>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- http://pitest.org/quickstart/maven/ -->
+                    <groupId>org.pitest</groupId>
+                    <artifactId>pitest-maven</artifactId>
+                    <version>${version.pittest-m-p}</version>
+                    <configuration>
+                        <!-- http://pitest.org/quickstart/maven/#threads -->
+                        <threads>${pit.threads}</threads>
+                        <!-- http://pitest.org/quickstart/maven/#mutationthreshold -->
+                        <mutationThreshold>${pit.mutationCoverage}</mutationThreshold>
+                        <!-- http://pitest.org/quickstart/maven/#skip -->
+                        <skip>${pit.skip}</skip>
+                        <!-- http://pitest.org/quickstart/maven/#targetclasses -->
+                        <targetClasses>
+                            <param>wtf.metio</param>
+                        </targetClasses>
+                        <!-- http://pitest.org/quickstart/maven/#targettests -->
+                        <targetTests>
+                            <param>wtf.metio</param>
+                        </targetTests>
+                        <outputFormats>
+                            <outputFormat>XML</outputFormat>
+                            <outputFormat>HTML</outputFormat>
+                        </outputFormats>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <!-- http://pitest.org/quickstart/maven/#mutationcoverage-goal -->
+                                <goal>mutationCoverage</goal>
+                            </goals>
+                            <phase>verify</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- https://jeremylong.github.io/DependencyCheck/dependency-check-maven/index.html -->
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>${version.dependency-check-m}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-dependency-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${version.m-dependency-p}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html -->
+                                <goal>analyze-only</goal>
+                                <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-duplicate-mojo.html -->
+                                <goal>analyze-duplicate</goal>
+                                <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-dep-mgt-mojo.html -->
+                                <goal>analyze-dep-mgt</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html#failOnWarning -->
+                        <failOnWarning>${failBuildOnDependencyProblem}</failOnWarning>
+                        <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html#usedDependencies -->
+                        <usedDependencies>
+                            <!--
+                              Ignore Eclipse JDT annotations because @NonNull, etc are not retained
+                              in byte code. Therefore the plugin detects a false positive.
+                             -->
+                            <usedDependency>org.eclipse.jdt:org.eclipse.jdt.annotation</usedDependency>
+                        </usedDependencies>
+                        <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html#ignoredDependencies -->
+                        <ignoredDependencies>
+                            <ignoredDependency>com.github.sebhoss:suppress-warnings</ignoredDependency>
+                        </ignoredDependencies>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- https://github.com/ning/maven-dependency-versions-check-plugin -->
+                    <groupId>com.ning.maven.plugins</groupId>
+                    <artifactId>maven-dependency-versions-check-plugin</artifactId>
+                    <version>${version.m-dependency-versions-check-p}</version>
+                    <executions>
+                        <execution>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <!-- http://www.mojohaus.org/flatten-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>${version.flatten-m-p}</version>
+                    <configuration>
+                        <flattenMode>oss</flattenMode>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <!-- enable flattening -->
+                            <id>flatten</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <!-- http://www.mojohaus.org/flatten-maven-plugin/flatten-mojo.html -->
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <!-- ensure proper cleanup -->
+                            <id>flatten.clean</id>
+                            <phase>clean</phase>
+                            <goals>
+                                <!-- http://www.mojohaus.org/flatten-maven-plugin/clean-mojo.html -->
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <!-- https://maven.apache.org/pom.html#Plugins -->
+        <plugins>
+            <plugin>
+                <!-- https://maven.apache.org/plugins/maven-remote-resources-plugin/ -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-remote-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- https://maven.apache.org/plugins/maven-compiler-plugin/ -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- https://github.com/bndtools/bnd/blob/master/maven/bnd-maven-plugin/README.md -->
+                <groupId>biz.aQute.bnd</groupId>
+                <artifactId>bnd-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- https://maven.apache.org/plugins/maven-jar-plugin/ -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 PROFILES                                -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Profiles -->
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <!-- https://maven.apache.org/plugins/maven-source-plugin/ -->
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <!-- https://maven.apache.org/plugins/maven-javadoc-plugin/ -->
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <!-- http://kohsuke.org/pgp-maven-plugin/ -->
+                        <groupId>org.kohsuke</groupId>
+                        <artifactId>pgp-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

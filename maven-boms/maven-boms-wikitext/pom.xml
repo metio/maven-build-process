@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    This file is part of maven-build-process. It is subject to the license terms in the LICENSE file found in the top-level
+    directory of this distribution and at http://creativecommons.org/publicdomain/zero/1.0/. No part of maven-build-process,
+    including this file, may be copied, modified, propagated, or distributed except according to the terms contained
+    in the LICENSE file.
+
+-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ordering follows https://maven.apache.org/developers/conventions/code.html#POM_Code_Convention -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 PARENT                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Inheritance -->
+    <parent>
+        <groupId>wtf.metio.maven.boms</groupId>
+        <artifactId>maven-boms</artifactId>
+        <version>9999.99.99-SNAPSHOT</version>
+    </parent>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               COORDINATES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
+    <artifactId>maven-boms-wikitext</artifactId>
+    <packaging>pom</packaging>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               INFORMATIONS                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#More_Project_Information -->
+    <name>Maven BOMs :: WikiText</name>
+    <description>WikiText related dependencies</description>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                PROPERTIES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Properties -->
+    <properties>
+        <version.wikitext>1.4</version.wikitext>
+    </properties>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                            DEPENDENCY MANAGEMENT                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependency_Management -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Mylyn/WikiText -->
+            <!-- http://wiki.eclipse.org/Mylyn/WikiText -->
+            <dependency>
+                <groupId>org.fusesource.wikitext</groupId>
+                <artifactId>wikitext-core</artifactId>
+                <version>${version.wikitext}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource.wikitext</groupId>
+                <artifactId>textile-core</artifactId>
+                <version>${version.wikitext}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource.wikitext</groupId>
+                <artifactId>twiki-core</artifactId>
+                <version>${version.wikitext}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource.wikitext</groupId>
+                <artifactId>tracwiki-core</artifactId>
+                <version>${version.wikitext}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource.wikitext</groupId>
+                <artifactId>mediawiki-core</artifactId>
+                <version>${version.wikitext}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fusesource.wikitext</groupId>
+                <artifactId>confluence-core</artifactId>
+                <version>${version.wikitext}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

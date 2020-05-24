@@ -1,0 +1,71 @@
+node {
+
+    def repositoryLocation = ".repository"
+    def timestamp = new java.text.SimpleDateFormat('yyyy.MM.dd-HHmmss').format(new Date())
+    def mavenVersion = "maven-latest"
+    def mavenSettings = "repository.metio.wtf"
+    def releaseTarget = "metio"
+    def skipLocalStaging = "true"
+
+    stage('Cleanup') {
+        deleteDir()
+    }
+
+    stage('Checkout') {
+        checkout scm
+    }
+
+    stage('Versioning') {
+        withMaven(
+                maven: "${mavenVersion}",
+                mavenSettingsConfig: "${mavenSettings}",
+                mavenLocalRepo: "${repositoryLocation}") {
+            sh """
+                mvn --batch-mode \
+                    --show-version \
+                    versions:set \
+                    -DgenerateBackupPoms=false \
+                    -DnewVersion=${timestamp}
+            """
+        }
+    }
+
+    stage('Analyze') {
+        withSonarQubeEnv('quality.metio.wtf') {
+            withMaven(
+                    maven: "${mavenVersion}",
+                    mavenSettingsConfig: "${mavenSettings}",
+                    mavenLocalRepo: "${repositoryLocation}") {
+                sh """
+                    mvn --batch-mode \
+                        --show-version \
+                        sonar:sonar
+                """
+            }
+        }
+    }
+
+    stage('Deploy') {
+        withCredentials([
+                string(credentialsId: 'pgp.secretkey', variable: 'PGP_KEY'),
+                string(credentialsId: 'pgp.passphrase', variable: 'PGP_PASSPHRASE')]) {
+            configFileProvider([configFile(fileId: "${mavenSettings}", variable: 'MAVEN_SETTINGS')]) {
+                withMaven(
+                        maven: "${mavenVersion}",
+                        mavenLocalRepo: "${repositoryLocation}") {
+                    sh """
+                        mvn --batch-mode \
+                            --settings $MAVEN_SETTINGS \
+                            --show-version \
+                            pgp:sign deploy \
+                            -Drelease=${releaseTarget} \
+                            -DskipLocalStaging=${skipLocalStaging} \
+                            -Dpgp.secretKey=keyfile:${PGP_KEY} \
+                            -Dpgp.passphrase=literal:'${PGP_PASSPHRASE}'
+                    """
+                }
+            }
+        }
+    }
+
+}
