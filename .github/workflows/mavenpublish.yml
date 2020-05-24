@@ -43,4 +43,21 @@ jobs:
           release_name: Release ${{steps.release.outputs.version}}
           draft: false
           prerelease: false
-          body: Automated release, see [commits](https://github.com/metio/maven-build-process/commits/${{steps.release.outputs.version}}) for changes
+          body: |
+            Automated release, see [commits](https://github.com/metio/maven-build-process/commits/${{steps.release.outputs.version}}) for changes.
+
+            Use the following snippet to use one of the parent POMs:
+            ```
+            <!-- for early prototypes -->
+            <parent>
+              <groupId>wtf.metio.maven.parents</groupId>
+              <artifactId>maven-parents-java-prototype</artifactId>
+              <version>${{steps.release.outputs.version}}</version>
+            </parent>
+            <!-- for stable/established projects -->
+            <parent>
+              <groupId>wtf.metio.maven.parents</groupId>
+              <artifactId>maven-parents-java-stable</artifactId>
+              <version>${{steps.release.outputs.version}}</version>
+            </parent>
+            ```
