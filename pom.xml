@@ -33,7 +33,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
     <name>Maven Build Process</name>
-    <description>Standard Maven build process for projects @ metio.wtf</description>
+    <description>Standard Maven Build Process for Java Projects</description>
     <url>https://maven-build-process.projects.metio.wtf</url>
     <inceptionYear>2020</inceptionYear>
 

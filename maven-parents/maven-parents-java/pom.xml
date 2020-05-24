@@ -132,12 +132,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
                     <version>${version.m-source-p}</version>
-                    <configuration>
-                        <!-- https://maven.apache.org/plugins/maven-source-plugin/jar-no-fork-mojo.html#archive -->
-                        <archive>
-                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                        </archive>
-                    </configuration>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
@@ -155,12 +149,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${version.m-javadoc-p}</version>
-                    <configuration>
-                        <!-- https://maven.apache.org/plugins/maven-javadoc-plugin/jar-mojo.html#archive -->
-                        <archive>
-                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                        </archive>
-                    </configuration>
                     <executions>
                         <execution>
                             <id>attach-javadocs</id>
@@ -188,12 +176,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${version.m-jar-p}</version>
-                    <configuration>
-                        <!-- https://maven.apache.org/plugins/maven-jar-plugin/jar-mojo.html#archive -->
-                        <archive>
-                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                        </archive>
-                    </configuration>
                 </plugin>
 
                 <plugin>
