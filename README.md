@@ -28,6 +28,25 @@ Inherit from one of the parents like this:
 
 Specify SCM, Issue Management, CI Management, and Distribution Management sections of your POM in case you want to deploy into [Maven Central](http://search.maven.org/) or other repositories.
 
+#### Prototype vs Stable
+
+| Feature              | Prototype     | Stable  |
+|:--------------------:|:-------------:|:-------:|
+| JUnit                | 5             | 5       |
+| Attach Source        | ✔             | ✔       |
+| Attach JavaDoc       | ✔             | ✔       |
+| Java                 | 11            | 11      |
+| Jar Manifest         | ✔             | ✔       |
+| FindBugs             | ✘             | ✔       |
+| PMD                  | ✘             | ✔       |
+| Jacoco               | 0 %           | 100 %   |
+| Duplicate Finder     | 0 %           | 100 %   |
+| Pitest               | ✘             | ✔       |
+| Dependency Scan      | ✔             | ✔       |
+| Analyse Dependencies | ✘             | ✔       |
+| Dependency Conflicts | ✔             | ✔       |
+| Flatten POM          | ✔             | ✔       |
+
 ### Maven BOMs
 
 This project defines multiple [Maven BOM](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#importing-dependencies)s. Include them like this:
