@@ -59,7 +59,7 @@ This project defines multiple [Maven BOM](https://maven.apache.org/guides/introd
     <dependency>
       <groupId>wtf.metio.maven.boms</groupId>
       <artifactId>maven-boms-[TYPE]</artifactId>
-      <version>2020.05.24-141357</version>
+      <version>${version.parent}</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
@@ -67,7 +67,7 @@ This project defines multiple [Maven BOM](https://maven.apache.org/guides/introd
 </dependencyManagement>
 ```
 
-Replace `[TYPE]` with one (or multiple) of the available BOMs:
+Pick one or more of the available BOMs and replace `${version.parent}` with the appropriate version. All managed dependencies are using the latest available (released) versions.
 
 <table>
   <tbody>
