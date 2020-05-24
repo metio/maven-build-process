@@ -28,7 +28,7 @@ Inherit from one of the parents like this:
 
 Specify SCM, Issue Management, CI Management, and Distribution Management sections of your POM in case you want to deploy into [Maven Central](http://search.maven.org/).
 
-=== Docker Build Environment
+### Docker Build Environment
 
 The build environment can be used together with docker-compose like this:
 
