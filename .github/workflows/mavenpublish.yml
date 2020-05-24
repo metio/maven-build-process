@@ -43,4 +43,4 @@ jobs:
           release_name: Release ${{steps.release.outputs.version}}
           draft: false
           prerelease: false
-          body: Automated release, see [commits](https://github.com/metio/maven-build-process/commits/master) for changes
+          body: Automated release, see [commits](https://github.com/metio/maven-build-process/commits/${{steps.release.outputs.version}}) for changes
