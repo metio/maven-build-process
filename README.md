@@ -68,8 +68,4 @@ with this software. If not, see http://creativecommons.org/publicdomain/zero/1.0
 
 ## Mirrors
 
-- https://github.com/sebhoss/{project-name}
-- https://bitbucket.org/sebhoss/{project-name}
-- https://gitlab.com/sebastian.hoss/{project-name}
-- http://v2.pikacode.com/sebhoss/{project-name}
-- http://repo.or.cz/{project-name}.git
+- https://github.com/metio/maven-build-process
