@@ -42,7 +42,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.camel>2.25.1</version.camel>
+        <version.camel>3.3.0</version.camel>
+        <version.camel-mqtt>3.0.0-M4</version.camel-mqtt>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -134,7 +135,7 @@
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-mqtt</artifactId>
-                <version>${version.camel}</version>
+                <version>${version.camel-mqtt}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel</groupId>
