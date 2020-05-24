@@ -74,6 +74,21 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>${version.slf4j}</version>
             </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-ext</artifactId>
+                <version>${version.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-nop</artifactId>
+                <version>${version.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${version.slf4j}</version>
+            </dependency>
 
             <!-- Syslog4j -->
             <!-- https://github.com/Graylog2/syslog4j-graylog2 -->
