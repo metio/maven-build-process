@@ -17,4 +17,4 @@ jobs:
       with:
         java-version: 11
     - name: Verify Project
-      run: mvn --batch-mode verify --file pom.xml
+      run: mvn --batch-mode verify
