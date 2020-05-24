@@ -4,8 +4,6 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -18,5 +16,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    - name: Verify Project
+      run: mvn --batch-mode verify --file pom.xml

@@ -16,9 +16,14 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+    - name: Create release version
+      id: release
+      run: echo "::set-output name=version::$(date +'%Y.%m.%d-%H%M%S')"
+    - name: Set release version
+      run: mvn --batch-mode --file pom.xml versions:set -DnewVersion=${{steps.release.outputs.version}} -DgenerateBackupPoms=false
+    - name: Verify project
+      run: mvn --batch-mode --file pom.xml verify
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy
+      run: mvn --batch-mode --show-version deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
