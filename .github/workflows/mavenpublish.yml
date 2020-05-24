@@ -46,18 +46,28 @@ jobs:
           body: |
             Automated release, see [commits](https://github.com/metio/maven-build-process/commits/${{steps.release.outputs.version}}) for changes.
 
-            Use the following snippet to use one of the parent POMs:
-            ```
-            <!-- for early prototypes -->
+            Use this project as a parent POM:
+            ```xml
             <parent>
               <groupId>wtf.metio.maven.parents</groupId>
-              <artifactId>maven-parents-java-prototype</artifactId>
-              <version>${{steps.release.outputs.version}}</version>
-            </parent>
-            <!-- for stable/established projects -->
-            <parent>
-              <groupId>wtf.metio.maven.parents</groupId>
-              <artifactId>maven-parents-java-stable</artifactId>
+              <artifactId>maven-parents-java-[TYPE]</artifactId>
               <version>${{steps.release.outputs.version}}</version>
             </parent>
             ```
+            Replace `[TYPE]` with either `prototype` or `stable`.
+
+            Use one (or all) of the provided BOMs:
+            ```xml
+            <dependencyManagement>
+              <dependencies>
+                <dependency>
+                  <groupId>wtf.metio.maven.boms</groupId>
+                  <artifactId>maven-boms-[TYPE]</artifactId>
+                  <version>${{steps.release.outputs.version}}</version>
+                  <type>pom</type>
+                  <scope>import</scope>
+                </dependency>
+              </dependencies>
+            </dependencyManagement>
+            ```
+            Replace `[TYPE]` with one of the [available BOMs](https://github.com/metio/maven-build-process/tree/${{steps.release.outputs.version}}/maven-boms).
