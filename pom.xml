@@ -155,14 +155,10 @@
             <name>official website</name>
             <url>https://maven-build-process.projects.metio.wtf</url>
         </site>
-        <snapshotRepository>
-            <!-- http://central.sonatype.org/pages/apache-maven.html -->
-            <id>${staging-id}</id>
-            <url>${staging-url}</url>
-        </snapshotRepository>
         <repository>
-            <id>${release-id}</id>
-            <url>${release-url}</url>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/metio/maven-build-process</url>
         </repository>
     </distributionManagement>
 
@@ -276,9 +272,8 @@
                     <artifactId>nexus-staging-maven-plugin</artifactId>
                     <version>${version.nexus-stagig-m-p}</version>
                     <configuration>
-                        <!-- make sure that you have an appropriate entry in your settings.xml -->
-                        <serverId>${staging-id}</serverId>
-                        <nexusUrl>${nexus-url}</nexusUrl>
+                        <serverId>github</serverId>
+                        <nexusUrl>https://maven.pkg.github.com/metio/maven-build-process</nexusUrl>
                         <autoReleaseAfterClose>true</autoReleaseAfterClose>
                     </configuration>
                 </plugin>
