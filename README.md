@@ -1,4 +1,4 @@
-# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23maven-build-process:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://riot.im/app/#/room/#maven-build-process:matrix.org) [![Mailing List](https://img.shields.io/badge/email-maven-build-process%40metio.groups.io%20-brightgreen.svg?style=social&label=Mail)](https://metio.groups.io/g/maven-build-process/topics)
+# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23mbp:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://riot.im/app/#/room/#maven-build-process:matrix.org) [![Mailing List](https://img.shields.io/badge/email-mbp%40metio.groups.io%20-brightgreen.svg?style=social&label=Mail)](https://metio.groups.io/g/maven-build-process/topics)
 
 Bunch of POMs that help to set up a [Maven](http://maven.apache.org/) based project.
 
@@ -75,12 +75,149 @@ Pick one or more of the available BOMs and replace `${version.parent}` with the 
       <th align="center">Artifacts</th>
     </tr>
     <tr>
+      <td>maven-boms-aspect</td>
+      <td>
+        <ul>
+          <li>aopalliance:aopalliance</li>
+          <li>org.aspectj:aspectjweaver</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-bytecode</td>
+      <td>
+        <ul>
+          <li>org.ow2.asm:asm</li>
+          <li>net.bytebuddy:byte-buddy</li>
+          <li>org.jboss.byteman:byteman</li>
+          <li>org.jboss.byteman:byteman-dtest</li>
+          <li>org.jboss.byteman:byteman-bmunit</li>
+          <li>org.jboss.byteman:byteman-install</li>
+          <li>org.jboss.byteman:byteman-submit</li>
+          <li>org.javassist:javassist</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-cache</td>
+      <td>
+        <ul>
+          <li>com.github.ben-manes.caffeine:caffeine</li>
+          <li>org.ehcache:ehcache</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-camel</td>
+      <td>
+        <ul>
+          <li>org.apache.camel:camel-core</li>
+          <li>org.apache.camel:camel-context</li>
+          <li>org.apache.camel:camel-spring</li>
+          <li>org.apache.camel:camel-jdbc</li>
+          <li>org.apache.camel:camel-sql</li>
+          <li>org.apache.camel:camel-test</li>
+          <li>org.apache.camel:camel-test-spring</li>
+          <li>org.apache.camel:camel-spring-javaconfig</li>
+          <li>org.apache.camel:camel-spring-boot</li>
+          <li>org.apache.camel:camel-metrics</li>
+          <li>org.apache.camel:camel-docker</li>
+          <li>org.apache.camel:camel-exec</li>
+          <li>org.apache.camel:camel-irc</li>
+          <li>org.apache.camel:camel-jetty</li>
+          <li>org.apache.camel:camel-jmx</li>
+          <li>org.apache.camel:camel-jms</li>
+          <li>org.apache.camel:camel-mqtt</li>
+          <li>org.apache.camel:camel-mail</li>
+          <li>org.apache.camel:camel-ssh</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td>maven-boms-database</td>
       <td>
         <ul>
           <li>com.h2database:h2</li>
           <li>org.postgresql:postgresql</li>
           <li>mysql:mysql-connector-java</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-eclipse</td>
+      <td>
+        <ul>
+          <li>org.eclipse.jdt:org.eclipse.jdt.annotation</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-google</td>
+      <td>
+        <ul>
+          <li>com.google.auto.value:auto-value</li>
+          <li>com.google.guava:guava</li>
+          <li>com.google.inject:guice</li>
+          <li>com.google.inject.extensions:guice-multibindings</li>
+          <li>com.google.inject.extensions:guice-assistedinject</li>
+          <li>com.google.inject.extensions:guice-throwingproviders</li>
+          <li>com.google.inject.extensions:guice-persist</li>
+          <li>com.google.inject.extensions:guice-jndi</li>
+          <li>com.google.inject.extensions:guice-jmx</li>
+          <li>com.google.inject.extensions:guice-grapher</li>
+          <li>com.google.inject.extensions:guice-struts2</li>
+          <li>com.google.inject.extensions:guice-spring</li>
+          <li>com.google.inject.extensions:guice-servlet</li>
+          <li>com.google.truth:truth</li>
+          <li>com.google.api-client:google-api-client</li>
+          <li>com.google.oauth-client:google-oauth-client</li>
+          <li>com.google.http-client:google-http-client</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-javax</td>
+      <td>
+        <ul>
+          <li>javax.cache:cache-api</li>
+          <li>javax.enterprise:cdi-api</li>
+          <li>javax.inject:javax.inject</li>
+          <li>javax.interceptor:javax.interceptor-api</li>
+          <li>javax.el:javax.el-api</li>
+          <li>org.glassfish:javax.el</li>
+          <li>javax.transaction:jta</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-json</td>
+      <td>
+        <ul>
+          <li>com.googlecode.json-simple:json-simple</li>
+          <li>com.owlike:genson</li>
+          <li>com.google.code.gson:gson</li>
+          <li>com.bluelinelabs:logansquare</li>
+          <li>com.fasterxml.jackson.core:jackson-databind</li>
+          <li>com.fasterxml.jackson.core:jackson-annotations</li>
+          <li>com.fasterxml.jackson.core:jackson-core</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-kafka</td>
+      <td>
+        <ul>
+          <li>org.apache.kafka:kafka-clients</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-karaf</td>
+      <td>
+        <ul>
+          <li>org.apache.karaf:karaf</li>
+          <li>org.apache.karaf:scheduler</li>
+          <li>org.apache.karaf:decanter</li>
         </ul>
       </td>
     </tr>
@@ -96,6 +233,38 @@ Pick one or more of the available BOMs and replace `${version.parent}` with the 
           <li>org.slf4j:slf4j-simple</li>
           <li>org.graylog2:syslog4j</li>
           <li>org.tinylog:tinylog</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-maven</td>
+      <td>
+        <ul>
+          <li>org.apache.maven:maven-core</li>
+          <li>org.apache.maven:maven-model</li>
+          <li>org.apache.maven:maven-plugin-api</li>
+          <li>org.apache.maven.plugin-tools:maven-plugin-annotations</li>
+          <li>org.codehaus.plexus:plexus-component-annotations</li>
+          <li>org.sonatype.plexus:plexus-build-api</li>
+          <li>org.apache.maven.doxia:doxia-core</li>
+          <li>org.apache.maven.doxia:doxia-sink-api</li>
+          <li>org.apache.maven.doxia:doxia-core</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>maven-boms-pax</td>
+      <td>
+        <ul>
+          <li>org.ops4j.pax.exam:pax-exam</li>
+          <li>org.ops4j.pax.exam:pax-exam-container-openwebbeans</li>
+          <li>org.ops4j.pax.exam:pax-exam-container-weld</li>
+          <li>org.ops4j.pax.exam:pax-exam-container-glassfish-embedded</li>
+          <li>org.ops4j.pax.exam:pax-exam-container-karaf</li>
+          <li>org.ops4j.pax.exam:pax-exam-inject</li>
+          <li>org.ops4j.pax.exam:pax-exam-spring</li>
+          <li>org.ops4j.pax.exam:pax-exam-cdi</li>
+          <li>org.ops4j.pax.exam:pax-exam-junit4</li>
         </ul>
       </td>
     </tr>
