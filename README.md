@@ -222,3 +222,7 @@ this software. If not, see http://creativecommons.org/publicdomain/zero/1.0/.
 ## Mirrors
 
 - https://github.com/metio/maven-build-process
+- https://repo.or.cz/metio-maven-build-process.git (WIP)
+- https://codeberg.org/metio.wtf/maven-build-process (WIP)
+- https://gitlab.com/metio.wtf/maven-build-process (WIP)
+- https://bitbucket.org/metio-wtf/maven-build-process (WIP)
