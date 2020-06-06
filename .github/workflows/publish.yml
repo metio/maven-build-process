@@ -71,3 +71,20 @@ jobs:
             </dependencyManagement>
             ```
             Replace `[TYPE]` with one of the [available BOMs](https://github.com/metio/maven-build-process/tree/${{ steps.release.outputs.version }}/maven-boms).
+      - name: Send Mail
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: maven-build-process release ${{ steps.release.outputs.version }}
+          body: See https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} for details.
+          to: maven-build-process@metio.groups.io
+          from: ${{ secrets.MAIL_SENDER }}
+      - name: Publish Toot
+        uses: rzr/fediverse-action@master
+        with:
+          access-token: ${{ secrets.MASTODON_TOKEN }}
+          message: "#maven-build-process version ${{ steps.release.outputs.version }} published! https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} #metio"
+          host: ${{ secrets.MASTODON_SERVER }}
