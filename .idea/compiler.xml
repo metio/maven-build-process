@@ -29,9 +29,9 @@
       <module name="maven-boms-yaml" target="1.5" />
       <module name="maven-build-process" target="1.5" />
       <module name="maven-parents" target="1.5" />
-      <module name="maven-parents-java" target="1.8" />
-      <module name="maven-parents-java-prototype" target="1.8" />
-      <module name="maven-parents-java-stable" target="1.8" />
+      <module name="maven-parents-java" target="11" />
+      <module name="maven-parents-java-prototype" target="11" />
+      <module name="maven-parents-java-stable" target="11" />
       <module name="maven-parents-superpom" target="1.5" />
     </bytecodeTargetLevel>
   </component>
