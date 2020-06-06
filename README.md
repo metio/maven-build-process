@@ -208,35 +208,6 @@ Pick one or more of the available BOMs and replace `${version.parent}` with the 
   </tbody>
 </table>
 
-### Docker Build Environment
-
-The build environment can be used together with docker-compose like this:
-
-```yaml
-version: '2'
-services:
-  verify-project:
-    image: sebhoss/maven-build-environment:latest
-    container_name: my-verifier
-    volumes:
-      - "./:/project"
-    working_dir: /workspace
-    command: bash -c "cp -af /project/. . && mvn clean verify -s /config/local-nexus-mirror.xml -Dmaven.repo.local=/repository"
-    networks:
-      - nexus
-networks:
-  nexus:
-    external:
-      name: nexus_default
-```
-
-Execute this by calling `docker-compose run --rm verify-project`. Executing builds directly inside the `/project` directory will most likely cause a permission problem on the host system. Therefore, the above `docker-compose.yml` file copies the project source into the `/workspace` directory first. The `--rm` option makes sure everything gets cleaned up nicely once execution is finished. Specify a *container_name* in case you want to easily reference the running container. The container includes two predefined Maven settings files:
-
-- /config/google-mirror.xml (https://maven-central.storage.googleapis.com)
-- /config/local-nexus-mirror.xml (http://local-nexus:8081/content/groups/public/)
-
-Use them together with docker networks like in the above example to run your builds against different Maven repositories. The local `/repository` directory already includes _some_ artifacts. Re-use it in order to cut down on build time.
-
 ## License
 
 To the extent possible under law, the author(s) have dedicated all copyright
