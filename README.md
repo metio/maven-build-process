@@ -66,7 +66,7 @@ This project defines multiple [Maven BOM](https://maven.apache.org/guides/introd
 </dependencyManagement>
 ```
 
-Pick one or more of the available BOMs and replace `${version.parent}` with the appropriate version. All managed dependencies are using the latest available (released) versions.
+Pick one or more of the available BOMs and replace `${version.parent}` with the appropriate version. All managed dependencies are using the latest available (released) versions and **updated once a week**.
 
 <table>
   <tbody>
