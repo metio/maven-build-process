@@ -1,7 +1,7 @@
 name: update dependencies
 on:
   schedule:
-    - cron:  '0 0 * * DON'
+    - cron:  '0 0 * * THU'
 jobs:
   build:
     runs-on: ubuntu-latest
