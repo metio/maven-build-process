@@ -22,7 +22,7 @@ jobs:
         run: echo "::set-output name=version::$(date +'%Y.%m.%d-%H%M%S')"
       - name: Count commits in last week
         id: commits
-        run: echo "::set-output name=count::$(git rev-list --count HEAD --since='last Sunday')"
+        run: echo "::set-output name=count::$(git rev-list --count HEAD --since='last Friday')"
       - name: Set release version
         run: mvn --batch-mode versions:set -DnewVersion=${{ steps.release.outputs.version }} -DgenerateBackupPoms=false
       - name: Build with Maven
