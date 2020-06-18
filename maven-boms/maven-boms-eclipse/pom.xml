@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.eclipse.jdt.annotation>2.2.400</version.eclipse.jdt.annotation>
+        <version.eclipse.jdt.annotation>2.2.600</version.eclipse.jdt.annotation>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
