@@ -47,7 +47,7 @@
         <version.okhttp3-testing>3.14.9</version.okhttp3-testing>
         <version.okhttp3-ws>3.4.2</version.okhttp3-ws>
         <version.okhttp4>4.7.2</version.okhttp4>
-        <version.javapoet>1.12.1</version.javapoet>
+        <version.javapoet>1.13.0</version.javapoet>
         <version.retrofit>2.9.0</version.retrofit>
     </properties>
 
