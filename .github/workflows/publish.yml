@@ -94,5 +94,5 @@ jobs:
           username: ${{ secrets.REDDIT_USERNAME }}
           password: ${{ secrets.REDDIT_PASSWORD }}
           app-id: ${{ secrets.REDDIT_APP_ID }}
-          app-secret: ${{ secrets.REDDIT_APP_SECRET }}
+          app-secret: ${{ secrets.REDDIT_API_SECRET }}
           subreddit: ${{ secrets.REDDIT_SUBREDDIT }}
