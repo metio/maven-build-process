@@ -86,7 +86,7 @@ jobs:
         uses: rzr/fediverse-action@master
         with:
           access-token: ${{ secrets.MASTODON_TOKEN }}
-          message: "#mbp version ${{ steps.release.outputs.version }} published! https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} #metio"
+          message: "#maven-build-process version ${{ steps.release.outputs.version }} published! https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} #metio #java"
           host: ${{ secrets.MASTODON_SERVER }}
       - uses: BjornLuG/release-for-reddit-action@v1
         if: steps.commits.outputs.count > 0
