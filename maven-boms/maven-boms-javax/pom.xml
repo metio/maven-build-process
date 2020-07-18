@@ -49,6 +49,7 @@
         <version.jta>1.1</version.jta>
         <version.el-api>3.0.0</version.el-api>
         <version.glassfish.javax.el>3.0.0</version.glassfish.javax.el>
+        <version.json-api>1.1.4</version.json-api>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -108,6 +109,14 @@
                 <groupId>javax.transaction</groupId>
                 <artifactId>jta</artifactId>
                 <version>${version.jta}</version>
+            </dependency>
+
+            <!-- JSR 374 -->
+            <!-- https://jcp.org/en/jsr/detail?id=374 -->
+            <dependency>
+                <groupId>javax.json</groupId>
+                <artifactId>javax.json-api</artifactId>
+                <version>${version.json-api}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

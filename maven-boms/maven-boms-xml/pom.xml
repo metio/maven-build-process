@@ -44,6 +44,7 @@
     <properties>
         <version.xstream>1.4.12</version.xstream>
         <version.xom>1.3.5</version.xom>
+        <version.simple-xml>2.7.1</version.simple-xml>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -52,15 +53,28 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
+            <!-- XStream -->
+            <!-- https://x-stream.github.io/ -->
             <dependency>
                 <groupId>com.thoughtworks.xstream</groupId>
                 <artifactId>xstream</artifactId>
                 <version>${version.xstream}</version>
             </dependency>
+
+            <!-- XOM -->
+            <!-- http://www.xom.nu/ -->
             <dependency>
                 <groupId>xom</groupId>
                 <artifactId>xom</artifactId>
                 <version>${version.xom}</version>
+            </dependency>
+
+            <!-- Simple -->
+            <!-- http://simple.sourceforge.net/ -->
+            <dependency>
+                <groupId>org.simpleframework</groupId>
+                <artifactId>simple-xml</artifactId>
+                <version>${version.simple-xml}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
