@@ -45,7 +45,8 @@
         <version.log4j>2.13.3</version.log4j>
         <version.slf4j>1.7.30</version.slf4j>
         <version.syslog4j>0.9.60</version.syslog4j>
-        <version.tinylog>1.3.6</version.tinylog>
+        <version.tinylog1>1.3.6</version.tinylog1>
+        <version.tinylog2>2.1.2</version.tinylog2>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -103,7 +104,17 @@
             <dependency>
                 <groupId>org.tinylog</groupId>
                 <artifactId>tinylog</artifactId>
-                <version>${version.tinylog}</version>
+                <version>${version.tinylog1}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tinylog</groupId>
+                <artifactId>tinylog-api</artifactId>
+                <version>${version.tinylog2}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tinylog</groupId>
+                <artifactId>tinylog-impl</artifactId>
+                <version>${version.tinylog2}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
