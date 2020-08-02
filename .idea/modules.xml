@@ -8,9 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-bytecode/maven-boms-bytecode.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-bytecode/maven-boms-bytecode.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-cache/maven-boms-cache.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-cache/maven-boms-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-camel/maven-boms-camel.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-camel/maven-boms-camel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-cli/maven-boms-cli.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-cli/maven-boms-cli.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-database/maven-boms-database.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-database/maven-boms-database.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-eclipse/maven-boms-eclipse.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-eclipse/maven-boms-eclipse.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-google/maven-boms-google.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-google/maven-boms-google.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-graal/maven-boms-graal.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-graal/maven-boms-graal.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-javax/maven-boms-javax.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-javax/maven-boms-javax.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-json/maven-boms-json.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-json/maven-boms-json.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-kafka/maven-boms-kafka.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-kafka/maven-boms-kafka.iml" />

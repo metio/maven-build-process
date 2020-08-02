@@ -99,6 +99,13 @@
             </dependency>
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-cli</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-database</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -114,6 +121,13 @@
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-google</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-graal</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

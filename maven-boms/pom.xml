@@ -47,8 +47,10 @@
         <module>maven-boms-bytecode</module>
         <module>maven-boms-cache</module>
         <module>maven-boms-camel</module>
+        <module>maven-boms-cli</module>
         <module>maven-boms-database</module>
         <module>maven-boms-google</module>
+        <module>maven-boms-graal</module>
         <module>maven-boms-eclipse</module>
         <module>maven-boms-javax</module>
         <module>maven-boms-json</module>

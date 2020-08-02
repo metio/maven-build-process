@@ -8,9 +8,11 @@
       <module name="maven-boms-bytecode" target="1.5" />
       <module name="maven-boms-cache" target="1.5" />
       <module name="maven-boms-camel" target="1.5" />
+      <module name="maven-boms-cli" target="1.5" />
       <module name="maven-boms-database" target="1.5" />
       <module name="maven-boms-eclipse" target="1.5" />
       <module name="maven-boms-google" target="1.5" />
+      <module name="maven-boms-graal" target="1.5" />
       <module name="maven-boms-javax" target="1.5" />
       <module name="maven-boms-json" target="1.5" />
       <module name="maven-boms-kafka" target="1.5" />
