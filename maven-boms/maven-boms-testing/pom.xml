@@ -54,6 +54,7 @@
         <version.assertj-core>3.16.1</version.assertj-core>
         <version.equalsverifier>3.4.1</version.equalsverifier>
         <version.mockserver>5.11.1</version.mockserver>
+        <version.archunit>0.14.1</version.archunit>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -169,6 +170,35 @@
                 <groupId>org.mock-server</groupId>
                 <artifactId>mockserver-netty</artifactId>
                 <version>${version.mockserver}</version>
+            </dependency>
+
+            <!-- ArchUnit -->
+            <!-- https://www.archunit.org/ -->
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit</artifactId>
+                <version>${version.archunit}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit-junit5</artifactId>
+                <version>${version.archunit}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit-junit5-api</artifactId>
+                <version>${version.archunit}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit-junit5-engine</artifactId>
+                <version>${version.archunit}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tngtech.archunit</groupId>
+                <artifactId>archunit-junit5-engine-api</artifactId>
+                <version>${version.archunit}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
