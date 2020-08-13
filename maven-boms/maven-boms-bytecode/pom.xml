@@ -44,7 +44,7 @@
     <properties>
         <version.asm>8.0.1</version.asm>
         <version.byte-buddy>1.10.14</version.byte-buddy>
-        <version.byteman>4.0.12</version.byteman>
+        <version.byteman>4.0.13</version.byteman>
         <version.javassist>3.27.0-GA</version.javassist>
     </properties>
 
