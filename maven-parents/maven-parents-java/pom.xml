@@ -60,9 +60,6 @@
         <pmd.minimumTokens>50</pmd.minimumTokens>
         <pmd.failurePriority>0</pmd.failurePriority>
         <pmd.skip>false</pmd.skip>
-        <findbugs.skip>false</findbugs.skip>
-        <findbugs.effort>Max</findbugs.effort>
-        <findbugs.threshold>Low</findbugs.threshold>
         <failBuildOnDuplicates>true</failBuildOnDuplicates>
         <failBuildOnDependencyVersionProblem>true</failBuildOnDependencyVersionProblem>
         <failBuildOnDependencyProblem>true</failBuildOnDependencyProblem>
@@ -73,7 +70,6 @@
         <version.m-jar-p>3.2.0</version.m-jar-p>
         <version.m-compiler-p>3.8.1</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
-        <version.findbugs-m-p>3.0.5</version.findbugs-m-p>
         <version.pittest-m-p>1.5.2</version.pittest-m-p>
         <version.duplicate-finder-m-p>1.4.0</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.5</version.jacoco-m-p>
@@ -176,29 +172,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${version.m-jar-p}</version>
-                </plugin>
-
-                <plugin>
-                    <!-- http://gleclaire.github.io/findbugs-maven-plugin/ -->
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>findbugs-maven-plugin</artifactId>
-                    <version>${version.findbugs-m-p}</version>
-                    <configuration>
-                        <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html#effort -->
-                        <effort>${findbugs.effort}</effort>
-                        <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html#threshold -->
-                        <threshold>${findbugs.threshold}</threshold>
-                        <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html#skip -->
-                        <skip>${findbugs.skip}</skip>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <!-- http://gleclaire.github.io/findbugs-maven-plugin/check-mojo.html -->
-                                <goal>check</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
 
                 <plugin>
@@ -365,18 +338,6 @@
                     <configuration>
                         <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html#failOnWarning -->
                         <failOnWarning>${failBuildOnDependencyProblem}</failOnWarning>
-                        <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html#usedDependencies -->
-                        <usedDependencies>
-                            <!--
-                              Ignore Eclipse JDT annotations because @NonNull, etc are not retained
-                              in byte code. Therefore the plugin detects a false positive.
-                             -->
-                            <usedDependency>org.eclipse.jdt:org.eclipse.jdt.annotation</usedDependency>
-                        </usedDependencies>
-                        <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html#ignoredDependencies -->
-                        <ignoredDependencies>
-                            <ignoredDependency>com.github.sebhoss:suppress-warnings</ignoredDependency>
-                        </ignoredDependencies>
                     </configuration>
                 </plugin>
 

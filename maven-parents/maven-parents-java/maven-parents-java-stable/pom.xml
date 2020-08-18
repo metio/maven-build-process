@@ -52,11 +52,6 @@
     <build>
         <!-- https://maven.apache.org/pom.html#Plugins -->
         <plugins>
-            <!-- http://gleclaire.github.io/findbugs-maven-plugin/ -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-            </plugin>
             <!-- https://maven.apache.org/plugins/maven-pmd-plugin/ -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
