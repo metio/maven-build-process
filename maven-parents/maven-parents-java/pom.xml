@@ -78,6 +78,13 @@
         <version.m-dependency-p>3.1.2</version.m-dependency-p>
         <version.flatten-m-p>1.2.5</version.flatten-m-p>
         <version.sonar-m-p>3.7.0.1746</version.sonar-m-p>
+        <version.templating-m-p>1.0.0</version.templating-m-p>
+        <version.native-image-m-p>20.2.0</version.native-image-m-p>
+        <version.appassembler-m-p>1.10</version.appassembler-m-p>
+        <version.m-assembly-p>3.3.0</version.m-assembly-p>
+        <version.checksum-m-p>1.9</version.checksum-m-p>
+        <version.exec-m-p>3.0.0</version.exec-m-p>
+        <version.asciidoctor-m-p>2.0.0</version.asciidoctor-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -409,6 +416,62 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>${version.sonar-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://www.mojohaus.org/templating-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>templating-maven-plugin</artifactId>
+                    <version>${version.templating-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://www.graalvm.org/reference-manual/native-image/ -->
+                    <groupId>org.graalvm.nativeimage</groupId>
+                    <artifactId>native-image-maven-plugin</artifactId>
+                    <version>${version.native-image-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://www.mojohaus.org/appassembler/appassembler-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>appassembler-maven-plugin</artifactId>
+                    <version>${version.appassembler-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://maven.apache.org/plugins/maven-assembly-plugin/ -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${version.m-assembly-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://checksum-maven-plugin.nicoulaj.net/ -->
+                    <groupId>net.nicoulaj.maven.plugins</groupId>
+                    <artifactId>checksum-maven-plugin</artifactId>
+                    <version>${version.checksum-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://www.mojohaus.org/exec-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${version.exec-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://asciidoctor.org/docs/asciidoctor-maven-plugin/ -->
+                    <groupId>org.asciidoctor</groupId>
+                    <artifactId>asciidoctor-maven-plugin</artifactId>
+                    <version>${version.asciidoctor-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://kohsuke.org/pgp-maven-plugin/ -->
+                    <groupId>org.kohsuke</groupId>
+                    <artifactId>pgp-maven-plugin</artifactId>
+                    <version>${version.pgp-m-p}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
