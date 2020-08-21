@@ -76,6 +76,7 @@
         <version.dependency-check-m>5.3.2</version.dependency-check-m>
         <version.m-dependency-p>3.1.2</version.m-dependency-p>
         <version.flatten-m-p>1.2.5</version.flatten-m-p>
+        <version.sonar-m-p>3.7.0.1746</version.sonar-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -396,9 +397,10 @@
                 </plugin>
 
                 <plugin>
+                    <!-- https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-maven/ -->
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
-                    <version>3.7.0.1746</version>
+                    <version>${version.sonar-m-p}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
