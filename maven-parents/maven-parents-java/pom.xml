@@ -71,7 +71,8 @@
         <version.m-surefire-p>3.0.0-M5</version.m-surefire-p>
         <version.m-compiler-p>3.8.1</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
-        <version.pittest-m-p>1.5.2</version.pittest-m-p>
+        <version.pitest-m-p>1.5.2</version.pitest-m-p>
+        <version.pitest-junit5>0.12</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.4.0</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.5</version.jacoco-m-p>
         <version.dependency-check-m>5.3.2</version.dependency-check-m>
@@ -288,7 +289,7 @@
                     <!-- http://pitest.org/quickstart/maven/ -->
                     <groupId>org.pitest</groupId>
                     <artifactId>pitest-maven</artifactId>
-                    <version>${version.pittest-m-p}</version>
+                    <version>${version.pitest-m-p}</version>
                     <configuration>
                         <!-- http://pitest.org/quickstart/maven/#threads -->
                         <threads>${pit.threads}</threads>
@@ -318,6 +319,13 @@
                             <phase>verify</phase>
                         </execution>
                     </executions>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.pitest</groupId>
+                            <artifactId>pitest-junit5-plugin</artifactId>
+                            <version>${version.pitest-junit5}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
                 <plugin>
