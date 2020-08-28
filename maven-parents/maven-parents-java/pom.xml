@@ -362,6 +362,8 @@
                             <usedDependency>org.junit.jupiter:junit-jupiter-engine</usedDependency>
                             <!-- Ignore ArchUnit aggregator -->
                             <usedDependency>com.tngtech.archunit:archunit-junit5</usedDependency>
+                            <!-- Ignore log4j-simple used during tests -->
+                            <usedDependency>org.slf4j:slf4j-simple</usedDependency>
                         </usedDependencies>
                     </configuration>
                 </plugin>
