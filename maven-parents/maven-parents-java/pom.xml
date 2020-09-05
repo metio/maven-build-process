@@ -299,11 +299,11 @@
                         <skip>${pit.skip}</skip>
                         <!-- http://pitest.org/quickstart/maven/#targetclasses -->
                         <targetClasses>
-                            <param>wtf.metio</param>
+                            <param>wtf.metio*</param>
                         </targetClasses>
                         <!-- http://pitest.org/quickstart/maven/#targettests -->
                         <targetTests>
-                            <param>wtf.metio</param>
+                            <param>wtf.metio*</param>
                         </targetTests>
                         <outputFormats>
                             <outputFormat>XML</outputFormat>
