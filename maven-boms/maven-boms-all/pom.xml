@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.spring>5.2.8.RELEASE</version.spring>
+        <version.spring>5.2.9.RELEASE</version.spring>
         <version.spring.integration>5.3.2.RELEASE</version.spring.integration>
     </properties>
 
