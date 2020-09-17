@@ -43,9 +43,9 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.junit>4.13</version.junit>
-        <version.junit5.platform>1.7.0-M1</version.junit5.platform>
-        <version.junit5.jupiter>5.7.0-M1</version.junit5.jupiter>
-        <version.junit5.vintage>5.7.0-M1</version.junit5.vintage>
+        <version.junit5.platform>1.7.0</version.junit5.platform>
+        <version.junit5.jupiter>5.7.0</version.junit5.jupiter>
+        <version.junit5.vintage>5.7.0</version.junit5.vintage>
         <version.hamcrest-all>1.3</version.hamcrest-all>
         <version.hamcrest-core>2.2</version.hamcrest-core>
         <version.mockito-core>3.5.10</version.mockito-core>
