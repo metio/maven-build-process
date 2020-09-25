@@ -55,6 +55,7 @@
         <version.equalsverifier>3.4.3</version.equalsverifier>
         <version.mockserver>5.11.1</version.mockserver>
         <version.archunit>0.14.1</version.archunit>
+        <version.system-lambda>1.1.0</version.system-lambda>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -199,6 +200,14 @@
                 <groupId>com.tngtech.archunit</groupId>
                 <artifactId>archunit-junit5-engine-api</artifactId>
                 <version>${version.archunit}</version>
+            </dependency>
+
+            <!-- system-lambda -->
+            <!-- https://github.com/stefanbirkner/system-lambda -->
+            <dependency>
+                <groupId>com.github.stefanbirkner</groupId>
+                <artifactId>system-lambda</artifactId>
+                <version>${version.system-lambda}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
