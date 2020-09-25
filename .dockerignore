@@ -1,5 +1,0 @@
-*
-!pom.xml
-!maven-boms/*
-!maven-parents/*
-!build/docker/*.xml
