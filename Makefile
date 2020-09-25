@@ -83,44 +83,7 @@ update-properties: ##@maintenance Update all properties to their latest versions
 	git add pom.xml **/**/pom.xml
 	git commit -s -S -m 'Update properties to latest version'
 
-.PHONY: docker-verify
-docker-verify: ##@docker Verify project in pre-defined build environment
-	docker run --rm -it --volume ${PWD}:/project metio/maven-build-process mvn verify -s /config/google-mirror.xml
-
-# see https://github.com/docker/docker/issues/10324 for NEXUS_HOST trick
-.PHONY: create-build-environment
-create-build-environment: ##@docker Creates a pre-defined build environment
-	docker build --tag metio/maven-build-process .
-
 .PHONY: sign-waiver
 sign-waiver: ##@contributing Sign the WAIVER
 	minisign -Sm AUTHORS/WAIVER
 	mv AUTHORS/WAIVER.minisig AUTHORS/WAIVER.${USERNAME}.minisig
-
-.PHONY: release-into-local-nexus
-release-into-local-nexus: ##@release Release all artifacts into a local nexus
-	mvn versions:set \
-	   -DnewVersion=$(TIMESTAMPED_VERSION) \
-	   -DgenerateBackupPoms=false
-	-mvn clean deploy scm:tag \
-	   -DpushChanges=false \
-	   -DskipLocalStaging=true \
-	   -Drelease=local
-	mvn versions:set \
-	   -DnewVersion=9999.99.99-SNAPSHOT \
-	   -DgenerateBackupPoms=false
-
-.PHONY: release-into-sonatype-nexus
-release-into-sonatype-nexus: ##@release Release all artifacts into Maven Central (through Sonatype OSSRH)
-	mvn versions:set \
-	   -DnewVersion=$(TIMESTAMPED_VERSION) \
-	   -DgenerateBackupPoms=false
-	-mvn clean pgp:sign deploy scm:tag \
-	   -DpushChanges=false \
-	   -Drelease=sonatype
-	-git push \
-	   --tags \
-	   origin master
-	mvn versions:set \
-	   -DnewVersion=9999.99.99-SNAPSHOT \
-	   -DgenerateBackupPoms=false
