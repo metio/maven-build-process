@@ -289,6 +289,10 @@
                                     <requireMavenVersion>
                                         <version>3.6.0</version>
                                     </requireMavenVersion>
+                                    <reactorModuleConvergence>
+                                        <message>The reactor is not valid</message>
+                                        <ignoreModuleDependencies>true</ignoreModuleDependencies>
+                                    </reactorModuleConvergence>
                                 </rules>
                             </configuration>
                         </execution>
