@@ -42,6 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
+        <version.reactive-streams>1.0.3</version.reactive-streams>
         <version.rxjava>2.2.19</version.rxjava>
     </properties>
 
@@ -51,6 +52,13 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
+            <!-- http://www.reactive-streams.org/ -->
+            <dependency>
+                <groupId>org.reactivestreams</groupId>
+                <artifactId>reactive-streams</artifactId>
+                <version>${version.reactive-streams}</version>
+            </dependency>
+
             <!-- https://github.com/ReactiveX/RxJava -->
             <dependency>
                 <groupId>io.reactivex.rxjava2</groupId>
