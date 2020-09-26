@@ -45,6 +45,7 @@
         <version.h2>1.4.200</version.h2>
         <version.postgres>42.2.16</version.postgres>
         <version.mysql>8.0.21</version.mysql>
+        <version.hikari>3.4.5</version.hikari>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -75,6 +76,14 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${version.mysql}</version>
+            </dependency>
+
+            <!-- HikariCP -->
+            <!-- https://github.com/brettwooldridge/HikariCP -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${version.hikari}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
