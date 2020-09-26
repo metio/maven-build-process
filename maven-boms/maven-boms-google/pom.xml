@@ -64,6 +64,11 @@
                 <artifactId>auto-value</artifactId>
                 <version>${version.auto-value}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.auto.value</groupId>
+                <artifactId>auto-value-annotations</artifactId>
+                <version>${version.auto-value}</version>
+            </dependency>
 
             <!-- Guava -->
             <!-- https://github.com/google/guava -->
