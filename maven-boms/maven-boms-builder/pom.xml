@@ -18,8 +18,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Inheritance -->
     <parent>
-        <groupId>wtf.metio.maven</groupId>
-        <artifactId>maven-build-process</artifactId>
+        <groupId>wtf.metio.maven.boms</groupId>
+        <artifactId>maven-boms</artifactId>
         <version>9999.99.99-SNAPSHOT</version>
     </parent>
 
@@ -27,51 +27,47 @@
     <!--                               COORDINATES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
-    <groupId>wtf.metio.maven.boms</groupId>
-    <artifactId>maven-boms</artifactId>
+    <artifactId>maven-boms-builder</artifactId>
     <packaging>pom</packaging>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               INFORMATIONS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
-    <name>Maven BOMs</name>
-    <description>Aggregator project for all Maven based BOMs</description>
+    <name>Maven BOMs :: Builder</name>
+    <description>Builder-pattern related dependencies</description>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!--                                 MODULES                                 -->
+    <!--                                PROPERTIES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Aggregation -->
-    <modules>
-        <module>maven-boms-aspect</module>
-        <module>maven-boms-builder</module>
-        <module>maven-boms-bytecode</module>
-        <module>maven-boms-cache</module>
-        <module>maven-boms-camel</module>
-        <module>maven-boms-cli</module>
-        <module>maven-boms-database</module>
-        <module>maven-boms-google</module>
-        <module>maven-boms-graal</module>
-        <module>maven-boms-eclipse</module>
-        <module>maven-boms-javax</module>
-        <module>maven-boms-json</module>
-        <module>maven-boms-kafka</module>
-        <module>maven-boms-karaf</module>
-        <module>maven-boms-logging</module>
-        <module>maven-boms-maven</module>
-        <module>maven-boms-pax</module>
-        <module>maven-boms-reactive</module>
-        <module>maven-boms-scripting</module>
-        <module>maven-boms-sebhoss</module>
-        <module>maven-boms-square</module>
-        <module>maven-boms-templating</module>
-        <module>maven-boms-testing</module>
-        <module>maven-boms-wikitext</module>
-        <module>maven-boms-xml</module>
-        <module>maven-boms-yaml</module>
+    <!-- https://maven.apache.org/pom.html#Properties -->
+    <properties>
+        <version.freebuilder>2.6.2</version.freebuilder>
+        <version.immutables>2.8.2</version.immutables>
+    </properties>
 
-        <!-- includes all of the above + more -->
-        <module>maven-boms-all</module>
-    </modules>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                            DEPENDENCY MANAGEMENT                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependency_Management -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- FreeBuilder -->
+            <!-- http://freebuilder.inferred.org// -->
+            <dependency>
+                <groupId>org.inferred</groupId>
+                <artifactId>freebuilder</artifactId>
+                <version>${version.freebuilder}</version>
+            </dependency>
+
+            <!-- Immutables -->
+            <!-- https://immutables.github.io/ -->
+            <dependency>
+                <groupId>org.immutables</groupId>
+                <artifactId>value</artifactId>
+                <version>${version.immutables}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
