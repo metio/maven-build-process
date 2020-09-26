@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-all/maven-boms-all.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-all/maven-boms-all.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-aspect/maven-boms-aspect.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-aspect/maven-boms-aspect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-builder/maven-boms-builder.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-builder/maven-boms-builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-bytecode/maven-boms-bytecode.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-bytecode/maven-boms-bytecode.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-cache/maven-boms-cache.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-cache/maven-boms-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-camel/maven-boms-camel.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-camel/maven-boms-camel.iml" />

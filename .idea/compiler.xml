@@ -5,6 +5,7 @@
       <module name="maven-boms" target="1.5" />
       <module name="maven-boms-all" target="1.5" />
       <module name="maven-boms-aspect" target="1.5" />
+      <module name="maven-boms-builder" target="1.5" />
       <module name="maven-boms-bytecode" target="1.5" />
       <module name="maven-boms-cache" target="1.5" />
       <module name="maven-boms-camel" target="1.5" />
