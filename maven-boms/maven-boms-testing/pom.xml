@@ -48,7 +48,7 @@
         <version.junit5.vintage>5.7.0</version.junit5.vintage>
         <version.hamcrest-all>1.3</version.hamcrest-all>
         <version.hamcrest-core>2.2</version.hamcrest-core>
-        <version.mockito-core>3.5.11</version.mockito-core>
+        <version.mockito-core>3.5.13</version.mockito-core>
         <version.dbunit>2.7.0</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.17.2</version.assertj-core>
@@ -57,7 +57,7 @@
         <version.archunit>0.14.1</version.archunit>
         <version.system-lambda>1.1.0</version.system-lambda>
         <version.jmh>1.25.2</version.jmh>
-        <version.cucumber>6.7.0</version.cucumber>
+        <version.cucumber>6.8.0</version.cucumber>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
