@@ -85,6 +85,13 @@
             </dependency>
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-builder</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-cache</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
