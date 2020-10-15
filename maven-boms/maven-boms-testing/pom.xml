@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.junit>4.13</version.junit>
+        <version.junit>4.13.1</version.junit>
         <version.junit5.platform>1.7.0</version.junit5.platform>
         <version.junit5.jupiter>5.7.0</version.junit5.jupiter>
         <version.junit5.vintage>5.7.0</version.junit5.vintage>
@@ -55,8 +55,8 @@
         <version.equalsverifier>3.4.3</version.equalsverifier>
         <version.mockserver>5.11.1</version.mockserver>
         <version.archunit>0.14.1</version.archunit>
-        <version.system-lambda>1.1.0</version.system-lambda>
-        <version.jmh>1.25.2</version.jmh>
+        <version.system-lambda>1.1.1</version.system-lambda>
+        <version.jmh>1.26</version.jmh>
         <version.cucumber>6.8.1</version.cucumber>
     </properties>
 
