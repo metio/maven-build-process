@@ -47,8 +47,8 @@
         <version.guice>4.2.3</version.guice>
         <version.truth>1.1</version.truth>
         <version.api-client>1.30.11</version.api-client>
-        <version.oauth-client>1.31.1</version.oauth-client>
-        <version.http-client>1.37.0</version.http-client>
+        <version.oauth-client>1.31.2</version.oauth-client>
+        <version.http-client>1.38.0</version.http-client>
         <version.dagger>2.29.1</version.dagger>
     </properties>
 
