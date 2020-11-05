@@ -75,7 +75,7 @@
         <version.pitest-junit5>0.12</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.5.0</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.6</version.jacoco-m-p>
-        <version.dependency-check-m>6.0.2</version.dependency-check-m>
+        <version.dependency-check-m>6.0.3</version.dependency-check-m>
         <version.m-dependency-p>3.1.2</version.m-dependency-p>
         <version.flatten-m-p>1.2.5</version.flatten-m-p>
         <version.sonar-m-p>3.7.0.1746</version.sonar-m-p>
