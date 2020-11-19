@@ -80,7 +80,7 @@
         <version.flatten-m-p>1.2.5</version.flatten-m-p>
         <version.sonar-m-p>3.7.0.1746</version.sonar-m-p>
         <version.templating-m-p>1.0.0</version.templating-m-p>
-        <version.native-image-m-p>20.2.0</version.native-image-m-p>
+        <version.native-image-m-p>20.3.0</version.native-image-m-p>
         <version.appassembler-m-p>2.1.0</version.appassembler-m-p>
         <version.m-assembly-p>3.3.0</version.m-assembly-p>
         <version.checksum-m-p>1.9</version.checksum-m-p>

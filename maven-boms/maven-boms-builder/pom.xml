@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.freebuilder>2.6.2</version.freebuilder>
+        <version.freebuilder>2.7.0</version.freebuilder>
         <version.immutables>2.8.8</version.immutables>
     </properties>
 
