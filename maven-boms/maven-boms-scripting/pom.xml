@@ -44,7 +44,7 @@
     <properties>
         <version.jexl>2.1.1</version.jexl>
         <version.juel>2.2.7</version.juel>
-        <version.mvel>2.4.11.Final</version.mvel>
+        <version.mvel>2.4.12.Final</version.mvel>
         <version.ognl>3.2.18</version.ognl>
     </properties>
 
