@@ -52,9 +52,9 @@
         <version.dbunit>2.7.0</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.19.0</version.assertj-core>
-        <version.equalsverifier>3.5.2</version.equalsverifier>
+        <version.equalsverifier>3.5.3</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
-        <version.archunit>0.15.0</version.archunit>
+        <version.archunit>0.16.0</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
         <version.jmh>1.27</version.jmh>
         <version.cucumber>6.9.1</version.cucumber>
