@@ -43,7 +43,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.reactive-streams>1.0.3</version.reactive-streams>
-        <version.rxjava>2.2.20</version.rxjava>
+        <version.rxjava>2.2.21</version.rxjava>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
