@@ -45,7 +45,7 @@
         <version.h2>1.4.200</version.h2>
         <version.postgres>42.2.18</version.postgres>
         <version.mysql>8.0.23</version.mysql>
-        <version.hikari>4.0.1</version.hikari>
+        <version.hikari>4.0.2</version.hikari>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
