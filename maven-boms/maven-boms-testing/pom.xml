@@ -48,16 +48,16 @@
         <version.junit5.vintage>5.8.0-M1</version.junit5.vintage>
         <version.hamcrest-all>1.3</version.hamcrest-all>
         <version.hamcrest-core>2.2</version.hamcrest-core>
-        <version.mockito-core>3.7.7</version.mockito-core>
+        <version.mockito-core>3.8.0</version.mockito-core>
         <version.dbunit>2.7.0</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.19.0</version.assertj-core>
-        <version.equalsverifier>3.5.4</version.equalsverifier>
+        <version.equalsverifier>3.5.5</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
-        <version.archunit>0.16.0</version.archunit>
+        <version.archunit>0.17.0</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
-        <version.jmh>1.27</version.jmh>
-        <version.cucumber>6.10.0</version.cucumber>
+        <version.jmh>1.29</version.jmh>
+        <version.cucumber>6.10.2</version.cucumber>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
