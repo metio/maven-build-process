@@ -42,14 +42,14 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.auto-value>1.7.4</version.auto-value>
-        <version.guava>30.1-jre</version.guava>
+        <version.auto-value>1.7.5</version.auto-value>
+        <version.guava>30.1.1-jre</version.guava>
         <version.guice>4.2.3</version.guice>
         <version.truth>1.1.2</version.truth>
-        <version.api-client>1.31.2</version.api-client>
+        <version.api-client>1.31.3</version.api-client>
         <version.oauth-client>1.31.4</version.oauth-client>
-        <version.http-client>1.38.1</version.http-client>
-        <version.dagger>2.32</version.dagger>
+        <version.http-client>1.39.1</version.http-client>
+        <version.dagger>2.33</version.dagger>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
