@@ -31,12 +31,10 @@ jobs:
         run: mvn --batch-mode versions:set -DnewVersion=${{ steps.release.outputs.version }} -DgenerateBackupPoms=false
       - id: gpg
         name: GPG Key
-        run: echo "${{ secrets.GPG_KEY }}" | base64 --decode > $GITHUB_WORKSPACE/signing.key.asc
-      - name: Build with Maven
-        run: mvn --batch-mode verify -Dpgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc -Dpgp.passphrase=literal:${{ secrets.GPG_KEY_PASSPHRASE }}
+        run: echo "${{ secrets.GPG_SECRET_KEY_BASE64 }}" | base64 --decode > $GITHUB_WORKSPACE/signing.key.asc
       - name: Publish to Maven Central
         if: steps.commits.outputs.count > 0
-        run: mvn --batch-mode deploy -Dpgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc -Dpgp.passphrase=literal:${{ secrets.GPG_KEY_PASSPHRASE }}
+        run: mvn --batch-mode verify deploy -Dpgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc -Dpgp.passphrase=literal:${{ secrets.GPG_SECRET_KEY_PASSWORD }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAVEN_CENTRAL_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
