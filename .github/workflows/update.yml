@@ -1,4 +1,4 @@
-name: update dependencies
+name: Update Dependencies
 on:
   schedule:
     - cron:  '0 0 * * THU'
