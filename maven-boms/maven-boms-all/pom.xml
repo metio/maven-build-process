@@ -48,7 +48,7 @@
         <version.camel>3.3.0</version.camel>
         <version.junit5>5.8.0-M1</version.junit5>
         <version.guice>4.2.3</version.guice>
-        <version.okhttp>3.13.1</version.okhttp>
+        <version.okhttp>4.9.1</version.okhttp>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
