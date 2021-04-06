@@ -44,7 +44,6 @@
     <properties>
         <version.auto-value>1.7.5</version.auto-value>
         <version.guava>30.1.1-jre</version.guava>
-        <version.guice>4.2.3</version.guice>
         <version.truth>1.1.2</version.truth>
         <version.api-client>1.31.3</version.api-client>
         <version.oauth-client>1.31.4</version.oauth-client>
@@ -95,64 +94,6 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${version.guava}</version>
-            </dependency>
-
-            <!-- Guice -->
-            <!-- https://github.com/google/guice -->
-            <dependency>
-                <groupId>com.google.inject</groupId>
-                <artifactId>guice</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-multibindings</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-assistedinject</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-throwingproviders</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-persist</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-jndi</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-jmx</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-grapher</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-struts2</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-spring</artifactId>
-                <version>${version.guice}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.inject.extensions</groupId>
-                <artifactId>guice-servlet</artifactId>
-                <version>${version.guice}</version>
             </dependency>
 
             <!-- Truth -->

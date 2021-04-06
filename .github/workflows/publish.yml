@@ -34,7 +34,7 @@ jobs:
         run: echo "${{ secrets.GPG_SECRET_KEY_BASE64 }}" | base64 --decode > $GITHUB_WORKSPACE/signing.key.asc
       - name: Publish to Maven Central
         if: steps.commits.outputs.count > 0
-        run: mvn --batch-mode clean verify deploy -Dpgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc -Dpgp.passphrase=literal:${{ secrets.GPG_SECRET_KEY_PASSWORD }}
+        run: mvn --batch-mode --activate-profiles release deploy -Dpgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc -Dpgp.passphrase=literal:${{ secrets.GPG_SECRET_KEY_PASSWORD }}
         env:
           MAVEN_CENTRAL_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}

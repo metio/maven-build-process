@@ -43,11 +43,11 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Aggregation -->
     <modules>
+        <module>maven-boms-ant</module>
         <module>maven-boms-aspect</module>
         <module>maven-boms-builder</module>
         <module>maven-boms-bytecode</module>
         <module>maven-boms-cache</module>
-        <module>maven-boms-camel</module>
         <module>maven-boms-cli</module>
         <module>maven-boms-database</module>
         <module>maven-boms-google</module>

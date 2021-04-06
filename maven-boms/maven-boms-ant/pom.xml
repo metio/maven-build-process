@@ -27,24 +27,22 @@
     <!--                               COORDINATES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
-    <artifactId>maven-boms-square</artifactId>
+    <artifactId>maven-boms-ant</artifactId>
     <packaging>pom</packaging>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               INFORMATIONS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
-    <name>Maven BOMs :: Square</name>
-    <description>Square related dependencies</description>
+    <name>Maven BOMs :: Ant</name>
+    <description>Ant related dependencies</description>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                PROPERTIES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.okhttp>2.7.5</version.okhttp>
-        <version.javapoet>1.13.0</version.javapoet>
-        <version.retrofit>2.9.0</version.retrofit>
+        <version.ant>1.10.9</version.ant>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -53,53 +51,10 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- OkHttp2 -->
-            <!-- https://square.github.io/okhttp/ -->
             <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-apache</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-android-support</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-mockwebserver</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-ws</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-testing-support</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-
-            <!-- JavaPoet -->
-            <!-- https://github.com/square/javapoet -->
-            <dependency>
-                <groupId>com.squareup</groupId>
-                <artifactId>javapoet</artifactId>
-                <version>${version.javapoet}</version>
-            </dependency>
-
-            <!-- Retrofit -->
-            <!-- http://square.github.io/retrofit/ -->
-            <dependency>
-                <groupId>com.squareup.retrofit2</groupId>
-                <artifactId>retrofit</artifactId>
-                <version>${version.retrofit}</version>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>${version.ant}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

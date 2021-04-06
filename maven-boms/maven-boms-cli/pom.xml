@@ -62,6 +62,7 @@
                 <groupId>info.picocli</groupId>
                 <artifactId>picocli-codegen</artifactId>
                 <version>${version.picocli}</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

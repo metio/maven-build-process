@@ -86,6 +86,9 @@
         <version.checksum-m-p>1.9</version.checksum-m-p>
         <version.exec-m-p>3.0.0</version.exec-m-p>
         <version.asciidoctor-m-p>2.1.0</version.asciidoctor-m-p>
+        <version.editorconfig-m-p>0.1.0</version.editorconfig-m-p>
+        <version.build-helper-m-p>3.2.0</version.build-helper-m-p>
+        <version.jmh-m-p>1.0.3</version.jmh-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -483,6 +486,47 @@
                     <artifactId>pgp-maven-plugin</artifactId>
                     <version>${version.pgp-m-p}</version>
                 </plugin>
+
+                <plugin>
+                    <!-- http://ec4j.github.io/editorconfig-maven-plugin/ -->
+                    <groupId>org.ec4j.maven</groupId>
+                    <artifactId>editorconfig-maven-plugin</artifactId>
+                    <version>${version.editorconfig-m-p}</version>
+                    <executions>
+                        <execution>
+                            <id>check</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <excludes>
+                            <!-- exclude for GitHub Actions -->
+                            <exclude>signing.key.asc</exclude>
+                        </excludes>
+                        <includes>
+                            <include>pom.xml</include>
+                            <include>maven-version-rules.xml</include>
+                            <include>src/**/*</include>
+                        </includes>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- https://www.mojohaus.org/build-helper-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${version.build-helper-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://github.com/jhunters/jmh-maven-plugin -->
+                    <groupId>com.baidu.maven</groupId>
+                    <artifactId>jmh-maven-plugin</artifactId>
+                    <version>${version.jmh-m-p}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -529,4 +573,5 @@
             </build>
         </profile>
     </profiles>
+
 </project>
