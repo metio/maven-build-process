@@ -49,6 +49,8 @@
         <version.junit5>5.8.0-M1</version.junit5>
         <version.guice>4.2.3</version.guice>
         <version.okhttp>4.9.1</version.okhttp>
+        <version.mutiny>0.15.0</version.mutiny>
+        <version.reactor>2020.0.5</version.reactor>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -104,6 +106,20 @@
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp-bom</artifactId>
                 <version>${version.okhttp}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.smallrye.reactive</groupId>
+                <artifactId>mutiny-bom</artifactId>
+                <version>${version.mutiny}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>${version.reactor}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
