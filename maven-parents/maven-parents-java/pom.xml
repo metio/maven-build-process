@@ -89,6 +89,7 @@
         <version.editorconfig-m-p>0.1.0</version.editorconfig-m-p>
         <version.build-helper-m-p>3.2.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
+        <version.spotbugs-m-p>4.2.0</version.spotbugs-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -526,6 +527,13 @@
                     <groupId>com.baidu.maven</groupId>
                     <artifactId>jmh-maven-plugin</artifactId>
                     <version>${version.jmh-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://spotbugs.readthedocs.io/en/latest/maven.html -->
+                    <groupId>com.github.spotbugs</groupId>
+                    <artifactId>spotbugs-maven-plugin</artifactId>
+                    <version>${version.spotbugs-m-p}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
