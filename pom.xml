@@ -169,7 +169,7 @@
         <version.sonar-m-p>3.8.0.2131</version.sonar-m-p>
         <version.pgp-m-p>1.1</version.pgp-m-p>
         <version.nexus-stagig-m-p>1.6.8</version.nexus-stagig-m-p>
-        <version.m-enforcer-p>1.4.1</version.m-enforcer-p>
+        <version.m-enforcer-p>3.0.0-M3</version.m-enforcer-p>
         <version.m-scm-p>1.11.2</version.m-scm-p>
         <version.versions-m-p>2.8.1</version.versions-m-p>
 
@@ -273,7 +273,7 @@
                     <!-- https://maven.apache.org/enforcer/maven-enforcer-plugin/index.html -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.0.0-M3</version>
+                    <version>${version.m-enforcer-p}</version>
                     <executions>
                         <execution>
                             <id>enforce-maven</id>
@@ -289,6 +289,20 @@
                                         <message>The reactor is not valid</message>
                                         <ignoreModuleDependencies>true</ignoreModuleDependencies>
                                     </reactorModuleConvergence>
+                                    <requireSameVersions>
+                                        <plugins>
+                                            <plugin>org.apache.maven.plugins:maven-surefire-plugin</plugin>
+                                            <plugin>org.apache.maven.plugins:maven-failsafe-plugin</plugin>
+                                            <plugin>org.apache.maven.plugins:maven-surefire-report-plugin</plugin>
+                                        </plugins>
+                                    </requireSameVersions>
+                                    <requireSameVersions>
+                                        <dependencies>
+                                            <dependency>org.apache.maven</dependency>
+                                        </dependencies>
+                                    </requireSameVersions>
+                                    <dependencyConvergence/>
+                                    <banDuplicatePomDependencyVersions/>
                                 </rules>
                             </configuration>
                         </execution>
