@@ -38,7 +38,6 @@ Specify SCM, Issue Management, CI Management, and Distribution Management sectio
 | Attach Source        | ✔             | ✔       |
 | Attach JavaDoc       | ✔             | ✔       |
 | Java                 | 11            | 11      |
-| FindBugs             | ✘             | ✔       |
 | PMD                  | ✘             | ✔       |
 | Jacoco               | 0 %           | 100 %   |
 | Duplicate Finder     | ✔             | ✔       |
