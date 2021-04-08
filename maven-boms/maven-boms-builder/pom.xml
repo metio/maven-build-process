@@ -43,7 +43,6 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.freebuilder>2.7.0</version.freebuilder>
-        <version.immutables>2.8.9-ea-1</version.immutables>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -58,19 +57,6 @@
                 <groupId>org.inferred</groupId>
                 <artifactId>freebuilder</artifactId>
                 <version>${version.freebuilder}</version>
-            </dependency>
-
-            <!-- Immutables -->
-            <!-- https://immutables.github.io/ -->
-            <dependency>
-                <groupId>org.immutables</groupId>
-                <artifactId>value</artifactId>
-                <version>${version.immutables}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.immutables</groupId>
-                <artifactId>value-annotations</artifactId>
-                <version>${version.immutables}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -100,12 +100,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Aggregation -->
     <modules>
-        <!--<module>maven-resources</module>-->
         <module>maven-boms</module>
-        <!-- <module>maven-extensions</module> -->
         <module>maven-parents</module>
-        <!-- <module>maven-archetypes</module> -->
-        <!-- <module>maven-mixins</module> -->
     </modules>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

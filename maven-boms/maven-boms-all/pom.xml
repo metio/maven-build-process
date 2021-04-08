@@ -51,6 +51,11 @@
         <version.okhttp>4.9.1</version.okhttp>
         <version.mutiny>0.15.0</version.mutiny>
         <version.reactor>2020.0.5</version.reactor>
+        <version.immutables>2.8.9-ea-1</version.immutables>
+        <version.netty>4.1.63.Final</version.netty>
+        <version.ebean>12.8.1</version.ebean>
+        <version.jdbi>3.18.1</version.jdbi>
+        <version.infinispan>12.1.0.Final</version.infinispan>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -120,6 +125,41 @@
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-bom</artifactId>
                 <version>${version.reactor}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.immutables</groupId>
+                <artifactId>bom</artifactId>
+                <version>${version.immutables}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-bom</artifactId>
+                <version>${version.netty}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.ebean</groupId>
+                <artifactId>ebean-bom</artifactId>
+                <version>${version.ebean}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jdbi</groupId>
+                <artifactId>jdbi3-bom</artifactId>
+                <version>${version.jdbi}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-bom</artifactId>
+                <version>${version.infinispan}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
