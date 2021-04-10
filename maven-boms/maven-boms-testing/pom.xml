@@ -42,6 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
+        <version.apiguardian>1.1.1</version.apiguardian>
         <version.junit>4.13.2</version.junit>
         <version.hamcrest-all>1.3</version.hamcrest-all>
         <version.hamcrest-core>2.2</version.hamcrest-core>
@@ -51,6 +52,7 @@
         <version.assertj-core>3.19.0</version.assertj-core>
         <version.equalsverifier>3.5.5</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
+        <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>0.17.0</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
         <version.jmh>1.29</version.jmh>
@@ -63,6 +65,14 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
+            <!-- API Guardian -->
+            <!-- https://github.com/apiguardian-team/apiguardian -->
+            <dependency>
+                <groupId>org.apiguardian</groupId>
+                <artifactId>apiguardian-api</artifactId>
+                <version>${version.apiguardian}</version>
+            </dependency>
+
             <!-- JUnit -->
             <!-- http://junit.org/ -->
             <dependency>
@@ -120,8 +130,56 @@
             <!-- http://www.mock-server.com/ -->
             <dependency>
                 <groupId>org.mock-server</groupId>
+                <artifactId>mockserver</artifactId>
+                <version>${version.mockserver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mock-server</groupId>
+                <artifactId>mockserver-core</artifactId>
+                <version>${version.mockserver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mock-server</groupId>
                 <artifactId>mockserver-netty</artifactId>
                 <version>${version.mockserver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mock-server</groupId>
+                <artifactId>mockserver-client-java</artifactId>
+                <version>${version.mockserver}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mock-server</groupId>
+                <artifactId>mockserver-junit-jupiter</artifactId>
+                <version>${version.mockserver}</version>
+            </dependency>
+
+            <!-- WireMock -->
+            <!-- http://wiremock.org/ -->
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-jre8</artifactId>
+                <version>${version.wiremock}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-jre8-standalone</artifactId>
+                <version>${version.wiremock}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock</artifactId>
+                <version>${version.wiremock}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-standalone</artifactId>
+                <version>${version.wiremock}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>crash-lab</artifactId>
+                <version>${version.wiremock}</version>
             </dependency>
 
             <!-- ArchUnit -->

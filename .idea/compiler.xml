@@ -5,6 +5,7 @@
       <module name="maven-boms" target="1.5" />
       <module name="maven-boms-all" target="1.5" />
       <module name="maven-boms-ant" target="1.5" />
+      <module name="maven-boms-ant (1)" target="1.5" />
       <module name="maven-boms-aspect" target="1.5" />
       <module name="maven-boms-builder" target="1.5" />
       <module name="maven-boms-bytecode" target="1.5" />
@@ -15,6 +16,7 @@
       <module name="maven-boms-eclipse" target="1.5" />
       <module name="maven-boms-google" target="1.5" />
       <module name="maven-boms-graal" target="1.5" />
+      <module name="maven-boms-http" target="1.5" />
       <module name="maven-boms-javax" target="1.5" />
       <module name="maven-boms-json" target="1.5" />
       <module name="maven-boms-kafka" target="1.5" />
