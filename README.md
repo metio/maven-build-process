@@ -1,4 +1,4 @@
-# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23mbp:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://riot.im/app/#/room/#maven-build-process:matrix.org) [![Mailing List](https://img.shields.io/badge/email-mbp%40metio.groups.io%20-brightgreen.svg?style=social&label=Mail)](https://metio.groups.io/g/maven-build-process/topics)
+# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23mbp:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://matrix.to/#maven-build-process:matrix.org) [![Mailing List](https://img.shields.io/badge/email-mbp%40metio.groups.io%20-brightgreen.svg?style=social&label=Mail)](https://metio.groups.io/g/maven-build-process/topics)
 
 Bunch of POMs that help to set up a [Maven](http://maven.apache.org/) based project.
 
