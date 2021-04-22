@@ -21,10 +21,10 @@
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-karaf/maven-boms-karaf.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-karaf/maven-boms-karaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-logging/maven-boms-logging.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-logging/maven-boms-logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-maven/maven-boms-maven.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-maven/maven-boms-maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-sebhoss/maven-boms-metio.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-sebhoss/maven-boms-metio.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-pax/maven-boms-pax.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-pax/maven-boms-pax.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-reactive/maven-boms-reactive.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-reactive/maven-boms-reactive.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-scripting/maven-boms-scripting.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-scripting/maven-boms-scripting.iml" />
-      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-sebhoss/maven-boms-sebhoss.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-sebhoss/maven-boms-sebhoss.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-square/maven-boms-square.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-square/maven-boms-square.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-templating/maven-boms-templating.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-templating/maven-boms-templating.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-testing/maven-boms-testing.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-testing/maven-boms-testing.iml" />

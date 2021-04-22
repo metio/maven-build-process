@@ -60,10 +60,10 @@
         <module>maven-boms-karaf</module>
         <module>maven-boms-logging</module>
         <module>maven-boms-maven</module>
+        <module>maven-boms-metio</module>
         <module>maven-boms-pax</module>
         <module>maven-boms-reactive</module>
         <module>maven-boms-scripting</module>
-        <module>maven-boms-sebhoss</module>
         <module>maven-boms-square</module>
         <module>maven-boms-templating</module>
         <module>maven-boms-testing</module>

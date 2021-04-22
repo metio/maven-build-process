@@ -23,10 +23,10 @@
       <module name="maven-boms-karaf" target="1.5" />
       <module name="maven-boms-logging" target="1.5" />
       <module name="maven-boms-maven" target="1.5" />
+      <module name="maven-boms-metio" target="1.5" />
       <module name="maven-boms-pax" target="1.5" />
       <module name="maven-boms-reactive" target="1.5" />
       <module name="maven-boms-scripting" target="1.5" />
-      <module name="maven-boms-sebhoss" target="1.5" />
       <module name="maven-boms-square" target="1.5" />
       <module name="maven-boms-templating" target="1.5" />
       <module name="maven-boms-testing" target="1.5" />

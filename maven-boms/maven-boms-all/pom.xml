@@ -294,6 +294,13 @@
             </dependency>
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-metio</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-pax</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -309,13 +316,6 @@
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-scripting</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>wtf.metio.maven.boms</groupId>
-                <artifactId>maven-boms-sebhoss</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
