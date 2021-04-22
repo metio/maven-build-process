@@ -53,7 +53,7 @@
         <version.reactor>2020.0.6</version.reactor>
         <version.immutables>2.8.9-ea-1</version.immutables>
         <version.netty>4.1.63.Final</version.netty>
-        <version.ebean>12.8.2</version.ebean>
+        <version.ebean>12.8.3</version.ebean>
         <version.jdbi>3.19.0</version.jdbi>
         <version.infinispan>12.1.1.Final</version.infinispan>
         <version.r2dbc>Arabba-SR9</version.r2dbc>
