@@ -79,7 +79,7 @@ jobs:
             ```
             Replace `[TYPE]` with one of the [available BOMs](https://github.com/metio/maven-build-process/tree/${{ steps.release.outputs.version }}/maven-boms).
       - name: Send Mail
-        uses: dawidd6/action-send-mail@v2
+        uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.MAIL_SERVER }}
           server_port: ${{ secrets.MAIL_PORT }}
