@@ -43,7 +43,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.h2>1.4.200</version.h2>
-        <version.postgres>42.2.19</version.postgres>
+        <version.postgres>42.2.20</version.postgres>
         <version.mysql>8.0.24</version.mysql>
         <version.hikari>4.0.3</version.hikari>
     </properties>
