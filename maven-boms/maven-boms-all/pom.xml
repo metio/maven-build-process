@@ -49,12 +49,12 @@
         <version.junit5>5.8.0-M1</version.junit5>
         <version.guice>5.0.1</version.guice>
         <version.okhttp>4.9.1</version.okhttp>
-        <version.mutiny>0.15.0</version.mutiny>
+        <version.mutiny>0.16.0</version.mutiny>
         <version.reactor>2020.0.6</version.reactor>
         <version.immutables>2.8.9-ea-1</version.immutables>
         <version.netty>4.1.63.Final</version.netty>
         <version.ebean>12.8.3</version.ebean>
-        <version.jdbi>3.19.0</version.jdbi>
+        <version.jdbi>3.20.0</version.jdbi>
         <version.infinispan>12.1.1.Final</version.infinispan>
         <version.r2dbc>Arabba-SR9</version.r2dbc>
     </properties>
