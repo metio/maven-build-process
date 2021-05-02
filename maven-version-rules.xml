@@ -43,15 +43,9 @@
                 <ignoreVersion type="regex">.*-java7</ignoreVersion>
             </ignoreVersions>
         </rule>
-        <!-- ignore all self managed artifacts, since they use semantic versioning + a version range -->
-        <rule groupId="de.xn--ho-hia.*" artifactId="*">
+        <rule groupId="com.tngtech.archunit" artifactId="*">
             <ignoreVersions>
-                <ignoreVersion type="regex">.*</ignoreVersion>
-            </ignoreVersions>
-        </rule>
-        <rule groupId="com.github.sebhoss" artifactId="*">
-            <ignoreVersions>
-                <ignoreVersion type="regex">.*</ignoreVersion>
+                <ignoreVersion>0.18.0</ignoreVersion>
             </ignoreVersions>
         </rule>
     </rules>

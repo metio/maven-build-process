@@ -53,7 +53,7 @@
         <version.equalsverifier>3.6</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
-        <version.archunit>0.18.0</version.archunit>
+        <version.archunit>0.17.0</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
         <version.jmh>1.29</version.jmh>
         <version.cucumber>6.10.3</version.cucumber>
