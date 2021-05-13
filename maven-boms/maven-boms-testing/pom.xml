@@ -46,7 +46,7 @@
         <version.junit>4.13.2</version.junit>
         <version.hamcrest-all>1.3</version.hamcrest-all>
         <version.hamcrest-core>2.2</version.hamcrest-core>
-        <version.mockito-core>3.9.0</version.mockito-core>
+        <version.mockito-core>3.10.0</version.mockito-core>
         <version.dbunit>2.7.0</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.19.0</version.assertj-core>
@@ -55,7 +55,7 @@
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>0.17.0</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
-        <version.jmh>1.30</version.jmh>
+        <version.jmh>1.31</version.jmh>
         <version.cucumber>6.10.3</version.cucumber>
     </properties>
 
