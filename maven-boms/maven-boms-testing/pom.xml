@@ -56,7 +56,7 @@
         <version.archunit>0.17.0</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
         <version.jmh>1.31</version.jmh>
-        <version.cucumber>6.10.3</version.cucumber>
+        <version.cucumber>6.10.4</version.cucumber>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
