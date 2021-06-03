@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.mustache.java>0.9.7</version.mustache.java>
+        <version.mustache.java>0.9.10</version.mustache.java>
         <version.jmustache>1.15</version.jmustache>
     </properties>
 
