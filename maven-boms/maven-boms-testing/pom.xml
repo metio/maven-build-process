@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.apiguardian>1.1.1</version.apiguardian>
+        <version.apiguardian>1.1.2</version.apiguardian>
         <version.junit>4.13.2</version.junit>
         <version.hamcrest-all>1.3</version.hamcrest-all>
         <version.hamcrest-core>2.2</version.hamcrest-core>
