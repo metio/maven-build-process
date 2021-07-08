@@ -83,7 +83,7 @@
         <version.native-image-m-p>21.1.0</version.native-image-m-p>
         <version.appassembler-m-p>2.1.0</version.appassembler-m-p>
         <version.m-assembly-p>3.3.0</version.m-assembly-p>
-        <version.checksum-m-p>1.10</version.checksum-m-p>
+        <version.checksum-m-p>1.11</version.checksum-m-p>
         <version.exec-m-p>3.0.0</version.exec-m-p>
         <version.asciidoctor-m-p>2.1.0</version.asciidoctor-m-p>
         <version.editorconfig-m-p>0.1.1</version.editorconfig-m-p>
