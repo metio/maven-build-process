@@ -43,7 +43,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.caffeine>3.0.3</version.caffeine>
-        <version.ehcache>3.9.4</version.ehcache>
+        <version.ehcache>3.9.5</version.ehcache>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
