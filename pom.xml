@@ -166,7 +166,7 @@
         <version.pgp-m-p>1.1</version.pgp-m-p>
         <version.nexus-stagig-m-p>1.6.8</version.nexus-stagig-m-p>
         <version.m-enforcer-p>3.0.0</version.m-enforcer-p>
-        <version.m-scm-p>1.11.2</version.m-scm-p>
+        <version.m-scm-p>1.11.3</version.m-scm-p>
         <version.versions-m-p>2.8.1</version.versions-m-p>
 
         <!-- plugin settings -->

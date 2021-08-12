@@ -55,8 +55,8 @@
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>0.20.1</version.archunit>
         <version.system-lambda>1.2.0</version.system-lambda>
-        <version.jmh>1.32</version.jmh>
-        <version.cucumber>6.10.4</version.cucumber>
+        <version.jmh>1.33</version.jmh>
+        <version.cucumber>6.11.0</version.cucumber>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
