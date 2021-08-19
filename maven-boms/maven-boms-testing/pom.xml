@@ -50,7 +50,7 @@
         <version.dbunit>2.7.2</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.20.2</version.assertj-core>
-        <version.equalsverifier>3.7</version.equalsverifier>
+        <version.equalsverifier>3.7.1</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>0.20.1</version.archunit>
