@@ -49,7 +49,7 @@
         <version.mockito-core>3.12.4</version.mockito-core>
         <version.dbunit>2.7.2</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
-        <version.assertj-core>3.20.2</version.assertj-core>
+        <version.assertj-core>3.21.0</version.assertj-core>
         <version.equalsverifier>3.7.1</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
