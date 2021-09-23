@@ -89,7 +89,7 @@
         <version.editorconfig-m-p>0.1.1</version.editorconfig-m-p>
         <version.build-helper-m-p>3.2.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
-        <version.spotbugs-m-p>4.3.0</version.spotbugs-m-p>
+        <version.spotbugs-m-p>4.4.1</version.spotbugs-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
