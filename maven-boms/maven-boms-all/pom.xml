@@ -49,12 +49,12 @@
         <version.junit5>5.8.1</version.junit5>
         <version.guice>5.0.1</version.guice>
         <version.okhttp>4.9.2</version.okhttp>
-        <version.mutiny>1.1.0</version.mutiny>
-        <version.reactor>2020.0.11</version.reactor>
+        <version.mutiny>1.1.2</version.mutiny>
+        <version.reactor>2020.0.12</version.reactor>
         <version.immutables>2.8.9-ea-1</version.immutables>
-        <version.netty>4.1.68.Final</version.netty>
-        <version.ebean>12.12.1</version.ebean>
-        <version.jdbi>3.22.0</version.jdbi>
+        <version.netty>4.1.69.Final</version.netty>
+        <version.ebean>12.12.2</version.ebean>
+        <version.jdbi>3.23.0</version.jdbi>
         <version.infinispan>13.0.0.Dev04</version.infinispan>
         <version.r2dbc>Borca-M2</version.r2dbc>
     </properties>
