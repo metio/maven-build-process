@@ -71,11 +71,11 @@
         <version.m-surefire-p>3.0.0-M5</version.m-surefire-p>
         <version.m-compiler-p>3.8.1</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
-        <version.pitest-m-p>1.7.1</version.pitest-m-p>
+        <version.pitest-m-p>1.7.2</version.pitest-m-p>
         <version.pitest-junit5>0.15</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.5.0</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.7</version.jacoco-m-p>
-        <version.dependency-check-m>6.3.2</version.dependency-check-m>
+        <version.dependency-check-m>6.4.1</version.dependency-check-m>
         <version.m-dependency-p>3.2.0</version.m-dependency-p>
         <version.flatten-m-p>1.2.7</version.flatten-m-p>
         <version.sonar-m-p>3.9.0.2155</version.sonar-m-p>
