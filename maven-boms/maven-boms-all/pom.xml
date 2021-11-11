@@ -50,12 +50,12 @@
         <version.guice>5.0.1</version.guice>
         <version.okhttp>4.9.2</version.okhttp>
         <version.mutiny>1.1.2</version.mutiny>
-        <version.reactor>2020.0.12</version.reactor>
+        <version.reactor>2020.0.13</version.reactor>
         <version.immutables>2.8.9-ea-1</version.immutables>
         <version.netty>4.1.70.Final</version.netty>
         <version.ebean>12.13.0</version.ebean>
-        <version.jdbi>3.23.0</version.jdbi>
-        <version.infinispan>13.0.1.Final</version.infinispan>
+        <version.jdbi>3.24.0</version.jdbi>
+        <version.infinispan>13.0.2.Final</version.infinispan>
         <version.r2dbc>Borca-M2</version.r2dbc>
     </properties>
 
