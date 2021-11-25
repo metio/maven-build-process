@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.maven>3.8.3</version.maven>
+        <version.maven>3.8.4</version.maven>
         <version.maven-annotations>3.6.1</version.maven-annotations>
         <version.plexus-annotations>2.1.0</version.plexus-annotations>
         <version.doxia>1.10</version.doxia>
