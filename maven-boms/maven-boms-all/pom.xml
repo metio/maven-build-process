@@ -48,7 +48,7 @@
         <version.camel>3.13.0</version.camel>
         <version.junit5>5.8.1</version.junit5>
         <version.guice>5.0.1</version.guice>
-        <version.okhttp>4.9.2</version.okhttp>
+        <version.okhttp>4.9.3</version.okhttp>
         <version.mutiny>1.1.2</version.mutiny>
         <version.reactor>2020.0.13</version.reactor>
         <version.immutables>2.8.9-ea-1</version.immutables>
