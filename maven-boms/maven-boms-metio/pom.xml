@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.reguloj>2021.11.16</version.reguloj>
+        <version.reguloj>2021.12.14</version.reguloj>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
