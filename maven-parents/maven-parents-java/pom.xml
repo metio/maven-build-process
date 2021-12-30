@@ -75,7 +75,7 @@
         <version.pitest-junit5>0.15</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.5.0</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.7</version.jacoco-m-p>
-        <version.dependency-check-m>6.5.0</version.dependency-check-m>
+        <version.dependency-check-m>6.5.1</version.dependency-check-m>
         <version.m-dependency-p>3.2.0</version.m-dependency-p>
         <version.flatten-m-p>1.2.7</version.flatten-m-p>
         <version.sonar-m-p>3.9.1.2184</version.sonar-m-p>
@@ -89,7 +89,7 @@
         <version.editorconfig-m-p>0.1.1</version.editorconfig-m-p>
         <version.build-helper-m-p>3.2.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
-        <version.spotbugs-m-p>4.5.0.0</version.spotbugs-m-p>
+        <version.spotbugs-m-p>4.5.2.0</version.spotbugs-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
