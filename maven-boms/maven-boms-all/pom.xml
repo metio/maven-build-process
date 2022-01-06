@@ -54,7 +54,7 @@
         <version.immutables>2.8.9-ea-1</version.immutables>
         <version.netty>4.1.72.Final</version.netty>
         <version.ebean>12.14.0</version.ebean>
-        <version.jdbi>3.26.0</version.jdbi>
+        <version.jdbi>3.26.1</version.jdbi>
         <version.infinispan>13.0.5.Final</version.infinispan>
         <version.r2dbc>Borca-M2</version.r2dbc>
     </properties>
