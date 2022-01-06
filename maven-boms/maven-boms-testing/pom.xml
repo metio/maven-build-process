@@ -49,14 +49,14 @@
         <version.mockito-core>4.2.0</version.mockito-core>
         <version.dbunit>2.7.2</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
-        <version.assertj-core>3.21.0</version.assertj-core>
-        <version.equalsverifier>3.8.1</version.equalsverifier>
+        <version.assertj-core>3.22.0</version.assertj-core>
+        <version.equalsverifier>3.8.2</version.equalsverifier>
         <version.mockserver>5.11.2</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>0.22.0</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
         <version.jmh>1.34</version.jmh>
-        <version.cucumber>7.1.0</version.cucumber>
+        <version.cucumber>7.2.1</version.cucumber>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

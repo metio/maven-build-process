@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.h2>2.0.204</version.h2>
+        <version.h2>2.0.206</version.h2>
         <version.postgres>42.3.1</version.postgres>
         <version.mysql>8.0.27</version.mysql>
         <version.hikari>5.0.0</version.hikari>
