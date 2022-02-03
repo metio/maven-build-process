@@ -45,7 +45,7 @@
         <version.spring>5.3.15</version.spring>
         <version.spring.integration>5.5.8</version.spring.integration>
         <version.jackson>2.13.1</version.jackson>
-        <version.camel>3.14.0</version.camel>
+        <version.camel>3.14.1</version.camel>
         <version.junit5>5.8.2</version.junit5>
         <version.guice>5.1.0</version.guice>
         <version.okhttp>4.9.3</version.okhttp>
@@ -53,7 +53,7 @@
         <version.reactor>2020.0.15</version.reactor>
         <version.immutables>2.9.0</version.immutables>
         <version.netty>4.1.73.Final</version.netty>
-        <version.ebean>12.14.1</version.ebean>
+        <version.ebean>12.15.0</version.ebean>
         <version.jdbi>3.27.1</version.jdbi>
         <version.infinispan>13.0.6.Final</version.infinispan>
         <version.r2dbc>Borca-M2</version.r2dbc>
