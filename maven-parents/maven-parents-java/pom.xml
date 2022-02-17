@@ -64,12 +64,12 @@
         <failBuildOnDependencyVersionProblem>true</failBuildOnDependencyVersionProblem>
         <failBuildOnDependencyProblem>true</failBuildOnDependencyProblem>
 
-        <version.m-pmd-p>3.15.0</version.m-pmd-p>
-        <version.m-javadoc-p>3.3.1</version.m-javadoc-p>
+        <version.m-pmd-p>3.16.0</version.m-pmd-p>
+        <version.m-javadoc-p>3.3.2</version.m-javadoc-p>
         <version.m-dependency-versions-check-p>2.0.4</version.m-dependency-versions-check-p>
         <version.m-jar-p>3.2.2</version.m-jar-p>
         <version.m-surefire-p>3.0.0-M5</version.m-surefire-p>
-        <version.m-compiler-p>3.9.0</version.m-compiler-p>
+        <version.m-compiler-p>3.10.0</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
         <version.pitest-m-p>1.7.4</version.pitest-m-p>
         <version.pitest-junit5>0.15</version.pitest-junit5>
