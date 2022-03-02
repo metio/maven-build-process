@@ -1,7 +1,7 @@
 name: Update Dependencies
 on:
   schedule:
-    - cron:  '0 0 * * THU'
+    - cron:  0 0 * * THU
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,27 +11,23 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 11
-          distribution: 'adopt'
-      - uses: actions/cache@v2.1.7
+          distribution: adopt
+      - uses: actions/cache@v2
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-      - name: Update properties
+      - id: update
+        name: Update properties
         run: mvn --batch-mode --update-snapshots versions:update-properties -DgenerateBackupPoms=false
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v3.14.0
+      - id: changes
+        name: Commit Changes
+        uses: EndBug/add-and-commit@v8
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update properties to latest version
-          committer: GitHub <noreply@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          title: 'Update properties to latest version'
-          body: |
-            `mvn --batch-mode --update-snapshots versions:update-properties -DgenerateBackupPoms=false`
-          labels: enhancement
-          assignees: sebhoss
-          draft: false
-          branch: update-properties
+          author_name: GitHub <noreply@github.com>
+          author_email: ${{ github.actor }}@users.noreply.github.com
+          message: Update properties to latest version
+          add: "['pom.xml', '*/pom.xml']"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
