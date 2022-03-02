@@ -49,6 +49,7 @@
         <version.fastjson>1.2.79</version.fastjson>
         <version.json-io>4.13.0</version.json-io>
         <version.moshi>1.13.0</version.moshi>
+        <version.yasson>2.0.4</version.yasson>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -111,6 +112,14 @@
                 <groupId>com.squareup.moshi</groupId>
                 <artifactId>moshi</artifactId>
                 <version>${version.moshi}</version>
+            </dependency>
+
+            <!-- Yasson -->
+            <!-- https://github.com/eclipse-ee4j/yasson -->
+            <dependency>
+                <groupId>org.eclipse</groupId>
+                <artifactId>yasson</artifactId>
+                <version>${version.yasson}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
