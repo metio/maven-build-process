@@ -53,7 +53,7 @@
         <version.reactor>2020.0.16</version.reactor>
         <version.immutables>2.9.0</version.immutables>
         <version.netty>4.1.74.Final</version.netty>
-        <version.ebean>12.15.0</version.ebean>
+        <version.ebean>12.15.1</version.ebean>
         <version.jdbi>3.27.2</version.jdbi>
         <version.infinispan>14.0.0.Dev01</version.infinispan>
         <version.r2dbc>Borca-RELEASE</version.r2dbc>
