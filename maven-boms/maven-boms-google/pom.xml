@@ -49,6 +49,7 @@
         <version.oauth-client>1.33.1</version.oauth-client>
         <version.http-client>1.41.6</version.http-client>
         <version.dagger>2.41</version.dagger>
+        <version.jimfs>1.2</version.jimfs>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -120,6 +121,14 @@
                 <groupId>com.google.http-client</groupId>
                 <artifactId>google-http-client</artifactId>
                 <version>${version.http-client}</version>
+            </dependency>
+
+            <!-- Jimfs -->
+            <!-- https://github.com/google/jimfs -->
+            <dependency>
+                <groupId>com.google.jimfs</groupId>
+                <artifactId>jimfs</artifactId>
+                <version>${version.jimfs}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
