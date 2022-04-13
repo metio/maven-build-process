@@ -2,19 +2,9 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-      <option name="id" value="maven-build-process" />
-      <option name="name" value="GitHub maven-build-process Apache Maven Packages" />
-      <option name="url" value="https://maven.pkg.github.com/metio/maven-build-process" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="hcf4j" />
-      <option name="name" value="GitHub hcf4j Apache Maven Packages" />
-      <option name="url" value="https://maven.pkg.github.com/metio/hcf4j" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
-      <option name="name" value="central" />
-      <option name="url" value="https://maven-central-eu.storage-download.googleapis.com/maven2/" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
     </remote-repository>
   </component>
 </project>

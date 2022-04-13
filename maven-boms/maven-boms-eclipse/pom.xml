@@ -43,6 +43,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.eclipse.jdt.annotation>2.2.600</version.eclipse.jdt.annotation>
+        <version.sisu>0.3.5</version.sisu>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -57,6 +58,29 @@
                 <groupId>org.eclipse.jdt</groupId>
                 <artifactId>org.eclipse.jdt.annotation</artifactId>
                 <version>${version.eclipse.jdt.annotation}</version>
+            </dependency>
+
+            <!-- Sisu -->
+            <!-- http://www.eclipse.org/sisu/ -->
+            <dependency>
+                <groupId>org.eclipse.sisu</groupId>
+                <artifactId>org.eclipse.sisu.plexus</artifactId>
+                <version>${version.sisu}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.sisu</groupId>
+                <artifactId>org.eclipse.sisu.inject</artifactId>
+                <version>${version.sisu}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.sisu</groupId>
+                <artifactId>sisu-plexus</artifactId>
+                <version>${version.sisu}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.sisu</groupId>
+                <artifactId>sisu-inject</artifactId>
+                <version>${version.sisu}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
