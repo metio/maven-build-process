@@ -65,7 +65,7 @@
         <failBuildOnDependencyProblem>true</failBuildOnDependencyProblem>
 
         <version.m-pmd-p>3.16.0</version.m-pmd-p>
-        <version.m-javadoc-p>3.3.2</version.m-javadoc-p>
+        <version.m-javadoc-p>3.4.0</version.m-javadoc-p>
         <version.m-dependency-versions-check-p>2.0.4</version.m-dependency-versions-check-p>
         <version.m-jar-p>3.2.2</version.m-jar-p>
         <version.m-surefire-p>3.0.0-M6</version.m-surefire-p>
