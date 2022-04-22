@@ -43,7 +43,8 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.reactive-streams>1.0.3</version.reactive-streams>
-        <version.rxjava>2.2.21</version.rxjava>
+        <version.rxjava2>2.2.21</version.rxjava2>
+        <version.rxjava3>3.1.4</version.rxjava3>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -63,7 +64,12 @@
             <dependency>
                 <groupId>io.reactivex.rxjava2</groupId>
                 <artifactId>rxjava</artifactId>
-                <version>${version.rxjava}</version>
+                <version>${version.rxjava2}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.reactivex.rxjava3</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${version.rxjava3}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
