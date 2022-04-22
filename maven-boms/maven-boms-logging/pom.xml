@@ -42,7 +42,6 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.log4j>2.17.2</version.log4j>
         <version.slf4j>1.7.36</version.slf4j>
         <version.syslog4j>0.9.60</version.syslog4j>
         <version.tinylog1>1.3.6</version.tinylog1>
@@ -57,19 +56,6 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- Log4j -->
-            <!-- http://logging.apache.org/log4j/2.x/ -->
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-api</artifactId>
-                <version>${version.log4j}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-core</artifactId>
-                <version>${version.log4j}</version>
-            </dependency>
-
             <!-- logback -->
             <!-- http://logback.qos.ch/ -->
             <dependency>
