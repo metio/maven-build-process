@@ -164,7 +164,7 @@
         <!-- version declarations -->
         <version.sonar-m-p>3.9.1.2184</version.sonar-m-p>
         <version.pgp-m-p>1.1</version.pgp-m-p>
-        <version.nexus-stagig-m-p>1.6.12</version.nexus-stagig-m-p>
+        <version.nexus-stagig-m-p>1.6.13</version.nexus-stagig-m-p>
         <version.m-enforcer-p>3.0.0</version.m-enforcer-p>
         <version.m-scm-p>2.0.0-M1</version.m-scm-p>
         <version.versions-m-p>2.10.0</version.versions-m-p>
