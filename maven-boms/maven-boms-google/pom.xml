@@ -47,7 +47,7 @@
         <version.truth>1.1.3</version.truth>
         <version.api-client>1.34.0</version.api-client>
         <version.oauth-client>1.33.3</version.oauth-client>
-        <version.http-client>1.41.7</version.http-client>
+        <version.http-client>1.41.8</version.http-client>
         <version.dagger>2.41</version.dagger>
         <version.jimfs>1.2</version.jimfs>
     </properties>

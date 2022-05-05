@@ -53,11 +53,11 @@
         <version.reactor>2020.0.18</version.reactor>
         <version.immutables>2.9.0</version.immutables>
         <version.netty>4.1.76.Final</version.netty>
-        <version.ebean>13.4.1</version.ebean>
+        <version.ebean>13.6.0</version.ebean>
         <version.jdbi>3.28.0</version.jdbi>
         <version.infinispan>14.0.0.Dev02</version.infinispan>
         <version.r2dbc>Borca-SR1</version.r2dbc>
-        <version.cucumber>7.3.2</version.cucumber>
+        <version.cucumber>7.3.4</version.cucumber>
         <version.mockito>4.5.1</version.mockito>
         <version.log4j>2.17.2</version.log4j>
     </properties>
