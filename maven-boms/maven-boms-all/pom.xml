@@ -43,17 +43,17 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.spring>5.3.20</version.spring>
-        <version.spring.integration>5.5.11</version.spring.integration>
-        <version.jackson>2.13.2.20220328</version.jackson>
+        <version.spring.integration>5.5.12</version.spring.integration>
+        <version.jackson>2.13.3</version.jackson>
         <version.camel>3.16.0</version.camel>
-        <version.junit5>5.8.2</version.junit5>
+        <version.junit5>5.9.0-M1</version.junit5>
         <version.guice>5.1.0</version.guice>
         <version.okhttp>4.9.3</version.okhttp>
         <version.mutiny>1.4.0</version.mutiny>
         <version.reactor>2020.0.19</version.reactor>
         <version.immutables>2.9.0</version.immutables>
         <version.netty>4.1.77.Final</version.netty>
-        <version.ebean>13.6.0</version.ebean>
+        <version.ebean>13.6.2</version.ebean>
         <version.jdbi>3.28.0</version.jdbi>
         <version.infinispan>14.0.0.Dev02</version.infinispan>
         <version.r2dbc>Borca-SR1</version.r2dbc>

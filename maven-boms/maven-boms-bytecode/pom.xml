@@ -45,7 +45,7 @@
         <version.asm>9.3</version.asm>
         <version.byte-buddy>1.12.10</version.byte-buddy>
         <version.byteman>4.0.18</version.byteman>
-        <version.javassist>3.28.0-GA</version.javassist>
+        <version.javassist>3.29.0-GA</version.javassist>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
