@@ -92,6 +92,7 @@
         <version.build-helper-m-p>3.3.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
         <version.spotbugs-m-p>4.7.0.0</version.spotbugs-m-p>
+        <version.exec-m-p>3.0.0</version.exec-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -549,6 +550,13 @@
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${version.spotbugs-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://www.mojohaus.org/exec-maven-plugin/ -->
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${version.exec-m-p}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
