@@ -50,6 +50,7 @@
         <version.http-client>1.41.8</version.http-client>
         <version.dagger>2.42</version.dagger>
         <version.jimfs>1.2</version.jimfs>
+        <version.ksp>1.6.21-1.0.5</version.ksp>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -87,6 +88,19 @@
                 <groupId>com.google.dagger</groupId>
                 <artifactId>dagger-producers</artifactId>
                 <version>${version.dagger}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.dagger</groupId>
+                <artifactId>dagger-spi</artifactId>
+                <version>${version.dagger}</version>
+            </dependency>
+
+            <!-- Kotlin Symbol Processing -->
+            <!-- https://github.com/google/ksp -->
+            <dependency>
+                <groupId>com.google.devtools.ksp</groupId>
+                <artifactId>symbol-processing-api</artifactId>
+                <version>${version.ksp}</version>
             </dependency>
 
             <!-- Guava -->
