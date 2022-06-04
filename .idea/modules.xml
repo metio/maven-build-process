@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-json/maven-boms-json.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-json/maven-boms-json.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-kafka/maven-boms-kafka.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-kafka/maven-boms-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-karaf/maven-boms-karaf.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-karaf/maven-boms-karaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-kotlin/maven-boms-kotlin.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-kotlin/maven-boms-kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-logging/maven-boms-logging.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-logging/maven-boms-logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-maven/maven-boms-maven.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-maven/maven-boms-maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-metio/maven-boms-metio.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-metio/maven-boms-metio.iml" />

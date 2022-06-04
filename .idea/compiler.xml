@@ -21,6 +21,7 @@
       <module name="maven-boms-json" target="1.5" />
       <module name="maven-boms-kafka" target="1.5" />
       <module name="maven-boms-karaf" target="1.5" />
+      <module name="maven-boms-kotlin" target="1.5" />
       <module name="maven-boms-logging" target="1.5" />
       <module name="maven-boms-maven" target="1.5" />
       <module name="maven-boms-metio" target="1.5" />
