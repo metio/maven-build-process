@@ -551,13 +551,6 @@
                     <artifactId>spotbugs-maven-plugin</artifactId>
                     <version>${version.spotbugs-m-p}</version>
                 </plugin>
-
-                <plugin>
-                    <!-- https://www.mojohaus.org/exec-maven-plugin/ -->
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>exec-maven-plugin</artifactId>
-                    <version>${version.exec-m-p}</version>
-                </plugin>
             </plugins>
         </pluginManagement>
 
