@@ -53,39 +53,6 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- OkHttp2 -->
-            <!-- https://square.github.io/okhttp/ -->
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-apache</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-android-support</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-mockwebserver</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-ws</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.squareup.okhttp</groupId>
-                <artifactId>okhttp-testing-support</artifactId>
-                <version>${version.okhttp}</version>
-            </dependency>
-
             <!-- JavaPoet -->
             <!-- https://github.com/square/javapoet -->
             <dependency>
