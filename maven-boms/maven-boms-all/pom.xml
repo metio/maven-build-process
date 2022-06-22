@@ -304,6 +304,13 @@
             </dependency>
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-kotlin</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-logging</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
