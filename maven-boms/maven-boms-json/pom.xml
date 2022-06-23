@@ -49,7 +49,7 @@
         <version.fastjson>2.0.7.graal</version.fastjson>
         <version.json-io>4.13.0</version.json-io>
         <version.moshi>1.13.0</version.moshi>
-        <version.yasson>2.0.4</version.yasson>
+        <version.yasson>3.0.0</version.yasson>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
