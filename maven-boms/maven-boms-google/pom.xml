@@ -45,9 +45,9 @@
         <version.auto-value>1.9</version.auto-value>
         <version.guava>31.1-jre</version.guava>
         <version.truth>1.1.3</version.truth>
-        <version.api-client>1.35.1</version.api-client>
+        <version.api-client>1.35.2</version.api-client>
         <version.oauth-client>1.34.1</version.oauth-client>
-        <version.http-client>1.42.0</version.http-client>
+        <version.http-client>1.42.1</version.http-client>
         <version.dagger>2.42</version.dagger>
         <version.jimfs>1.2</version.jimfs>
         <version.ksp>1.7.0-1.0.6</version.ksp>
