@@ -377,16 +377,16 @@
                         <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-mojo.html#failOnWarning -->
                         <failOnWarning>${failBuildOnDependencyProblem}</failOnWarning>
                         <!-- https://maven.apache.org/plugins/maven-dependency-plugin/analyze-only-mojo.html#usedDependencies -->
-                        <usedDependencies>
+                        <ignoredDependencies>
                             <!-- Ignore Graal SDK because it is provided at runtime -->
-                            <usedDependency>org.graalvm.sdk:graal-sdk</usedDependency>
+                            <ignoredDependency>org.graalvm.sdk:graal-sdk</ignoredDependency>
                             <!-- Ignore JUnit 5 test engine -->
-                            <usedDependency>org.junit.jupiter:junit-jupiter-engine</usedDependency>
+                            <ignoredDependency>org.junit.jupiter:junit-jupiter-engine</ignoredDependency>
                             <!-- Ignore ArchUnit aggregator -->
-                            <usedDependency>com.tngtech.archunit:archunit-junit5</usedDependency>
+                            <ignoredDependency>com.tngtech.archunit:archunit-junit5</ignoredDependency>
                             <!-- Ignore log4j-simple used during tests -->
-                            <usedDependency>org.slf4j:slf4j-simple</usedDependency>
-                        </usedDependencies>
+                            <ignoredDependency>org.slf4j:slf4j-simple</ignoredDependency>
+                        </ignoredDependencies>
                     </configuration>
                 </plugin>
 
