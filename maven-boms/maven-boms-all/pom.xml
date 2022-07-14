@@ -50,12 +50,12 @@
         <version.guice>5.1.0</version.guice>
         <version.okhttp>4.10.0</version.okhttp>
         <version.mutiny>1.6.0</version.mutiny>
-        <version.reactor>2020.0.20</version.reactor>
+        <version.reactor>2020.0.21</version.reactor>
         <version.immutables>2.9.0</version.immutables>
-        <version.netty>4.1.78.Final</version.netty>
+        <version.netty>4.1.79.Final</version.netty>
         <version.ebean>13.6.5</version.ebean>
         <version.jdbi>3.30.0</version.jdbi>
-        <version.infinispan>14.0.0.Dev03</version.infinispan>
+        <version.infinispan>14.0.0.Dev04</version.infinispan>
         <version.r2dbc>Borca-SR1</version.r2dbc>
         <version.cucumber>7.4.1</version.cucumber>
         <version.mockito>4.6.1</version.mockito>
