@@ -604,6 +604,11 @@
                         <artifactId>maven-javadoc-plugin</artifactId>
                     </plugin>
                     <plugin>
+                        <!-- https://maven.apache.org/plugins/maven-artifact-plugin/ -->
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-artifact-plugin</artifactId>
+                    </plugin>
+                    <plugin>
                         <!-- http://kohsuke.org/pgp-maven-plugin/ -->
                         <groupId>org.kohsuke</groupId>
                         <artifactId>pgp-maven-plugin</artifactId>
