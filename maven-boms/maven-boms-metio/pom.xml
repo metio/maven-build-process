@@ -43,6 +43,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.reguloj>2022.7.12</version.reguloj>
+        <version.javapoet-type-guesser>2022.8.11</version.javapoet-type-guesser>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -51,11 +52,15 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- Java Projects -->
             <dependency>
                 <groupId>wtf.metio.reguloj</groupId>
                 <artifactId>reguloj</artifactId>
                 <version>${version.reguloj}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.javapoet</groupId>
+                <artifactId>javapoet-type-guesser</artifactId>
+                <version>${version.javapoet-type-guesser}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

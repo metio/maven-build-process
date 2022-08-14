@@ -31,7 +31,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               INFORMATIONS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#More_Project_Information -->
+    <!-- https://maven.apache.org/pom.html#more-project-information -->
     <name>Maven Build Process</name>
     <description>Standard Maven Build Process for Java Projects</description>
     <url>https://maven-build-process.projects.metio.wtf</url>
@@ -40,7 +40,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               ORGANIZATION                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Organization -->
+    <!-- https://maven.apache.org/pom.html#organization -->
     <organization>
         <name>metio.wtf</name>
         <url>https://metio.wtf/</url>
@@ -49,7 +49,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                 LICENSE                                 -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Licenses -->
+    <!-- https://maven.apache.org/pom.html#licenses -->
     <licenses>
         <license>
             <name>Creative Commons Zero</name>
@@ -62,7 +62,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                DEVELOPERS                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Developers -->
+    <!-- https://maven.apache.org/pom.html#developers -->
     <developers>
         <developer>
             <id>sebhoss</id>
@@ -86,13 +86,13 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               CONTRIBUTORS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Contributors -->
+    <!-- https://maven.apache.org/pom.html#contributors -->
     <contributors/>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               MAILING LISTS                             -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Mailing_Lists -->
+    <!-- https://maven.apache.org/pom.html#mailing-lists -->
     <mailingLists/>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -107,7 +107,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                    SCM                                  -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#SCM -->
+    <!-- https://maven.apache.org/pom.html#scm -->
     <scm>
         <connection>scm:git:git://codeberg.org/metio.wtf/maven-build-process.git</connection>
         <developerConnection>scm:git:git@codeberg.org:metio.wtf/maven-build-process.git</developerConnection>
@@ -118,7 +118,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                             ISSUE MANAGEMENT                            -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Issue_Management -->
+    <!-- https://maven.apache.org/pom.html#issue-management -->
     <issueManagement>
         <system>codeberg</system>
         <url>https://codeberg.org/metio.wtf/maven-build-process/issues</url>
@@ -127,10 +127,10 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               CI MANAGEMENT                             -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Continuous_Integration_Management -->
+    <!-- https://maven.apache.org/pom.html#continuous-integration-management -->
     <ciManagement>
-        <system>Jenkins</system>
-        <url>https://build.metio.wtf/job/sebhoss/job/maven-build-process/</url>
+        <system>GitHub</system>
+        <url>https://github.com/metio/maven-build-process/actions</url>
     </ciManagement>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
