@@ -45,7 +45,7 @@
         <version.spring>5.3.22</version.spring>
         <version.spring.integration>5.5.14</version.spring.integration>
         <version.jackson>2.13.3</version.jackson>
-        <version.camel>3.18.0</version.camel>
+        <version.camel>3.18.1</version.camel>
         <version.junit5>5.9.0</version.junit5>
         <version.guice>5.1.0</version.guice>
         <version.okhttp>4.10.0</version.okhttp>
@@ -58,7 +58,7 @@
         <version.infinispan>14.0.0.Dev04</version.infinispan>
         <version.r2dbc>Borca-SR1</version.r2dbc>
         <version.cucumber>7.6.0</version.cucumber>
-        <version.mockito>4.6.1</version.mockito>
+        <version.mockito>4.7.0</version.mockito>
         <version.log4j>2.18.0</version.log4j>
     </properties>
 

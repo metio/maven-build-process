@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.reguloj>2022.7.12</version.reguloj>
+        <version.reguloj>2022.8.16</version.reguloj>
         <version.javapoet-type-guesser>2022.8.11</version.javapoet-type-guesser>
     </properties>
 
