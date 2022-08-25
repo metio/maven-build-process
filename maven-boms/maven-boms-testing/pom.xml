@@ -50,7 +50,7 @@
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.23.1</version.assertj-core>
         <version.equalsverifier>3.10.1</version.equalsverifier>
-        <version.mockserver>5.13.2</version.mockserver>
+        <version.mockserver>5.14.0</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>0.23.1</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
