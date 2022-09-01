@@ -52,8 +52,8 @@
         <version.mutiny>2.0.0-milestone1</version.mutiny>
         <version.reactor>2020.0.22</version.reactor>
         <version.immutables>2.9.1</version.immutables>
-        <version.netty>4.1.79.Final</version.netty>
-        <version.ebean>13.8.1</version.ebean>
+        <version.netty>4.1.80.Final</version.netty>
+        <version.ebean>13.9.0</version.ebean>
         <version.jdbi>3.32.0</version.jdbi>
         <version.infinispan>14.0.0.Dev04</version.infinispan>
         <version.r2dbc>Borca-SR1</version.r2dbc>
