@@ -43,7 +43,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.kotlinx-metadata-jvm>0.5.0</version.kotlinx-metadata-jvm>
-        <version.kotlin-stdlib>1.7.10</version.kotlin-stdlib>
+        <version.kotlin-stdlib>1.7.20</version.kotlin-stdlib>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

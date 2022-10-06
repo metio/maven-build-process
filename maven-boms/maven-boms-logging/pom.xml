@@ -47,7 +47,7 @@
         <version.tinylog1>1.3.6</version.tinylog1>
         <version.tinylog2>2.5.0</version.tinylog2>
         <version.cal10n>0.8.1</version.cal10n>
-        <version.logback>1.4.1</version.logback>
+        <version.logback>1.4.3</version.logback>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

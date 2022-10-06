@@ -52,7 +52,7 @@
         <version.equalsverifier>3.10.1</version.equalsverifier>
         <version.mockserver>5.14.0</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
-        <version.archunit>0.23.1</version.archunit>
+        <version.archunit>1.0.0</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
         <version.system-stubs>2.0.1</version.system-stubs>
         <version.jmh>1.35</version.jmh>
