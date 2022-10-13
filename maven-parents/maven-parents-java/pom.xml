@@ -72,7 +72,7 @@
         <version.m-surefire-p>3.0.0-M7</version.m-surefire-p>
         <version.m-compiler-p>3.10.1</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
-        <version.pitest-m-p>1.9.7</version.pitest-m-p>
+        <version.pitest-m-p>1.9.8</version.pitest-m-p>
         <version.pitest-junit5>1.1.0</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.5.1</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.8</version.jacoco-m-p>
@@ -91,7 +91,7 @@
         <version.editorconfig-m-p>0.1.1</version.editorconfig-m-p>
         <version.build-helper-m-p>3.3.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
-        <version.spotbugs-m-p>4.7.2.0</version.spotbugs-m-p>
+        <version.spotbugs-m-p>4.7.2.1</version.spotbugs-m-p>
         <version.m-antrun-p>3.1.0</version.m-antrun-p>
         <version.properties-m-p>1.1.0</version.properties-m-p>
     </properties>

@@ -42,7 +42,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.auto-value>1.9</version.auto-value>
+        <version.auto-value>1.10</version.auto-value>
         <version.guava>31.1-jre</version.guava>
         <version.truth>1.1.3</version.truth>
         <version.api-client>2.0.0</version.api-client>
