@@ -45,7 +45,7 @@
         <version.maven>3.8.6</version.maven>
         <version.maven-annotations>3.6.4</version.maven-annotations>
         <version.plexus-annotations>2.1.1</version.plexus-annotations>
-        <version.doxia>2.0.0-M3</version.doxia>
+        <version.doxia>2.0.0-M4</version.doxia>
         <version.plexus-build-api>0.0.7</version.plexus-build-api>
         <version.plexus-sec-dispatcher>2.0</version.plexus-sec-dispatcher>
     </properties>

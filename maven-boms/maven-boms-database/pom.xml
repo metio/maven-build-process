@@ -44,7 +44,7 @@
     <properties>
         <version.h2>2.1.214</version.h2>
         <version.postgres>42.5.0</version.postgres>
-        <version.mysql>8.0.30</version.mysql>
+        <version.mysql>8.0.31</version.mysql>
         <version.hikari>5.0.1</version.hikari>
     </properties>
 

@@ -76,13 +76,13 @@
         <version.pitest-junit5>1.1.0</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.5.1</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.8</version.jacoco-m-p>
-        <version.dependency-check-m>7.2.1</version.dependency-check-m>
+        <version.dependency-check-m>7.3.0</version.dependency-check-m>
         <version.m-dependency-p>3.3.0</version.m-dependency-p>
         <version.flatten-m-p>1.3.0</version.flatten-m-p>
         <version.sonar-m-p>3.9.1.2184</version.sonar-m-p>
         <version.templating-m-p>1.0.0</version.templating-m-p>
         <version.native-image-m-p>21.2.0</version.native-image-m-p>
-        <version.native-m-p>0.9.14</version.native-m-p>
+        <version.native-m-p>0.9.16</version.native-m-p>
         <version.appassembler-m-p>2.1.0</version.appassembler-m-p>
         <version.m-assembly-p>3.4.2</version.m-assembly-p>
         <version.checksum-m-p>1.11</version.checksum-m-p>
