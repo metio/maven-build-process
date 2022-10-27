@@ -55,7 +55,7 @@
         <version.netty>4.1.84.Final</version.netty>
         <version.ebean>13.10.0</version.ebean>
         <version.jdbi>3.34.0</version.jdbi>
-        <version.infinispan>14.0.1.Final</version.infinispan>
+        <version.infinispan>14.0.2.Final</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
         <version.cucumber>7.8.1</version.cucumber>
         <version.mockito>4.8.1</version.mockito>
