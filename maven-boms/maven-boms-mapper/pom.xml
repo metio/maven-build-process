@@ -27,22 +27,25 @@
     <!--                               COORDINATES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
-    <artifactId>maven-boms-builder</artifactId>
+    <artifactId>maven-boms-mapper</artifactId>
     <packaging>pom</packaging>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               INFORMATIONS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
-    <name>Maven BOMs :: Builder</name>
-    <description>Builder-pattern related dependencies</description>
+    <name>Maven BOMs :: Mapper</name>
+    <description>Model mapping related dependencies</description>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                PROPERTIES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.freebuilder>2.8.0</version.freebuilder>
+        <version.dozer>6.5.2</version.dozer>
+        <version.modelmapper>3.0.0</version.modelmapper>
+        <version.orika>1.5.4</version.orika>
+        <version.mapstruct>1.5.3.Final</version.mapstruct>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -51,12 +54,36 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- FreeBuilder -->
-            <!-- https://freebuilder.inferred.org/ -->
+            <!-- Dozer -->
+            <!-- https://dozermapper.github.io/ -->
             <dependency>
-                <groupId>org.inferred</groupId>
-                <artifactId>freebuilder</artifactId>
-                <version>${version.freebuilder}</version>
+                <groupId>com.github.dozermapper</groupId>
+                <artifactId>dozer-core</artifactId>
+                <version>${version.dozer}</version>
+            </dependency>
+
+            <!-- ModelMapper -->
+            <!-- https://modelmapper.org/ -->
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${version.modelmapper}</version>
+            </dependency>
+
+            <!-- Orika -->
+            <!-- https://orika-mapper.github.io/ -->
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>${version.orika}</version>
+            </dependency>
+
+            <!-- MapStruct -->
+            <!-- https://mapstruct.org/ -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${version.mapstruct}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

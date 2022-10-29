@@ -27,22 +27,24 @@
     <!--                               COORDINATES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
-    <artifactId>maven-boms-builder</artifactId>
+    <artifactId>maven-boms-annotations</artifactId>
     <packaging>pom</packaging>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               INFORMATIONS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
-    <name>Maven BOMs :: Builder</name>
-    <description>Builder-pattern related dependencies</description>
+    <name>Maven BOMs :: Annotations</name>
+    <description>Annotation related dependencies</description>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                PROPERTIES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.freebuilder>2.8.0</version.freebuilder>
+        <version.jspecify>0.3.0-alpha-1</version.jspecify>
+        <version.jetbrains-annotations>23.0.0</version.jetbrains-annotations>
+        <version.spotbugs-annotations>4.7.3</version.spotbugs-annotations>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -51,12 +53,26 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- FreeBuilder -->
-            <!-- https://freebuilder.inferred.org/ -->
+            <!-- JSpecify -->
+            <!-- https://jspecify.dev/ -->
             <dependency>
-                <groupId>org.inferred</groupId>
-                <artifactId>freebuilder</artifactId>
-                <version>${version.freebuilder}</version>
+                <groupId>org.jspecify</groupId>
+                <artifactId>jspecify</artifactId>
+                <version>${version.jspecify}</version>
+            </dependency>
+
+            <!-- JetBrains Annotations -->
+            <dependency>
+                <groupId>org.jetbrains</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${version.jetbrains-annotations}</version>
+            </dependency>
+
+            <!-- SpotBugs Annotations -->
+            <dependency>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-annotations</artifactId>
+                <version>${version.spotbugs-annotations}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

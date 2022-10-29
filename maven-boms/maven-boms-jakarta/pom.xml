@@ -27,22 +27,22 @@
     <!--                               COORDINATES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
-    <artifactId>maven-boms-builder</artifactId>
+    <artifactId>maven-boms-jakarta</artifactId>
     <packaging>pom</packaging>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               INFORMATIONS                              -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
-    <name>Maven BOMs :: Builder</name>
-    <description>Builder-pattern related dependencies</description>
+    <name>Maven BOMs :: Jakarta</name>
+    <description>Jakarta related dependencies</description>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                PROPERTIES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.freebuilder>2.8.0</version.freebuilder>
+        <version.jakarta-persistence-api>3.1.0</version.jakarta-persistence-api>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -51,12 +51,12 @@
     <!-- https://maven.apache.org/pom.html#Dependency_Management -->
     <dependencyManagement>
         <dependencies>
-            <!-- FreeBuilder -->
-            <!-- https://freebuilder.inferred.org/ -->
+            <!-- Jakarta Persistence -->
+            <!-- https://jakarta.ee/specifications/persistence/ -->
             <dependency>
-                <groupId>org.inferred</groupId>
-                <artifactId>freebuilder</artifactId>
-                <version>${version.freebuilder}</version>
+                <groupId>jakarta.persistence</groupId>
+                <artifactId>jakarta.persistence-api</artifactId>
+                <version>${version.jakarta-persistence-api}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

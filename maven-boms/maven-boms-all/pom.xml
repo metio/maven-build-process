@@ -199,6 +199,13 @@
             <!-- internally managed -->
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-annotations</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-ant</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -276,6 +283,13 @@
             </dependency>
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-jakarta</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-javax</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -312,6 +326,13 @@
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-logging</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.maven.boms</groupId>
+                <artifactId>maven-boms-mapper</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>

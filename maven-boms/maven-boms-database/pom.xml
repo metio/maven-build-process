@@ -46,6 +46,7 @@
         <version.postgres>42.5.0</version.postgres>
         <version.mysql>8.0.31</version.mysql>
         <version.hikari>5.0.1</version.hikari>
+        <version.mongodb>3.12.11</version.mongodb>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -84,6 +85,13 @@
                 <groupId>com.zaxxer</groupId>
                 <artifactId>HikariCP</artifactId>
                 <version>${version.hikari}</version>
+            </dependency>
+
+            <!-- MongoDB -->
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver</artifactId>
+                <version>${version.mongodb}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

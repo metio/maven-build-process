@@ -43,6 +43,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Aggregation -->
     <modules>
+        <module>maven-boms-annotations</module>
         <module>maven-boms-ant</module>
         <module>maven-boms-aspect</module>
         <module>maven-boms-builder</module>
@@ -53,6 +54,7 @@
         <module>maven-boms-google</module>
         <module>maven-boms-graal</module>
         <module>maven-boms-http</module>
+        <module>maven-boms-jakarta</module>
         <module>maven-boms-eclipse</module>
         <module>maven-boms-javax</module>
         <module>maven-boms-json</module>
@@ -60,6 +62,7 @@
         <module>maven-boms-karaf</module>
         <module>maven-boms-kotlin</module>
         <module>maven-boms-logging</module>
+        <module>maven-boms-mapper</module>
         <module>maven-boms-maven</module>
         <module>maven-boms-metio</module>
         <module>maven-boms-pax</module>
