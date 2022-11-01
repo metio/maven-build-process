@@ -5,6 +5,7 @@ name: Perform Release
 on:
   schedule:
     - cron:  15 1 * * FRI
+  workflow_dispatch:
 jobs:
   publish:
     runs-on: ubuntu-latest
