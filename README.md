@@ -1,4 +1,4 @@
-# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23mbp:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://matrix.to/#maven-build-process:matrix.org) [![Mailing List](https://img.shields.io/badge/email-mbp%40metio.groups.io%20-brightgreen.svg?style=social&label=Mail)](https://metio.groups.io/g/maven-build-process/topics)
+# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23talk.metio:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://matrix.to/#/#talk.metio:matrix.org)
 
 Bunch of POMs that help to set up a [Maven](http://maven.apache.org/) based project.
 
@@ -81,11 +81,3 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ```
-
-## Mirrors
-
-- https://github.com/metio/maven-build-process
-- https://repo.or.cz/metio-maven-build-process.git (WIP)
-- https://codeberg.org/metio.wtf/maven-build-process (WIP)
-- https://gitlab.com/metio.wtf/maven-build-process (WIP)
-- https://bitbucket.org/metio-wtf/maven-build-process (WIP)
