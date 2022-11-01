@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-
-    This file is part of maven-build-process. It is subject to the license terms in the LICENSE file found in the top-level
-    directory of this distribution and at https://creativecommons.org/publicdomain/zero/1.0/. No part of maven-build-process,
-    including this file, may be copied, modified, propagated, or distributed except according to the terms contained
-    in the LICENSE file.
-
--->
+  ~ SPDX-FileCopyrightText: The maven-build-process Authors
+  ~ SPDX-License-Identifier: 0BSD
+  -->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
