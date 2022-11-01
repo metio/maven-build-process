@@ -1,9 +1,12 @@
+# SPDX-FileCopyrightText: The maven-build-process Authors
+# SPDX-License-Identifier: 0BSD
+
 name: Perform Release
 on:
   schedule:
     - cron:  15 1 * * FRI
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -23,19 +26,25 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Create release version
         id: release
-        run: echo "::set-output name=version::$(date +'%Y.%-m.%-d')"
+        run: echo "version=$(date +'%Y.%-m.%-d')" >> $GITHUB_OUTPUT
       - name: Count commits in last week
         id: commits
-        run: echo "::set-output name=count::$(git rev-list --count HEAD --since='last Friday')"
+        run: echo "count=$(git rev-list --count HEAD --since='last Friday')" >> $GITHUB_OUTPUT
       - name: Set release version
-        run: mvn --batch-mode versions:set -DnewVersion=${{ steps.release.outputs.version }} -DgenerateBackupPoms=false
+        run: mvn --batch-mode --define newVersion=${{ steps.release.outputs.version }} --define generateBackupPoms=false versions:set
       - id: gpg
         if: steps.commits.outputs.count > 0
         name: GPG Key
         run: echo "${{ secrets.GPG_SECRET_KEY_BASE64 }}" | base64 --decode > $GITHUB_WORKSPACE/signing.key.asc
       - name: Publish to Maven Central
         if: steps.commits.outputs.count > 0
-        run: mvn --batch-mode --activate-profiles release deploy -Dpgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc -Dpgp.passphrase=literal:${{ secrets.GPG_SECRET_KEY_PASSWORD }}
+        run: |
+          mvn \
+            --batch-mode \
+            --activate-profiles release \
+            --define pgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc \
+            --define pgp.passphrase=literal:${{ secrets.GPG_SECRET_KEY_PASSWORD }} \
+            deploy
         env:
           MAVEN_CENTRAL_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
@@ -79,7 +88,7 @@ jobs:
             ```
             Replace `[TYPE]` with one of the [available BOMs](https://github.com/metio/maven-build-process/tree/${{ steps.release.outputs.version }}/maven-boms).
       - name: Send Mail
-        uses: dawidd6/action-send-mail@v3.7.0
+        uses: dawidd6/action-send-mail@v3.7.1
         with:
           server_address: ${{ secrets.MAIL_SERVER }}
           server_port: ${{ secrets.MAIL_PORT }}
@@ -95,5 +104,5 @@ jobs:
         with:
           room_id: ${{ secrets.MATRIX_ROOM_ID }}
           access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
-          message: "release ${{ steps.release.outputs.version }} published - see https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} for details"
+          message: "maven-release-process: version ${{ steps.release.outputs.version }} published - see https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} for details"
           server: "matrix.org"
