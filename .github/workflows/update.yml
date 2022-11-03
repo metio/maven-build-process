@@ -23,14 +23,30 @@ jobs:
             ${{ runner.os }}-maven-
       - id: update
         name: Update properties
-        run: mvn --batch-mode --update-snapshots versions:update-properties -DgenerateBackupPoms=false
-      - id: changes
-        name: Commit Changes
-        uses: EndBug/add-and-commit@v9
+        run: mvn --batch-mode --update-snapshots --define generateBackupPoms=false versions:update-properties
+      - id: cpr
+        name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
         with:
-          author_name: GitHub <noreply@github.com>
-          author_email: ${{ github.actor }}@users.noreply.github.com
-          message: Update properties to latest version
-          add: "['pom.xml', '*/pom.xml']"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
+          commit-message: Update properties to their latest versions
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          title: Update properties to their latest versions
+          body: |
+            `mvn --batch-mode --update-snapshots --define generateBackupPoms=false versions:update-properties`
+          labels: |
+            enhancement
+          assignees: |
+            sebhoss
+          draft: false
+          base: main
+          branch: update-properties
+          delete-branch: true
+      - name: Enable Pull Request Automerge
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v2
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: rebase
