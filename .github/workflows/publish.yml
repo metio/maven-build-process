@@ -9,6 +9,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
@@ -49,46 +51,18 @@ jobs:
         env:
           MAVEN_CENTRAL_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
-      - name: Create Release
+      - id: create_release
+        name: Create Release
         if: steps.commits.outputs.count > 0
-        id: create_release
-        uses: actions/create-release@v1.1.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.release.outputs.version }}
-          release_name: ${{ steps.release.outputs.version }}
+          name: ${{ steps.release.outputs.version }}
           draft: false
           prerelease: false
-          body: |
-            Automated release, see [commits](https://github.com/metio/maven-build-process/commits/${{ steps.release.outputs.version }}) for changes.
-
-            Use this project as a parent POM:
-            ```xml
-            <parent>
-              <groupId>wtf.metio.maven.parents</groupId>
-              <artifactId>maven-parents-java-[TYPE]</artifactId>
-              <version>${{ steps.release.outputs.version }}</version>
-            </parent>
-            ```
-            Replace `[TYPE]` with either `prototype` or `stable`.
-
-            Use one (or all) of the provided BOMs:
-            ```xml
-            <dependencyManagement>
-              <dependencies>
-                <dependency>
-                  <groupId>wtf.metio.maven.boms</groupId>
-                  <artifactId>maven-boms-[TYPE]</artifactId>
-                  <version>${{ steps.release.outputs.version }}</version>
-                  <type>pom</type>
-                  <scope>import</scope>
-                </dependency>
-              </dependencies>
-            </dependencyManagement>
-            ```
-            Replace `[TYPE]` with one of the [available BOMs](https://github.com/metio/maven-build-process/tree/${{ steps.release.outputs.version }}/maven-boms).
-      - name: Send Mail
+          generate_release_notes: true
+      - id: mail
+        name: Send Mail
         uses: dawidd6/action-send-mail@v3.7.1
         with:
           server_address: ${{ secrets.MAIL_SERVER }}
@@ -96,7 +70,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: release ${{ steps.release.outputs.version }}
-          body: See https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} for details.
+          body: See ${{ steps.create_release.outputs.url }} for details.
           to: maven-build-process@metio.groups.io
           from: ${{ secrets.MAIL_SENDER }}
       - id: matrix
@@ -105,5 +79,5 @@ jobs:
         with:
           room_id: ${{ secrets.MATRIX_ROOM_ID }}
           access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
-          message: "maven-release-process: version ${{ steps.release.outputs.version }} published - see https://github.com/metio/maven-build-process/releases/tag/${{ steps.release.outputs.version }} for details"
-          server: "matrix.org"
+          message: maven-release-process version [${{ steps.release.outputs.version }}](${{ steps.create_release.outputs.url }}) published
+          server: matrix.org
