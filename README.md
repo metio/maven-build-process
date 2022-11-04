@@ -32,20 +32,20 @@ Specify SCM, Issue Management, CI Management, and Distribution Management sectio
 
 #### Prototype vs Stable
 
-| Feature              | Prototype     | Stable  |
-|:--------------------:|:-------------:|:-------:|
-| JUnit                | 5             | 5       |
-| Attach Source        | ✔             | ✔       |
-| Attach JavaDoc       | ✔             | ✔       |
-| Java                 | 11            | 11      |
-| PMD                  | ✘             | ✔       |
-| Jacoco               | 0 %           | 100 %   |
-| Duplicate Finder     | ✔             | ✔       |
-| Pitest               | ✘             | ✔       |
-| Dependency Scan      | ✔             | ✔       |
-| Analyse Dependencies | ✘             | ✔       |
-| Dependency Conflicts | ✔             | ✔       |
-| Flatten POM          | ✔             | ✔       |
+|       Feature        | Prototype | Stable |
+|:--------------------:|:---------:|:------:|
+|        JUnit         |     5     |   5    |
+|    Attach Source     |     ✔     |   ✔    |
+|    Attach JavaDoc    |     ✔     |   ✔    |
+|         Java         |    11     |   11   |
+|         PMD          |     ✘     |   ✔    |
+|        Jacoco        |    0 %    | 100 %  |
+|   Duplicate Finder   |     ✔     |   ✔    |
+|        Pitest        |     ✘     |   ✔    |
+|   Dependency Scan    |     ✔     |   ✔    |
+| Analyse Dependencies |     ✘     |   ✔    |
+| Dependency Conflicts |     ✔     |   ✔    |
+|     Flatten POM      |     ✔     |   ✔    |
 
 ### Maven BOMs
 
