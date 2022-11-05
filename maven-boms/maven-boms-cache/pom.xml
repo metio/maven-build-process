@@ -40,6 +40,7 @@
     <properties>
         <version.caffeine>3.1.1</version.caffeine>
         <version.ehcache>3.10.2</version.ehcache>
+        <version.imcache>0.3.0</version.imcache>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -62,6 +63,14 @@
                 <groupId>org.ehcache</groupId>
                 <artifactId>ehcache</artifactId>
                 <version>${version.ehcache}</version>
+            </dependency>
+
+            <!-- imcache -->
+            <!-- https://github.com/Cetsoft/imcache -->
+            <dependency>
+                <groupId>com.cetsoft</groupId>
+                <artifactId>imcache</artifactId>
+                <version>${version.imcache}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
