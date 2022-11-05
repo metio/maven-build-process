@@ -34,6 +34,7 @@ jobs:
         id: commits
         run: echo "count=$(git rev-list --count HEAD --since='last Friday')" >> $GITHUB_OUTPUT
       - name: Set release version
+        if: steps.commits.outputs.count > 0
         run: mvn --batch-mode --define newVersion=${{ steps.release.outputs.version }} --define generateBackupPoms=false versions:set
       - id: gpg
         if: steps.commits.outputs.count > 0
