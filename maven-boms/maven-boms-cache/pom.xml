@@ -44,6 +44,7 @@
         <version.cache2k>2.6.1.Final</version.cache2k>
         <version.expiringmap>0.5.10</version.expiringmap>
         <version.chronicle-map>3.24ea0</version.chronicle-map>
+        <version.cacheonix>2.3.1</version.cacheonix>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -138,6 +139,14 @@
                 <groupId>net.openhft</groupId>
                 <artifactId>chronicle-map</artifactId>
                 <version>${version.chronicle-map}</version>
+            </dependency>
+
+            <!-- Cacheonix -->
+            <!-- https://www.cacheonix.org/ -->
+            <dependency>
+                <groupId>org.cacheonix</groupId>
+                <artifactId>cacheonix-core</artifactId>
+                <version>${version.cacheonix}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
