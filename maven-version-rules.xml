@@ -11,6 +11,7 @@
         <ignoreVersion type="regex">(?i).*beta.*</ignoreVersion>
         <ignoreVersion type="regex">(?i).*-b.*</ignoreVersion>
         <ignoreVersion type="regex">(?i).*-rc.*</ignoreVersion>
+        <ignoreVersion type="regex">(?i).*-milestone.*</ignoreVersion>
     </ignoreVersions>
     <rules>
         <rule groupId="org.postgresql" artifactId="postgresql">
@@ -42,6 +43,12 @@
         <rule groupId="com.tngtech.archunit" artifactId="*">
             <ignoreVersions>
                 <ignoreVersion>0.18.0</ignoreVersion>
+            </ignoreVersions>
+        </rule>
+        <rule groupId="com.alibaba" artifactId="fastjson">
+            <ignoreVersions>
+                <ignoreVersion type="regex">.*android</ignoreVersion>
+                <ignoreVersion type="regex">.*graal</ignoreVersion>
             </ignoreVersions>
         </rule>
     </rules>

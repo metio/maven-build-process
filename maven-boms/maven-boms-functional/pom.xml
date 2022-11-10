@@ -45,6 +45,11 @@
         <version.protonpack>1.16</version.protonpack>
         <version.lambda>5.4.0</version.lambda>
         <version.streamex>0.8.1</version.streamex>
+        <version.shoki>1.0-alpha-2</version.shoki>
+        <version.kraftwerk>0.11.0</version.kraftwerk>
+        <version.collection-views>2.0.0</version.collection-views>
+        <version.enhanced-iterables>2.0.0</version.enhanced-iterables>
+        <version.wuwei>0.3</version.wuwei>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -100,11 +105,52 @@
                 <version>${version.lambda}</version>
             </dependency>
 
+            <!-- Shōki -->
+            <!-- https://github.com/palatable/shoki -->
+            <dependency>
+                <groupId>com.jnape.palatable</groupId>
+                <artifactId>shoki</artifactId>
+                <version>${version.shoki}</version>
+            </dependency>
+
+            <!-- kraftwerk -->
+            <!-- https://github.com/kschuetz/kraftwerk -->
+            <dependency>
+                <groupId>software.kes</groupId>
+                <artifactId>kraftwerk</artifactId>
+                <version>${version.kraftwerk}</version>
+            </dependency>
+
+            <!-- collection-views -->
+            <!-- https://github.com/kschuetz/collection-views -->
+            <dependency>
+                <groupId>software.kes</groupId>
+                <artifactId>collection-views</artifactId>
+                <version>${version.collection-views}</version>
+            </dependency>
+
+            <!-- enhanced-iterables -->
+            <!-- https://github.com/kschuetz/enhanced-iterables -->
+            <dependency>
+                <groupId>software.kes</groupId>
+                <artifactId>enhanced-iterables</artifactId>
+                <version>${version.enhanced-iterables}</version>
+            </dependency>
+
+            <!-- StreamEx -->
             <!-- https://github.com/amaembo/streamex -->
             <dependency>
                 <groupId>one.util</groupId>
                 <artifactId>streamex</artifactId>
                 <version>${version.streamex}</version>
+            </dependency>
+
+            <!-- WuWei -->
+            <!-- https://github.com/nomicflux/WuWei -->
+            <dependency>
+                <groupId>io.ataraxic.nomicflux</groupId>
+                <artifactId>wuwei</artifactId>
+                <version>${version.wuwei}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
