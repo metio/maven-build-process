@@ -52,6 +52,7 @@
         <version.system-lambda>1.2.1</version.system-lambda>
         <version.system-stubs>2.0.1</version.system-stubs>
         <version.jmh>1.35</version.jmh>
+        <version.concurrentunit>0.4.6</version.concurrentunit>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -234,6 +235,14 @@
                 <groupId>org.openjdk.jmh</groupId>
                 <artifactId>jmh-generator-annprocess</artifactId>
                 <version>${version.jmh}</version>
+            </dependency>
+
+            <!-- ConcurrentUnit -->
+            <!-- https://github.com/jhalterman/concurrentunit -->
+            <dependency>
+                <groupId>net.jodah</groupId>
+                <artifactId>concurrentunit</artifactId>
+                <version>${version.concurrentunit}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
