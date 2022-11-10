@@ -40,7 +40,7 @@
     <properties>
         <version.eclipse.jdt.annotation>2.2.700</version.eclipse.jdt.annotation>
         <version.sisu>0.9.0.M1</version.sisu>
-        <version.eclipselink>3.0.3</version.eclipselink>
+        <version.eclipselink>4.0.0</version.eclipselink>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
