@@ -52,6 +52,7 @@
         <module>maven-boms-http</module>
         <module>maven-boms-jakarta</module>
         <module>maven-boms-eclipse</module>
+        <module>maven-boms-functional</module>
         <module>maven-boms-javax</module>
         <module>maven-boms-json</module>
         <module>maven-boms-kafka</module>

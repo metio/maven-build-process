@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ SPDX-FileCopyrightText: The maven-build-process Authors
+  ~ SPDX-License-Identifier: 0BSD
+  -->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ordering follows https://maven.apache.org/developers/conventions/code.html#POM_Code_Convention -->
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 PARENT                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Inheritance -->
+    <parent>
+        <groupId>wtf.metio.maven.boms</groupId>
+        <artifactId>maven-boms</artifactId>
+        <version>9999.99.99-SNAPSHOT</version>
+    </parent>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               COORDINATES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
+    <artifactId>maven-boms-functional</artifactId>
+    <packaging>pom</packaging>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               INFORMATIONS                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#More_Project_Information -->
+    <name>Maven BOMs :: Functional</name>
+    <description>Functional programming related dependencies</description>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                PROPERTIES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Properties -->
+    <properties>
+        <version.jool>0.9.14</version.jool>
+        <version.vavr>1.0.0-alpha-4</version.vavr>
+        <version.faux-pas>0.9.0</version.faux-pas>
+        <version.fugue>4.7.1</version.fugue>
+        <version.protonpack>1.16</version.protonpack>
+        <version.lambda>5.4.0</version.lambda>
+        <version.streamex>0.8.1</version.streamex>
+    </properties>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                            DEPENDENCY MANAGEMENT                        -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Dependency_Management -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- jOOL -->
+            <!-- https://github.com/jOOQ/jOOL/ -->
+            <dependency>
+                <groupId>org.jooq</groupId>
+                <artifactId>jool</artifactId>
+                <version>${version.jool}</version>
+            </dependency>
+
+            <!-- vavr -->
+            <!-- https://www.vavr.io/ -->
+            <dependency>
+                <groupId>io.vavr</groupId>
+                <artifactId>vavr</artifactId>
+                <version>${version.vavr}</version>
+            </dependency>
+
+            <!-- Faux Pas -->
+            <!-- https://github.com/zalando/faux-pas -->
+            <dependency>
+                <groupId>org.zalando</groupId>
+                <artifactId>faux-pas</artifactId>
+                <version>${version.faux-pas}</version>
+            </dependency>
+
+            <!-- Fugue -->
+            <!-- https://bitbucket.org/atlassian/fugue/ -->
+            <dependency>
+                <groupId>io.atlassian.fugue</groupId>
+                <artifactId>fugue</artifactId>
+                <version>${version.fugue}</version>
+            </dependency>
+
+            <!-- https://github.com/poetix/protonpack -->
+            <dependency>
+                <groupId>com.codepoetics</groupId>
+                <artifactId>protonpack</artifactId>
+                <version>${version.protonpack}</version>
+            </dependency>
+
+            <!-- lambda -->
+            <!-- https://github.com/palatable/lambda -->
+            <dependency>
+                <groupId>com.jnape.palatable</groupId>
+                <artifactId>lambda</artifactId>
+                <version>${version.lambda}</version>
+            </dependency>
+
+            <!-- https://github.com/amaembo/streamex -->
+            <dependency>
+                <groupId>one.util</groupId>
+                <artifactId>streamex</artifactId>
+                <version>${version.streamex}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
