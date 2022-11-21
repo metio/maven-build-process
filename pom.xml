@@ -342,41 +342,80 @@
                             </ignoreVersion>
                         </ignoreVersions>
                         <rules>
-                            <rule groupId="org.postgresql" artifactId="postgresql">
+                            <rule>
+                                <groupId>org.postgresql</groupId>
+                                <artifactId>postgresql</artifactId>
                                 <ignoreVersions>
-                                    <ignoreVersion type="regex">.*jre.*</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>regex</type>
+                                        <version>.*jre.*</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
-                            <rule groupId="javax.enterprise" artifactId="cdi-api">
+                            <rule>
+                                <groupId>javax.enterprise</groupId>
+                                <artifactId>cdi-api</artifactId>
                                 <ignoreVersions>
-                                    <ignoreVersion type="regex">2.0-EDR.*</ignoreVersion>
-                                    <ignoreVersion type="regex">2.0-PFD.*</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>regex</type>
+                                        <version>2.0-EDR.*</version>
+                                    </ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>regex</type>
+                                        <version>2.0-PFD.*</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
-                            <rule groupId="javax.cache" artifactId="cache-api">
+                            <rule>
+                                <groupId>javax.cache</groupId>
+                                <artifactId>cache-api</artifactId>
                                 <ignoreVersions>
-                                    <ignoreVersion>1.0.0-PFD</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>exact</type>
+                                        <version>1.0.0-PFD</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
-                            <rule groupId="javax.transaction" artifactId="">
+                            <rule>
+                                <groupId>javax.transaction</groupId>
                                 <ignoreVersions>
-                                    <ignoreVersion>1.0.1B</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>exact</type>
+                                        <version>1.0.1B</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
-                            <rule groupId="com.thoughtworks.xstream" artifactId="xstream">
+                            <rule>
+                                <groupId>com.thoughtworks.xstream</groupId>
+                                <artifactId>xstream</artifactId>
                                 <ignoreVersions>
-                                    <ignoreVersion type="regex">.*-java7</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>regex</type>
+                                        <version>.*-java7</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
-                            <rule groupId="com.tngtech.archunit" artifactId="*">
+                            <rule>
+                                <groupId>com.tngtech.archunit</groupId>
                                 <ignoreVersions>
-                                    <ignoreVersion>0.18.0</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>exact</type>
+                                        <version>0.18.0</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
-                            <rule groupId="com.alibaba" artifactId="fastjson">
+                            <rule>
+                                <groupId>com.alibaba</groupId>
+                                <artifactId>fastjson</artifactId>
                                 <ignoreVersions>
-                                    <ignoreVersion type="regex">.*android</ignoreVersion>
-                                    <ignoreVersion type="regex">.*graal</ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>regex</type>
+                                        <version>.*android</version>
+                                    </ignoreVersion>
+                                    <ignoreVersion>
+                                        <type>regex</type>
+                                        <version>.*graal</version>
+                                    </ignoreVersion>
                                 </ignoreVersions>
                             </rule>
                         </rules>
