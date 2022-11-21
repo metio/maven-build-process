@@ -48,7 +48,8 @@
     <properties>
         <version.jdk>11</version.jdk>
 
-        <jacoco.lineCoverage>1.00000</jacoco.lineCoverage>
+        <jacoco.minCoverage>1.00000</jacoco.minCoverage>
+        <jacoco.maxMissed>0</jacoco.maxMissed>
         <jacoco.skip>false</jacoco.skip>
         <pit.mutationCoverage>100</pit.mutationCoverage>
         <pit.threads>8</pit.threads>
@@ -264,15 +265,20 @@
                                 <!-- http://eclemma.org/jacoco/trunk/doc/check-mojo.html#rules -->
                                 <rules>
                                     <rule>
-                                        <element>CLASS</element>
+                                        <element>BUNDLE</element>
                                         <excludes>
                                             <exclude>*Test</exclude>
                                         </excludes>
                                         <limits>
                                             <limit>
-                                                <counter>LINE</counter>
+                                                <counter>INSTRUCTION</counter>
                                                 <value>COVEREDRATIO</value>
-                                                <minimum>${jacoco.lineCoverage}</minimum>
+                                                <minimum>${jacoco.minCoverage}</minimum>
+                                            </limit>
+                                            <limit>
+                                                <counter>CLASS</counter>
+                                                <value>MISSEDCOUNT</value>
+                                                <maximum>${jacoco.maxMissed}</maximum>
                                             </limit>
                                         </limits>
                                     </rule>
@@ -575,14 +581,14 @@
                             <goals>
                                 <goal>read-project-properties</goal>
                             </goals>
-                            <configuration>
-                                <quiet>true</quiet>
-                                <files>
-                                    <file>java.properties</file>
-                                </files>
-                            </configuration>
                         </execution>
                     </executions>
+                    <configuration>
+                        <quiet>true</quiet>
+                        <files>
+                            <file>java.properties</file>
+                        </files>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
