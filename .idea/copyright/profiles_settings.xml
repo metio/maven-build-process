@@ -1,3 +1,10 @@
 <component name="CopyrightManager">
-  <settings default="maven-build-process" />
+  <settings default="maven-build-process">
+    <module2copyright>
+      <element module="Project Files" copyright="maven-build-process" />
+    </module2copyright>
+    <LanguageOptions name="JAVA">
+      <option name="addBlankBefore" value="true" />
+    </LanguageOptions>
+  </settings>
 </component>

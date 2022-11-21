@@ -13,14 +13,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: 11
-          distribution: temurin
-          server-id: ossrh
-          server-username: MAVEN_CENTRAL_USERNAME
-          server-password: MAVEN_CENTRAL_TOKEN
+      - uses: ./.github/workflows/managed-pom.yml
       - uses: actions/cache@v3
         with:
           path: ~/.m2/repository

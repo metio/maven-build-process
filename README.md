@@ -1,4 +1,9 @@
-# Maven Build Process [![Chat](https://img.shields.io/badge/matrix-%23talk.metio:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://matrix.to/#/#talk.metio:matrix.org)
+<!--
+SPDX-FileCopyrightText: The maven-build-process Authors
+SPDX-License-Identifier: 0BSD
+ -->
+
+# maven-build-process [![Chat](https://img.shields.io/badge/matrix-%23talk.metio:matrix.org-brightgreen.svg?style=social&label=Matrix)](https://matrix.to/#/#talk.metio:matrix.org)
 
 Bunch of POMs that help to set up a [Maven](http://maven.apache.org/) based project.
 

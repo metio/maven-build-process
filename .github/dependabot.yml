@@ -1,8 +1,11 @@
+# SPDX-FileCopyrightText: The maven-build-process Authors
+# SPDX-License-Identifier: 0BSD
+
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "daily"
+      interval: daily
     assignees:
       - sebhoss

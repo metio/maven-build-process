@@ -1,89 +1,34 @@
-# http://www.gnu.org/software/make/manual/make.html
-# https://www.gnu.org/prep/standards/html_node/Makefile-Basics.html#Makefile-Basics
-# http://clarkgrubb.com/makefile-style-guide
+# SPDX-FileCopyrightText: The maven-build-process Authors
+# SPDX-License-Identifier: 0BSD
 
-############
-# PROLOGUE #
-############
+###############################################################################
+# PROLOGUE                                                                    #
+###############################################################################
 MAKEFLAGS += --warn-undefined-variables
-SHELL = /bin/bash
-.SHELLFLAGS := -eu -o pipefail -c
-.DEFAULT_GOAL := all
+MAKEFLAGS += --no-builtin-rules
+.ONESHELL:
 .DELETE_ON_ERROR:
-.SUFFIXES:
+.DEFAULT_GOAL := help
+ifneq ($(strip $(shell which zsh)),)
+  SHELL := zsh
+  .SHELLFLAGS += -o pipefail
+else ifneq ($(strip $(shell which bash)),)
+  SHELL := bash
+  .SHELLFLAGS += -o pipefail
+else
+  SHELL := sh
+endif
 
-######################
-# INTERNAL VARIABLES #
-######################
-TIMESTAMPED_VERSION := $(shell /bin/date "+%Y.%m.%d-%H%M%S")
-CURRENT_DATE := $(shell /bin/date "+%Y-%m-%d")
-USERNAME := $(shell id -u -n)
-USERID := $(shell id -u)
-GREEN  := $(shell tput -Txterm setaf 2)
-WHITE  := $(shell tput -Txterm setaf 7)
-YELLOW := $(shell tput -Txterm setaf 3)
-RESET  := $(shell tput -Txterm sgr0)
+###############################################################################
+# COMMON RULES                                                                #
+###############################################################################
 
-######################
-# INTERNAL FUNCTIONS #
-######################
-HELP_FUN = \
-    %help; \
-    while(<>) { push @{$$help{$$2 // 'targets'}}, [$$1, $$3] if /^([a-zA-Z\-]+)\s*:.*\#\#(?:@([a-zA-Z\-]+))?\s(.*)$$/ }; \
-    print "usage: make [target]\n\n"; \
-    for (sort keys %help) { \
-    print "${WHITE}$$_:${RESET}\n"; \
-    for (@{$$help{$$_}}) { \
-    $$sep = " " x (32 - length $$_->[0]); \
-    print "  ${YELLOW}$$_->[0]${RESET}$$sep${GREEN}$$_->[1]${RESET}\n"; \
-    }; \
-    print "\n"; }
+##@ other
+.PHONY: help
+help: ## Display this help message
+	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make <target>\033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-25s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
-###############
-# GOALS/RULES #
-###############
-.PHONY: all
-all: help
-
-help: ##@other Show this help
-	@perl -e '$(HELP_FUN)' $(MAKEFILE_LIST)
-
-.PHONY: install
-install: ##@hacking Install all artifacts into local repository
-	mvn clean install
-
-.PHONY: test
-test: ##@hacking Run all tests
-	mvn test
-
-.PHONY: display-dependency-updates
-display-dependency-updates: ##@maintenance Display dependency updates in 'maven-boms'
-	mvn versions:display-dependency-updates \
-	   --update-snapshots \
-	   --projects maven-boms \
-	   --also-make-dependents
-
-.PHONY: display-plugin-updates
-display-plugin-updates: ##@maintenance Display plugin updates in 'maven-parents'
-	mvn versions:display-plugin-updates \
-	   --update-snapshots \
-	   --projects maven-parents \
-	   --also-make-dependents
-
-.PHONY: display-property-updates
-display-property-updates: ##@maintenance Display property updates in all modules
-	mvn versions:display-property-updates \
-	   --update-snapshots
-
-.PHONY: update-properties
-update-properties: ##@maintenance Update all properties to their latest versions
-	mvn versions:update-properties \
-	   --update-snapshots \
-	   -DgenerateBackupPoms=false
-	git add pom.xml **/**/pom.xml
-	git commit -s -S -m 'Update properties to latest version'
-
-.PHONY: sign-waiver
-sign-waiver: ##@contributing Sign the WAIVER
-	minisign -Sm AUTHORS/WAIVER
-	mv AUTHORS/WAIVER.minisig AUTHORS/WAIVER.${USERNAME}.minisig
+###############################################################################
+# PROJECT SPECIFIC RULES                                                      #
+###############################################################################
+-include project.mk

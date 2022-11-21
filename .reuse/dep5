@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: maven-build-process
+Upstream-Contact: Sebastian Hoß <seb@hoß.de>
+Source: https://github.com/metio/maven-build-process
+
+Files: .idea/*
+Copyright: The maven-build-process Authors
+License: 0BSD
