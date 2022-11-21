@@ -320,11 +320,26 @@
                 <configuration>
                     <ruleSet>
                         <ignoreVersions>
-                            <ignoreVersion type="regex">(?i).*alpha.*</ignoreVersion>
-                            <ignoreVersion type="regex">(?i).*beta.*</ignoreVersion>
-                            <ignoreVersion type="regex">(?i).*-b.*</ignoreVersion>
-                            <ignoreVersion type="regex">(?i).*-rc.*</ignoreVersion>
-                            <ignoreVersion type="regex">(?i).*-milestone.*</ignoreVersion>
+                            <ignoreVersion>
+                                <type>regex</type>
+                                <version>(?i).*alpha.*</version>
+                            </ignoreVersion>
+                            <ignoreVersion>
+                                <type>regex</type>
+                                <version>(?i).*beta.*</version>
+                            </ignoreVersion>
+                            <ignoreVersion>
+                                <type>regex</type>
+                                <version>(?i).*-b.*</version>
+                            </ignoreVersion>
+                            <ignoreVersion>
+                                <type>regex</type>
+                                <version>(?i).*-rc.*</version>
+                            </ignoreVersion>
+                            <ignoreVersion>
+                                <type>regex</type>
+                                <version>(?i).*-milestone.*</version>
+                            </ignoreVersion>
                         </ignoreVersions>
                         <rules>
                             <rule groupId="org.postgresql" artifactId="postgresql">
