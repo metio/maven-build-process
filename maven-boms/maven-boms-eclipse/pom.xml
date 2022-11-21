@@ -41,6 +41,7 @@
         <version.eclipse.jdt.annotation>2.2.700</version.eclipse.jdt.annotation>
         <version.sisu>0.9.0.M1</version.sisu>
         <version.eclipselink>4.0.0</version.eclipselink>
+        <version.eclipse-collections>11.1.0</version.eclipse-collections>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -86,6 +87,19 @@
                 <groupId>org.eclipse.persistence</groupId>
                 <artifactId>eclipselink</artifactId>
                 <version>${version.eclipselink}</version>
+            </dependency>
+
+            <!-- Eclipse Collections -->
+            <!-- https://www.eclipse.org/collections/ -->
+            <dependency>
+                <groupId>org.eclipse.collections</groupId>
+                <artifactId>eclipse-collections-api</artifactId>
+                <version>${version.eclipse-collections}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.collections</groupId>
+                <artifactId>eclipse-collections</artifactId>
+                <version>${version.eclipse-collections}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
