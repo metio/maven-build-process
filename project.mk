@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: The maven-build-process Authors
+# SPDX-License-Identifier: 0BSD
+
 .PHONY: install
 install: ## Install all artifacts into local repository
 	mvn clean install
