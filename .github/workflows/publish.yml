@@ -13,7 +13,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/workflows/managed-pom.yml
+      - uses: .github/actions/managed-pom
       - uses: actions/cache@v3
         with:
           path: ~/.m2/repository

@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Clone Git Repository
         uses: actions/checkout@v3
-      - uses: ./.github/workflows/managed-java.yml
+      - uses: .github/actions/managed-java
       - name: Cache Dependencies
         uses: actions/cache@v3
         with:
