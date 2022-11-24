@@ -38,8 +38,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.caffeine>3.1.1</version.caffeine>
-        <version.ehcache>3.10.4</version.ehcache>
+        <version.caffeine>3.1.2</version.caffeine>
+        <version.ehcache>3.10.8</version.ehcache>
         <version.imcache>0.3.0</version.imcache>
         <version.cache2k>2.6.1.Final</version.cache2k>
         <version.expiringmap>0.5.10</version.expiringmap>
