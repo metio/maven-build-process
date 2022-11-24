@@ -86,3 +86,10 @@ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ```
+
+## Mirrors
+
+- https://github.com/metio/maven-build-process
+- https://gitlab.com/metio.wtf/maven-build-process
+- https://bitbucket.org/metio-wtf/maven-build-process
+- https://codeberg.org/metio.wtf/maven-build-process
