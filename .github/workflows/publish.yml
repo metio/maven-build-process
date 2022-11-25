@@ -77,5 +77,3 @@ jobs:
           access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
           message: ${{ github.event.repository.name }} version [${{ steps.release.outputs.version }}](${{ steps.create_release.outputs.url }}) published
           server: matrix.org
-          version: ${{ steps.release.outputs.version }}
-          release_url: ${{ steps.create_release.outputs.url }}
