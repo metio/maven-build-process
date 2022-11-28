@@ -121,11 +121,6 @@
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
@@ -391,7 +386,7 @@
                         <ignoredDependencies>
                             <!-- Ignore Graal SDK because it is provided at runtime -->
                             <ignoredDependency>org.graalvm.sdk:graal-sdk</ignoredDependency>
-                            <!-- Ignore JUnit 5 test engine -->
+                            <!-- Ignore JUnit 5 test engine because it is not used directly -->
                             <ignoredDependency>org.junit.jupiter:junit-jupiter-engine</ignoredDependency>
                             <!-- Ignore ArchUnit aggregator -->
                             <ignoredDependency>com.tngtech.archunit:archunit-junit5</ignoredDependency>
