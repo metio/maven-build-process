@@ -39,6 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.reguloj>2022.11.8</version.reguloj>
+        <version.devcontainer>2022.11.28</version.devcontainer>
         <version.javapoet-type-guesser>2022.11.10</version.javapoet-type-guesser>
     </properties>
 
@@ -57,6 +58,11 @@
                 <groupId>wtf.metio.javapoet</groupId>
                 <artifactId>javapoet-type-guesser</artifactId>
                 <version>${version.javapoet-type-guesser}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.devcontainer</groupId>
+                <artifactId>devcontainer.java</artifactId>
+                <version>${version.devcontainer}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
