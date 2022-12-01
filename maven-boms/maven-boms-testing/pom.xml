@@ -45,7 +45,7 @@
         <version.dbunit>2.7.3</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.23.1</version.assertj-core>
-        <version.equalsverifier>3.11.1</version.equalsverifier>
+        <version.equalsverifier>3.12</version.equalsverifier>
         <version.mockserver>5.14.0</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>1.0.1</version.archunit>

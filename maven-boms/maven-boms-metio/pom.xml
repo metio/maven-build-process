@@ -39,7 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.reguloj>2022.11.8</version.reguloj>
-        <version.devcontainer>2022.11.28</version.devcontainer>
+        <version.devcontainer>2022.11.30</version.devcontainer>
         <version.javapoet-type-guesser>2022.11.10</version.javapoet-type-guesser>
     </properties>
 
