@@ -50,7 +50,6 @@
         <module>maven-boms-google</module>
         <module>maven-boms-graal</module>
         <module>maven-boms-http</module>
-        <module>maven-boms-jakarta</module>
         <module>maven-boms-eclipse</module>
         <module>maven-boms-functional</module>
         <module>maven-boms-javax</module>

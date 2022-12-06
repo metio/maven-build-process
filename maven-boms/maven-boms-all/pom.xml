@@ -56,6 +56,7 @@
         <version.cucumber>7.9.0</version.cucumber>
         <version.mockito>4.9.0</version.mockito>
         <version.log4j>2.19.0</version.log4j>
+        <version.jakarta>10.0.0</version.jakarta>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -191,6 +192,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-bom</artifactId>
+                <version>${version.jakarta}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <!-- internally managed -->
             <dependency>
@@ -280,13 +288,6 @@
             <dependency>
                 <groupId>wtf.metio.maven.boms</groupId>
                 <artifactId>maven-boms-http</artifactId>
-                <version>${project.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>wtf.metio.maven.boms</groupId>
-                <artifactId>maven-boms-jakarta</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
