@@ -17,7 +17,6 @@
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-google/maven-boms-google.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-google/maven-boms-google.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-graal/maven-boms-graal.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-graal/maven-boms-graal.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-http/maven-boms-http.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-http/maven-boms-http.iml" />
-      <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-jakarta/maven-boms-jakarta.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-jakarta/maven-boms-jakarta.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-javax/maven-boms-javax.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-javax/maven-boms-javax.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-json/maven-boms-json.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-json/maven-boms-json.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven-boms/maven-boms-kafka/maven-boms-kafka.iml" filepath="$PROJECT_DIR$/maven-boms/maven-boms-kafka/maven-boms-kafka.iml" />
