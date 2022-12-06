@@ -39,6 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.jakarta-persistence-api>3.1.0</version.jakarta-persistence-api>
+        <version.jakarta-activation-api>2.1.0</version.jakarta-activation-api>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -53,6 +54,14 @@
                 <groupId>jakarta.persistence</groupId>
                 <artifactId>jakarta.persistence-api</artifactId>
                 <version>${version.jakarta-persistence-api}</version>
+            </dependency>
+
+            <!-- Jakarta Activation -->
+            <!-- https://jakarta.ee/specifications/activation/ -->
+            <dependency>
+                <groupId>jakarta.activation</groupId>
+                <artifactId>jakarta.activation-api</artifactId>
+                <version>${version.jakarta-activation-api}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
