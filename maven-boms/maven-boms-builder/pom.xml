@@ -39,6 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.freebuilder>2.8.0</version.freebuilder>
+        <version.record-builder>34</version.record-builder>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -53,6 +54,14 @@
                 <groupId>org.inferred</groupId>
                 <artifactId>freebuilder</artifactId>
                 <version>${version.freebuilder}</version>
+            </dependency>
+
+            <!-- RecordBuilder -->
+            <!-- https://github.com/Randgalt/record-builder -->
+            <dependency>
+                <groupId>io.soabase.record-builder</groupId>
+                <artifactId>record-builder-core</artifactId>
+                <version>${version.record-builder}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
