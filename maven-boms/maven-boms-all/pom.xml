@@ -50,7 +50,7 @@
         <version.immutables>2.9.2</version.immutables>
         <version.netty>4.1.85.Final</version.netty>
         <version.ebean>13.10.2</version.ebean>
-        <version.jdbi>3.34.0</version.jdbi>
+        <version.jdbi>3.35.0</version.jdbi>
         <version.infinispan>14.0.3.Final</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
         <version.cucumber>7.9.0</version.cucumber>
