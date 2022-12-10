@@ -50,6 +50,7 @@
         <version.collection-views>2.0.0</version.collection-views>
         <version.enhanced-iterables>2.0.0</version.enhanced-iterables>
         <version.wuwei>0.3</version.wuwei>
+        <version.functionaljava>5.0</version.functionaljava>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -151,6 +152,24 @@
                 <groupId>io.ataraxic.nomicflux</groupId>
                 <artifactId>wuwei</artifactId>
                 <version>${version.wuwei}</version>
+            </dependency>
+
+            <!-- Functional Java -->
+            <!-- https://github.com/functionaljava/functionaljava -->
+            <dependency>
+                <groupId>org.functionaljava</groupId>
+                <artifactId>functionaljava</artifactId>
+                <version>${version.functionaljava}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.functionaljava</groupId>
+                <artifactId>functionaljava-quickcheck</artifactId>
+                <version>${version.functionaljava}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.functionaljava</groupId>
+                <artifactId>functionaljava-java-core</artifactId>
+                <version>${version.functionaljava}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
