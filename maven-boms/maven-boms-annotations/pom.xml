@@ -38,8 +38,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.jspecify>0.3.0-alpha-1</version.jspecify>
-        <version.jetbrains-annotations>23.0.0</version.jetbrains-annotations>
+        <version.jspecify>0.3.0</version.jspecify>
+        <version.jetbrains-annotations>23.1.0</version.jetbrains-annotations>
         <version.spotbugs-annotations>4.7.3</version.spotbugs-annotations>
     </properties>
 

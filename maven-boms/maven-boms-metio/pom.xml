@@ -38,9 +38,9 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.reguloj>2022.12.6</version.reguloj>
-        <version.devcontainer>2022.12.7</version.devcontainer>
-        <version.javapoet-type-guesser>2022.11.10</version.javapoet-type-guesser>
+        <version.reguloj>2022.12.8</version.reguloj>
+        <version.devcontainer>2022.12.14</version.devcontainer>
+        <version.javapoet-type-guesser>2022.12.8</version.javapoet-type-guesser>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

@@ -39,7 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.dozer>6.5.2</version.dozer>
-        <version.modelmapper>3.1.0</version.modelmapper>
+        <version.modelmapper>3.1.1</version.modelmapper>
         <version.orika>1.5.4</version.orika>
         <version.mapstruct>1.5.3.Final</version.mapstruct>
     </properties>
