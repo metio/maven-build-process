@@ -163,7 +163,7 @@
         <version.nexus-stagig-m-p>1.6.13</version.nexus-stagig-m-p>
         <version.m-enforcer-p>3.1.0</version.m-enforcer-p>
         <version.m-scm-p>2.0.0-M3</version.m-scm-p>
-        <version.versions-m-p>2.14.0</version.versions-m-p>
+        <version.versions-m-p>2.14.1</version.versions-m-p>
 
         <!-- plugin settings -->
         <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#secretkey -->
