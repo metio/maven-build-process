@@ -54,7 +54,7 @@
         <version.infinispan>14.0.4.Final</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
         <version.cucumber>7.10.1</version.cucumber>
-        <version.mockito>4.10.0</version.mockito>
+        <version.mockito>4.11.0</version.mockito>
         <version.log4j>2.19.0</version.log4j>
         <version.jakarta>10.0.0</version.jakarta>
     </properties>
