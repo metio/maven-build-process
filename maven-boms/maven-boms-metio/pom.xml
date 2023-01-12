@@ -40,7 +40,7 @@
     <properties>
         <version.reguloj>2022.12.15</version.reguloj>
         <version.devcontainer>2022.12.23</version.devcontainer>
-        <version.javapoet-type-guesser>2022.12.15</version.javapoet-type-guesser>
+        <version.javapoet-type-guesser>2023.1.5</version.javapoet-type-guesser>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
