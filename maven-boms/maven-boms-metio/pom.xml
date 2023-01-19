@@ -40,7 +40,9 @@
     <properties>
         <version.reguloj>2023.1.12</version.reguloj>
         <version.devcontainer>2023.1.13</version.devcontainer>
-        <version.javapoet-type-guesser>2023.1.12</version.javapoet-type-guesser>
+        <version.javapoet-type-guesser>2023.1.19</version.javapoet-type-guesser>
+        <version.memoization>2023.1.10</version.memoization>
+        <version.storage-units>2023.1.10</version.storage-units>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -54,15 +56,89 @@
                 <artifactId>reguloj</artifactId>
                 <version>${version.reguloj}</version>
             </dependency>
+
             <dependency>
                 <groupId>wtf.metio.javapoet</groupId>
                 <artifactId>javapoet-type-guesser</artifactId>
                 <version>${version.javapoet-type-guesser}</version>
             </dependency>
+
             <dependency>
                 <groupId>wtf.metio.devcontainer</groupId>
                 <artifactId>devcontainer.java</artifactId>
                 <version>${version.devcontainer}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>wtf.metio.memoization</groupId>
+                <artifactId>memoization-jdk</artifactId>
+                <version>${version.memoization}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.memoization</groupId>
+                <artifactId>memoization-jool</artifactId>
+                <version>${version.memoization}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.memoization</groupId>
+                <artifactId>memoization-lambda</artifactId>
+                <version>${version.memoization}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.memoization</groupId>
+                <artifactId>memoization-rxjava</artifactId>
+                <version>${version.memoization}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-model</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-dozer</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-eclipselink</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-gson</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-jackson</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-jakarta</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-mapstruct</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-modelmapper</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-mongodb</artifactId>
+                <version>${version.storage-units}</version>
+            </dependency>
+            <dependency>
+                <groupId>wtf.metio.storage-units</groupId>
+                <artifactId>storage-units-orika</artifactId>
+                <version>${version.storage-units}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
