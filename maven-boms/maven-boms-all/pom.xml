@@ -49,9 +49,9 @@
         <version.reactor>2022.0.2</version.reactor>
         <version.immutables>2.9.3</version.immutables>
         <version.netty>4.1.87.Final</version.netty>
-        <version.ebean>13.11.1</version.ebean>
+        <version.ebean>13.11.2</version.ebean>
         <version.jdbi>3.36.0</version.jdbi>
-        <version.infinispan>14.0.5.Final</version.infinispan>
+        <version.infinispan>14.0.6.Final</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
         <version.cucumber>7.11.0</version.cucumber>
         <version.mockito>5.0.0</version.mockito>
