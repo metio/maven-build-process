@@ -38,7 +38,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.picocli>4.7.0</version.picocli>
+        <version.picocli>4.7.1</version.picocli>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
