@@ -45,12 +45,12 @@
         <version.dbunit>2.7.3</version.dbunit>
         <version.fest-assert-core>2.0M10</version.fest-assert-core>
         <version.assertj-core>3.24.2</version.assertj-core>
-        <version.equalsverifier>3.12.3</version.equalsverifier>
+        <version.equalsverifier>3.12.4</version.equalsverifier>
         <version.mockserver>5.15.0</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
         <version.archunit>1.0.1</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
-        <version.system-stubs>2.0.1</version.system-stubs>
+        <version.system-stubs>2.0.2</version.system-stubs>
         <version.jmh>1.36</version.jmh>
         <version.concurrentunit>0.4.6</version.concurrentunit>
     </properties>
