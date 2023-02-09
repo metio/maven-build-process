@@ -46,7 +46,7 @@
         <version.http-client>1.42.3</version.http-client>
         <version.dagger>2.44.2</version.dagger>
         <version.jimfs>1.2</version.jimfs>
-        <version.ksp>1.8.0-1.0.9</version.ksp>
+        <version.ksp>1.8.10-1.0.9</version.ksp>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
