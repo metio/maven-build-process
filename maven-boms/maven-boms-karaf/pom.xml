@@ -40,7 +40,7 @@
     <properties>
         <version.karaf>4.4.3</version.karaf>
         <version.scheduler>3.0.10</version.scheduler>
-        <version.decanter>2.9.0</version.decanter>
+        <version.decanter>2.10.0</version.decanter>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
