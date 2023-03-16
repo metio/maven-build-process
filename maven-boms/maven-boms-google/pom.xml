@@ -43,7 +43,7 @@
         <version.truth>1.1.3</version.truth>
         <version.api-client>2.2.0</version.api-client>
         <version.oauth-client>1.34.1</version.oauth-client>
-        <version.http-client>1.43.0</version.http-client>
+        <version.http-client>1.43.1</version.http-client>
         <version.dagger>2.45</version.dagger>
         <version.jimfs>1.2</version.jimfs>
         <version.ksp>1.8.10-1.0.9</version.ksp>

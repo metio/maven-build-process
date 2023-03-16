@@ -68,7 +68,7 @@
         <version.m-artifact-p>3.4.1</version.m-artifact-p>
         <version.m-resource-p>3.3.0</version.m-resource-p>
         <version.m-clean-p>3.2.0</version.m-clean-p>
-        <version.m-surefire-p>3.0.0-M9</version.m-surefire-p>
+        <version.m-surefire-p>3.0.0</version.m-surefire-p>
         <version.m-compiler-p>3.11.0</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
         <version.pitest-m-p>1.11.4</version.pitest-m-p>
