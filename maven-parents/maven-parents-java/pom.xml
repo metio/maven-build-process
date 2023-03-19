@@ -93,6 +93,8 @@
         <version.spotbugs-m-p>4.7.3.2</version.spotbugs-m-p>
         <version.m-antrun-p>3.1.0</version.m-antrun-p>
         <version.properties-m-p>1.1.0</version.properties-m-p>
+        <version.cyclonedx-m-p>2.7.5</version.cyclonedx-m-p>
+        <version.spdx-m-p>0.6.4</version.spdx-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -599,6 +601,25 @@
                         <files>
                             <file>java.properties</file>
                         </files>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <!-- https://github.com/CycloneDX/cyclonedx-maven-plugin -->
+                    <groupId>org.cyclonedx</groupId>
+                    <artifactId>cyclonedx-maven-plugin</artifactId>
+                    <version>${version.cyclonedx-m-p}</version>
+                </plugin>
+
+                <plugin>
+                    <!-- https://github.com/spdx/spdx-maven-plugin -->
+                    <groupId>org.spdx</groupId>
+                    <artifactId>spdx-maven-plugin</artifactId>
+                    <version>${version.spdx-m-p}</version>
+                    <configuration>
+                        <excludedFilePatterns>
+                            <param>*.spdx</param>
+                        </excludedFilePatterns>
                     </configuration>
                 </plugin>
             </plugins>
