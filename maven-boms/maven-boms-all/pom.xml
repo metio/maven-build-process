@@ -48,7 +48,7 @@
         <version.mutiny>2.1.0</version.mutiny>
         <version.reactor>2022.0.5</version.reactor>
         <version.immutables>2.9.3</version.immutables>
-        <version.netty>4.1.90.Final</version.netty>
+        <version.netty>4.1.91.Final</version.netty>
         <version.ebean>13.16.0-jakarta</version.ebean>
         <version.jdbi>3.37.1</version.jdbi>
         <version.infinispan>14.0.7.Final</version.infinispan>
