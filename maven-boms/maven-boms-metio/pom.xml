@@ -38,9 +38,9 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.reguloj>2023.3.9</version.reguloj>
-        <version.devcontainer>2023.3.10</version.devcontainer>
-        <version.javapoet-type-guesser>2023.3.9</version.javapoet-type-guesser>
+        <version.reguloj>2023.3.30</version.reguloj>
+        <version.devcontainer>2023.3.31</version.devcontainer>
+        <version.javapoet-type-guesser>2023.3.30</version.javapoet-type-guesser>
         <version.memoization>2023.1.10</version.memoization>
         <version.storage-units>2023.3.7</version.storage-units>
     </properties>

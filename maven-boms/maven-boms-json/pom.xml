@@ -45,7 +45,7 @@
         <version.fastjson>2.0.26</version.fastjson>
         <version.json-io>4.14.0</version.json-io>
         <version.moshi>1.14.0</version.moshi>
-        <version.yasson>3.0.2</version.yasson>
+        <version.yasson>3.0.3</version.yasson>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
