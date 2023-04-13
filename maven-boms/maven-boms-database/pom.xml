@@ -42,7 +42,7 @@
         <version.postgres>42.6.0</version.postgres>
         <version.mysql>8.0.32</version.mysql>
         <version.hikari>5.0.1</version.hikari>
-        <version.mongodb>3.12.12</version.mongodb>
+        <version.mongodb>3.12.13</version.mongodb>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
