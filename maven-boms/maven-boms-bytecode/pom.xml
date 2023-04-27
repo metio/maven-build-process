@@ -40,7 +40,7 @@
     <properties>
         <version.asm>9.5</version.asm>
         <version.byte-buddy>1.14.4</version.byte-buddy>
-        <version.byteman>4.0.20</version.byteman>
+        <version.byteman>4.0.21</version.byteman>
         <version.javassist>3.29.2-GA</version.javassist>
     </properties>
 
