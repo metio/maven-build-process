@@ -44,9 +44,9 @@
         <version.api-client>2.2.0</version.api-client>
         <version.oauth-client>1.34.1</version.oauth-client>
         <version.http-client>1.43.1</version.http-client>
-        <version.dagger>2.45</version.dagger>
+        <version.dagger>2.46</version.dagger>
         <version.jimfs>1.2</version.jimfs>
-        <version.ksp>1.8.20-1.0.11</version.ksp>
+        <version.ksp>1.8.21-1.0.11</version.ksp>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
