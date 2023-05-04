@@ -45,15 +45,15 @@
         <version.junit5>5.9.3</version.junit5>
         <version.guice>5.1.0</version.guice>
         <version.okhttp>4.11.0</version.okhttp>
-        <version.mutiny>2.1.0</version.mutiny>
+        <version.mutiny>2.2.0</version.mutiny>
         <version.reactor>2022.0.6</version.reactor>
         <version.immutables>2.9.3</version.immutables>
         <version.netty>4.1.92.Final</version.netty>
-        <version.ebean>13.17.2-jakarta</version.ebean>
-        <version.jdbi>3.38.0</version.jdbi>
+        <version.ebean>13.17.3-jakarta</version.ebean>
+        <version.jdbi>3.38.1</version.jdbi>
         <version.infinispan>15.0.0.Dev01</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
-        <version.cucumber>7.11.2</version.cucumber>
+        <version.cucumber>7.12.0</version.cucumber>
         <version.mockito>5.3.1</version.mockito>
         <version.log4j>2.20.0</version.log4j>
         <version.jakarta>10.0.0</version.jakarta>
