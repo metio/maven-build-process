@@ -68,7 +68,7 @@
         <version.m-artifact-p>3.4.1</version.m-artifact-p>
         <version.m-resource-p>3.3.1</version.m-resource-p>
         <version.m-clean-p>3.2.0</version.m-clean-p>
-        <version.m-surefire-p>3.0.0</version.m-surefire-p>
+        <version.m-surefire-p>3.1.0</version.m-surefire-p>
         <version.m-compiler-p>3.11.0</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
         <version.pitest-m-p>1.13.1</version.pitest-m-p>
@@ -77,7 +77,7 @@
         <version.jacoco-m-p>0.8.10</version.jacoco-m-p>
         <version.dependency-check-m>8.2.1</version.dependency-check-m>
         <version.m-dependency-p>3.5.0</version.m-dependency-p>
-        <version.flatten-m-p>1.4.1</version.flatten-m-p>
+        <version.flatten-m-p>1.5.0</version.flatten-m-p>
         <version.sonar-m-p>3.9.1.2184</version.sonar-m-p>
         <version.templating-m-p>1.0.0</version.templating-m-p>
         <version.native-image-m-p>21.2.0</version.native-image-m-p>
