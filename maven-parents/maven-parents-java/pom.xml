@@ -61,7 +61,7 @@
         <failBuildOnDependencyVersionProblem>true</failBuildOnDependencyVersionProblem>
         <failBuildOnDependencyProblem>true</failBuildOnDependencyProblem>
 
-        <version.m-pmd-p>3.20.0</version.m-pmd-p>
+        <version.m-pmd-p>3.21.0</version.m-pmd-p>
         <version.m-javadoc-p>3.5.0</version.m-javadoc-p>
         <version.m-dependency-versions-check-p>2.0.4</version.m-dependency-versions-check-p>
         <version.m-jar-p>3.3.0</version.m-jar-p>
@@ -71,7 +71,7 @@
         <version.m-surefire-p>3.1.0</version.m-surefire-p>
         <version.m-compiler-p>3.11.0</version.m-compiler-p>
         <version.m-source-p>3.2.1</version.m-source-p>
-        <version.pitest-m-p>1.13.1</version.pitest-m-p>
+        <version.pitest-m-p>1.13.2</version.pitest-m-p>
         <version.pitest-junit5>1.1.2</version.pitest-junit5>
         <version.duplicate-finder-m-p>1.5.1</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.10</version.jacoco-m-p>
@@ -81,19 +81,19 @@
         <version.sonar-m-p>3.9.1.2184</version.sonar-m-p>
         <version.templating-m-p>1.0.0</version.templating-m-p>
         <version.native-image-m-p>21.2.0</version.native-image-m-p>
-        <version.native-m-p>0.9.21</version.native-m-p>
+        <version.native-m-p>0.9.22</version.native-m-p>
         <version.appassembler-m-p>2.1.0</version.appassembler-m-p>
-        <version.m-assembly-p>3.5.0</version.m-assembly-p>
+        <version.m-assembly-p>3.6.0</version.m-assembly-p>
         <version.checksum-m-p>1.11</version.checksum-m-p>
         <version.exec-m-p>3.1.0</version.exec-m-p>
         <version.asciidoctor-m-p>2.2.3</version.asciidoctor-m-p>
         <version.editorconfig-m-p>0.1.3</version.editorconfig-m-p>
-        <version.build-helper-m-p>3.3.0</version.build-helper-m-p>
+        <version.build-helper-m-p>3.4.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
         <version.spotbugs-m-p>4.7.3.4</version.spotbugs-m-p>
         <version.m-antrun-p>3.1.0</version.m-antrun-p>
         <version.properties-m-p>1.1.0</version.properties-m-p>
-        <version.cyclonedx-m-p>2.7.8</version.cyclonedx-m-p>
+        <version.cyclonedx-m-p>2.7.9</version.cyclonedx-m-p>
         <version.spdx-m-p>0.6.5</version.spdx-m-p>
     </properties>
 

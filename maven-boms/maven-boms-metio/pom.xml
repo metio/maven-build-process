@@ -38,8 +38,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.reguloj>2023.4.13</version.reguloj>
-        <version.devcontainer>2023.4.14</version.devcontainer>
+        <version.reguloj>2023.5.11</version.reguloj>
+        <version.devcontainer>2023.5.12</version.devcontainer>
         <version.javapoet-type-guesser>2023.5.4</version.javapoet-type-guesser>
         <version.memoization>2023.1.10</version.memoization>
         <version.storage-units>2023.5.9</version.storage-units>
