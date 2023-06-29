@@ -38,7 +38,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.auto-value>1.10.1</version.auto-value>
+        <version.auto-value>1.10.2</version.auto-value>
         <version.guava>32.0.1-jre</version.guava>
         <version.truth>1.1.5</version.truth>
         <version.api-client>2.2.0</version.api-client>

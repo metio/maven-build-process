@@ -38,10 +38,10 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.maven>3.9.2</version.maven>
+        <version.maven>3.9.3</version.maven>
         <version.maven-annotations>3.9.0</version.maven-annotations>
         <version.plexus-annotations>2.1.1</version.plexus-annotations>
-        <version.doxia>2.0.0-M6</version.doxia>
+        <version.doxia>2.0.0-M7</version.doxia>
         <version.plexus-build-api>0.0.7</version.plexus-build-api>
         <version.plexus-sec-dispatcher>2.0</version.plexus-sec-dispatcher>
     </properties>
