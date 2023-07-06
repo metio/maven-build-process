@@ -49,7 +49,7 @@
         <version.reactor>2022.0.8</version.reactor>
         <version.immutables>2.9.3</version.immutables>
         <version.netty>4.1.94.Final</version.netty>
-        <version.ebean>13.20.0-jakarta</version.ebean>
+        <version.ebean>13.20.1-jakarta</version.ebean>
         <version.jdbi>3.39.1</version.jdbi>
         <version.infinispan>15.0.0.Dev01</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
