@@ -41,7 +41,7 @@
         <version.jexl>2.1.1</version.jexl>
         <version.juel>2.2.7</version.juel>
         <version.mvel>2.5.0.Final</version.mvel>
-        <version.ognl>3.4.0</version.ognl>
+        <version.ognl>3.4.1</version.ognl>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
