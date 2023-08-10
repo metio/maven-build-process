@@ -48,10 +48,10 @@
         <version.equalsverifier>3.15.1</version.equalsverifier>
         <version.mockserver>5.15.0</version.mockserver>
         <version.wiremock>2.27.2</version.wiremock>
-        <version.archunit>1.0.1</version.archunit>
+        <version.archunit>1.1.0</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
         <version.system-stubs>2.0.2</version.system-stubs>
-        <version.jmh>1.36</version.jmh>
+        <version.jmh>1.37</version.jmh>
         <version.concurrentunit>0.4.6</version.concurrentunit>
     </properties>
 
