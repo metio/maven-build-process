@@ -40,7 +40,7 @@
     <properties>
         <version.reactive-streams>1.0.4</version.reactive-streams>
         <version.rxjava2>2.2.21</version.rxjava2>
-        <version.rxjava3>3.1.6</version.rxjava3>
+        <version.rxjava3>3.1.7</version.rxjava3>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
