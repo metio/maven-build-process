@@ -48,13 +48,13 @@
         <version.mutiny>2.3.1</version.mutiny>
         <version.reactor>2022.0.10</version.reactor>
         <version.immutables>2.9.3</version.immutables>
-        <version.netty>4.1.96.Final</version.netty>
-        <version.ebean>13.20.1-jakarta</version.ebean>
+        <version.netty>4.1.97.Final</version.netty>
+        <version.ebean>13.21.0-jakarta</version.ebean>
         <version.jdbi>3.41.0</version.jdbi>
         <version.infinispan>15.0.0.Dev02</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
         <version.cucumber>7.13.0</version.cucumber>
-        <version.mockito>5.4.0</version.mockito>
+        <version.mockito>5.5.0</version.mockito>
         <version.log4j>2.20.0</version.log4j>
         <version.jakarta>10.0.0</version.jakarta>
     </properties>
