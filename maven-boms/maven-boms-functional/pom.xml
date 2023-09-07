@@ -44,7 +44,7 @@
         <version.fugue>5.0.0</version.fugue>
         <version.protonpack>1.16</version.protonpack>
         <version.lambda>5.5.0</version.lambda>
-        <version.streamex>0.8.1</version.streamex>
+        <version.streamex>0.8.2</version.streamex>
         <version.shoki>1.0-alpha-2</version.shoki>
         <version.kraftwerk>0.11.0</version.kraftwerk>
         <version.collection-views>2.0.0</version.collection-views>

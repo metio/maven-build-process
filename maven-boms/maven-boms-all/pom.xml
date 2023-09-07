@@ -45,7 +45,7 @@
         <version.junit5>5.10.0</version.junit5>
         <version.guice>7.0.0</version.guice>
         <version.okhttp>4.11.0</version.okhttp>
-        <version.mutiny>2.3.1</version.mutiny>
+        <version.mutiny>2.4.0</version.mutiny>
         <version.reactor>2022.0.10</version.reactor>
         <version.immutables>2.9.3</version.immutables>
         <version.netty>4.1.97.Final</version.netty>
