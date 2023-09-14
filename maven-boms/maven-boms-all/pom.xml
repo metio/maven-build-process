@@ -46,14 +46,14 @@
         <version.guice>7.0.0</version.guice>
         <version.okhttp>4.11.0</version.okhttp>
         <version.mutiny>2.4.0</version.mutiny>
-        <version.reactor>2022.0.10</version.reactor>
+        <version.reactor>2022.0.11</version.reactor>
         <version.immutables>2.9.3</version.immutables>
         <version.netty>4.1.97.Final</version.netty>
         <version.ebean>13.22.0-jakarta</version.ebean>
-        <version.jdbi>3.41.0</version.jdbi>
+        <version.jdbi>3.41.1</version.jdbi>
         <version.infinispan>15.0.0.Dev02</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
-        <version.cucumber>7.13.0</version.cucumber>
+        <version.cucumber>7.14.0</version.cucumber>
         <version.mockito>5.5.0</version.mockito>
         <version.log4j>2.20.0</version.log4j>
         <version.jakarta>10.0.0</version.jakarta>
