@@ -39,7 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.auto-value>1.10.4</version.auto-value>
-        <version.guava>32.1.2-jre</version.guava>
+        <version.guava>32.1.3-jre</version.guava>
         <version.truth>1.1.5</version.truth>
         <version.api-client>2.2.0</version.api-client>
         <version.oauth-client>1.34.1</version.oauth-client>
