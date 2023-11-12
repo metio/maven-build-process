@@ -47,7 +47,7 @@
         <version.assertj-core>3.24.2</version.assertj-core>
         <version.equalsverifier>3.15.3</version.equalsverifier>
         <version.mockserver>5.15.0</version.mockserver>
-        <version.wiremock>2.27.2</version.wiremock>
+        <version.wiremock>2.35.1</version.wiremock>
         <version.archunit>1.2.0</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
         <version.system-stubs>2.1.4</version.system-stubs>
