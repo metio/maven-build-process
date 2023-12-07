@@ -42,7 +42,7 @@
         <version.devcontainer>2023.11.10</version.devcontainer>
         <version.javapoet-type-guesser>2023.11.9</version.javapoet-type-guesser>
         <version.memoization>2023.1.10</version.memoization>
-        <version.storage-units>2023.11.14</version.storage-units>
+        <version.storage-units>2023.12.5</version.storage-units>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
