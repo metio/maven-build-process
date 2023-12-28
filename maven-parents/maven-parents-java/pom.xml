@@ -69,7 +69,7 @@
         <version.m-resource-p>3.3.1</version.m-resource-p>
         <version.m-clean-p>3.3.2</version.m-clean-p>
         <version.m-surefire-p>3.2.3</version.m-surefire-p>
-        <version.m-compiler-p>3.12.0</version.m-compiler-p>
+        <version.m-compiler-p>3.12.1</version.m-compiler-p>
         <version.m-source-p>3.3.0</version.m-source-p>
         <version.pitest-m-p>1.15.3</version.pitest-m-p>
         <version.pitest-junit5>1.2.1</version.pitest-junit5>

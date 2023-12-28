@@ -39,7 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.freebuilder>2.8.0</version.freebuilder>
-        <version.record-builder>37</version.record-builder>
+        <version.record-builder>38</version.record-builder>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
