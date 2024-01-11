@@ -46,7 +46,7 @@
         <version.guice>7.0.0</version.guice>
         <version.okhttp>4.12.0</version.okhttp>
         <version.mutiny>2.5.3</version.mutiny>
-        <version.reactor>2023.0.1</version.reactor>
+        <version.reactor>2023.0.2</version.reactor>
         <version.immutables>2.10.0</version.immutables>
         <version.netty>4.1.104.Final</version.netty>
         <version.ebean>13.25.2-jakarta</version.ebean>
