@@ -40,7 +40,7 @@
     <properties>
         <version.reguloj>2023.12.7</version.reguloj>
         <version.devcontainer>2023.12.15</version.devcontainer>
-        <version.javapoet-type-guesser>2023.12.7</version.javapoet-type-guesser>
+        <version.javapoet-type-guesser>2024.1.9</version.javapoet-type-guesser>
         <version.memoization>2023.1.10</version.memoization>
         <version.storage-units>2023.12.20</version.storage-units>
     </properties>
