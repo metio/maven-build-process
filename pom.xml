@@ -158,22 +158,10 @@
         <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
 
         <!-- version declarations -->
-        <version.sonar-m-p>3.10.0.2594</version.sonar-m-p>
-        <version.pgp-m-p>1.1</version.pgp-m-p>
+        <version.sign-m-p>1.0.1</version.sign-m-p>
         <version.nexus-stagig-m-p>1.6.13</version.nexus-stagig-m-p>
         <version.m-enforcer-p>3.4.1</version.m-enforcer-p>
-        <version.m-scm-p>2.0.1</version.m-scm-p>
         <version.versions-m-p>2.16.2</version.versions-m-p>
-
-        <!-- plugin settings -->
-        <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#secretkey -->
-        <pgp.secretKey></pgp.secretKey>
-        <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#passphrase -->
-        <pgp.passphrase></pgp.passphrase>
-        <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html#skip -->
-        <pgp.skip>false</pgp.skip>
-        <!-- http://sonarsource.github.io/sonar-maven/sonar-mojo.html#skip -->
-        <sonar.skip>false</sonar.skip>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -198,55 +186,18 @@
             <!-- https://maven.apache.org/pom.html#Plugins -->
             <plugins>
                 <plugin>
-                    <!-- https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Maven -->
-                    <groupId>org.sonarsource.scanner.maven</groupId>
-                    <artifactId>sonar-maven-plugin</artifactId>
-                    <version>${version.sonar-m-p}</version>
-                    <configuration>
-                        <skip>${sonar.skip}</skip>
-                    </configuration>
+                    <!-- https://github.com/s4u/sign-maven-plugin -->
+                    <groupId>org.simplify4u.plugins</groupId>
+                    <artifactId>sign-maven-plugin</artifactId>
+                    <version>${version.sign-m-p}</version>
                     <executions>
                         <execution>
-                            <id>sonar-analysis</id>
                             <goals>
-                                <goal>sonar</goal>
-                            </goals>
-                            <phase>verify</phase>
-                        </execution>
-                    </executions>
-                </plugin>
-
-                <plugin>
-                    <!-- http://kohsuke.org/pgp-maven-plugin/ -->
-                    <groupId>org.kohsuke</groupId>
-                    <artifactId>pgp-maven-plugin</artifactId>
-                    <version>${version.pgp-m-p}</version>
-                    <configuration>
-                        <secretkey>${pgp.secretKey}</secretkey>
-                        <passphrase>${pgp.passphrase}</passphrase>
-                        <skip>${pgp.skip}</skip>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>sign-artifacts</id>
-                            <phase>verify</phase>
-                            <goals>
-                                <!-- http://kohsuke.org/pgp-maven-plugin/sign-mojo.html -->
+                                <!-- https://www.simplify4u.org/sign-maven-plugin/sign-mojo.html -->
                                 <goal>sign</goal>
                             </goals>
                         </execution>
                     </executions>
-                </plugin>
-
-                <plugin>
-                    <!-- http://maven.apache.org/scm/maven-scm-plugin/ -->
-                    <artifactId>maven-scm-plugin</artifactId>
-                    <version>${version.m-scm-p}</version>
-                    <configuration>
-                        <!-- http://maven.apache.org/scm/maven-scm-plugin/tag-mojo.html#tag -->
-                        <tag>${project.artifactId}-${project.version}</tag>
-                        <message>[maven-scm] tag ${project.artifactId}-${project.version}</message>
-                    </configuration>
                 </plugin>
 
                 <plugin>
@@ -275,12 +226,8 @@
                             <configuration>
                                 <rules>
                                     <requireMavenVersion>
-                                        <version>3.6.0</version>
+                                        <version>3.9.0</version>
                                     </requireMavenVersion>
-                                    <reactorModuleConvergence>
-                                        <message>The reactor is not valid</message>
-                                        <ignoreModuleDependencies>true</ignoreModuleDependencies>
-                                    </reactorModuleConvergence>
                                     <requireSameVersions>
                                         <plugins>
                                             <plugin>org.apache.maven.plugins:maven-surefire-plugin</plugin>
@@ -428,12 +375,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
             </plugin>
-
-            <plugin>
-                <!-- https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Maven -->
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-            </plugin>
         </plugins>
     </build>
 
@@ -447,9 +388,9 @@
             <build>
                 <plugins>
                     <plugin>
-                        <!-- http://kohsuke.org/pgp-maven-plugin/ -->
-                        <groupId>org.kohsuke</groupId>
-                        <artifactId>pgp-maven-plugin</artifactId>
+                        <!-- https://www.simplify4u.org/sign-maven-plugin/ -->
+                        <groupId>org.simplify4u.plugins</groupId>
+                        <artifactId>sign-maven-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>

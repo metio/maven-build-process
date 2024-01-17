@@ -10,21 +10,12 @@
     <!-- ordering follows https://maven.apache.org/developers/conventions/code.html#POM_Code_Convention -->
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!--                                 PARENT                                  -->
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    <!-- https://maven.apache.org/pom.html#Inheritance -->
-    <parent>
-        <groupId>wtf.metio.maven</groupId>
-        <artifactId>maven-build-process</artifactId>
-        <version>9999.99.99-SNAPSHOT</version>
-    </parent>
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                               COORDINATES                               -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Maven_Coordinates -->
     <groupId>wtf.metio.maven.parents</groupId>
     <artifactId>maven-parents</artifactId>
+    <version>9999.99.99-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -39,8 +30,66 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Aggregation -->
     <modules>
-        <module>maven-parents-superpom</module>
         <module>maven-parents-java</module>
     </modules>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                               ORGANIZATION                              -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#organization -->
+    <organization>
+        <name>metio.wtf</name>
+        <url>https://metio.wtf/</url>
+    </organization>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                 LICENSE                                 -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#licenses -->
+    <licenses>
+        <license>
+            <name>BSD Zero Clause License</name>
+            <url>https://spdx.org/licenses/0BSD.html</url>
+            <distribution>repo</distribution>
+            <comments>https://spdx.org/licenses/0BSD.html</comments>
+        </license>
+    </licenses>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                DEVELOPERS                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#developers -->
+    <developers>
+        <developer>
+            <id>sebhoss</id>
+            <name>Sebastian Hoß</name>
+            <email>seb@hoß.de</email>
+            <url>https://seb.hoß.de/</url>
+            <organization>metio.wtf</organization>
+            <organizationUrl>https://metio.wtf/</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>Europe/Berlin</timezone>
+            <properties>
+                <github>@sebhoss</github>
+                <bitbucket>@sebhoss</bitbucket>
+                <gitlab>@sebastian.hoss</gitlab>
+            </properties>
+        </developer>
+    </developers>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                PROPERTIES                               -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#Properties -->
+    <properties>
+        <!-- 'global' settings -->
+        <global.encoding>UTF-8</global.encoding>
+
+        <!-- project settings -->
+        <project.build.sourceEncoding>${global.encoding}</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
+    </properties>
 
 </project>

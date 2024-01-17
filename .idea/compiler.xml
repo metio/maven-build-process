@@ -5,6 +5,7 @@
       <module name="maven-boms-ant (1)" target="1.5" />
       <module name="maven-boms-camel" target="1.5" />
       <module name="maven-boms-jakarta" target="1.5" />
+      <module name="maven-parents-superpom" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -40,17 +40,21 @@ jobs:
         if: steps.commits.outputs.count > 0
         run: mvn --batch-mode --define newVersion=${{ steps.release.outputs.version }} --define generateBackupPoms=false versions:set
       - id: gpg
-        if: steps.commits.outputs.count > 0
         name: GPG Key
-        run: echo "${{ secrets.GPG_SECRET_KEY_BASE64 }}" | base64 --decode > $GITHUB_WORKSPACE/signing.key.asc
+        if: needs.prepare.outputs.commit_count > 0
+        uses: timheuer/base64-to-file@v1.2
+        with:
+          fileName: signing.key.asc
+          fileDir: ${{ github.workspace}}
+          encodedString: ${{ secrets.GPG_SECRET_KEY_BASE64 }}
       - name: Publish to Maven Central
         if: steps.commits.outputs.count > 0
         run: >
           mvn
           --batch-mode
           --activate-profiles release
-          --define pgp.secretkey=keyfile:$GITHUB_WORKSPACE/signing.key.asc
-          --define pgp.passphrase=literal:${{ secrets.GPG_SECRET_KEY_PASSWORD }}
+          --define sign.keyFile=signing.key.asc
+          --define sign.keyPass=${{ secrets.GPG_SECRET_KEY_PASSWORD }}
           deploy
         env:
           MAVEN_CENTRAL_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
