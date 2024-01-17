@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
       - uses: ./.github/actions/managed-java
       - name: Cache Dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
