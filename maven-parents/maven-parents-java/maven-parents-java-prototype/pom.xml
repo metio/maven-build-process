@@ -41,7 +41,6 @@
         <jacoco.skip>true</jacoco.skip>
         <pit.skip>true</pit.skip>
         <pmd.skip>true</pmd.skip>
-        <sonar.skip>true</sonar.skip>
         <failBuildOnDuplicates>false</failBuildOnDuplicates>
         <failBuildOnDependencyVersionProblem>false</failBuildOnDependencyVersionProblem>
         <failBuildOnDependencyProblem>false</failBuildOnDependencyProblem>
