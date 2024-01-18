@@ -50,7 +50,7 @@
         <version.wiremock>3.0.1</version.wiremock>
         <version.archunit>1.2.1</version.archunit>
         <version.system-lambda>1.2.1</version.system-lambda>
-        <version.system-stubs>2.1.5</version.system-stubs>
+        <version.system-stubs>2.1.6</version.system-stubs>
         <version.jmh>1.37</version.jmh>
         <version.concurrentunit>0.4.6</version.concurrentunit>
     </properties>
