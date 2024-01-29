@@ -159,7 +159,7 @@
 
         <!-- version declarations -->
         <version.sign-m-p>1.0.1</version.sign-m-p>
-        <version.nexus-stagig-m-p>1.6.13</version.nexus-stagig-m-p>
+        <version.central-publishing-m-p>0.3.0</version.central-publishing-m-p>
         <version.m-enforcer-p>3.4.1</version.m-enforcer-p>
         <version.versions-m-p>2.16.2</version.versions-m-p>
     </properties>
@@ -181,84 +181,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Build -->
     <build>
-        <!-- https://maven.apache.org/pom.html#Plugin_Management -->
-        <pluginManagement>
-            <!-- https://maven.apache.org/pom.html#Plugins -->
-            <plugins>
-                <plugin>
-                    <!-- https://github.com/s4u/sign-maven-plugin -->
-                    <groupId>org.simplify4u.plugins</groupId>
-                    <artifactId>sign-maven-plugin</artifactId>
-                    <version>${version.sign-m-p}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <!-- https://www.simplify4u.org/sign-maven-plugin/sign-mojo.html -->
-                                <goal>sign</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-
-                <plugin>
-                    <!-- https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin -->
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${version.nexus-stagig-m-p}</version>
-                    <configuration>
-                        <serverId>ossrh</serverId>
-                        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                    </configuration>
-                </plugin>
-
-                <plugin>
-                    <!-- https://maven.apache.org/enforcer/maven-enforcer-plugin/index.html -->
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>${version.m-enforcer-p}</version>
-                    <executions>
-                        <execution>
-                            <id>enforce-maven</id>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                            <configuration>
-                                <rules>
-                                    <requireMavenVersion>
-                                        <version>3.8.0</version>
-                                    </requireMavenVersion>
-                                    <requireSameVersions>
-                                        <plugins>
-                                            <plugin>org.apache.maven.plugins:maven-surefire-plugin</plugin>
-                                            <plugin>org.apache.maven.plugins:maven-failsafe-plugin</plugin>
-                                            <plugin>org.apache.maven.plugins:maven-surefire-report-plugin</plugin>
-                                        </plugins>
-                                    </requireSameVersions>
-                                    <requireSameVersions>
-                                        <dependencies>
-                                            <dependency>org.apache.maven</dependency>
-                                        </dependencies>
-                                    </requireSameVersions>
-                                    <dependencyConvergence/>
-                                    <banDuplicatePomDependencyVersions/>
-                                </rules>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-
         <!-- https://maven.apache.org/pom.html#Plugins -->
         <plugins>
-            <plugin>
-                <!-- https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin -->
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <extensions>true</extensions>
-            </plugin>
-
             <plugin>
                 <!-- http://www.mojohaus.org/versions-maven-plugin/ -->
                 <groupId>org.codehaus.mojo</groupId>
@@ -374,6 +298,36 @@
                 <!-- https://maven.apache.org/enforcer/maven-enforcer-plugin/index.html -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${version.m-enforcer-p}</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>3.8.0</version>
+                                </requireMavenVersion>
+                                <requireSameVersions>
+                                    <plugins>
+                                        <plugin>org.apache.maven.plugins:maven-surefire-plugin</plugin>
+                                        <plugin>org.apache.maven.plugins:maven-failsafe-plugin</plugin>
+                                        <plugin>org.apache.maven.plugins:maven-surefire-report-plugin</plugin>
+                                    </plugins>
+                                </requireSameVersions>
+                                <requireSameVersions>
+                                    <dependencies>
+                                        <dependency>org.apache.maven</dependency>
+                                    </dependencies>
+                                </requireSameVersions>
+                                <dependencyConvergence/>
+                                <banDuplicatePomDependencyVersions/>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -388,9 +342,30 @@
             <build>
                 <plugins>
                     <plugin>
-                        <!-- https://www.simplify4u.org/sign-maven-plugin/ -->
+                        <!-- https://central.sonatype.org/publish/publish-portal-maven/ -->
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <extensions>true</extensions>
+                        <version>${version.central-publishing-m-p}</version>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                            <tokenEnabled>true</tokenEnabled>
+                        </configuration>
+                    </plugin>
+
+                    <plugin>
+                        <!-- https://github.com/s4u/sign-maven-plugin -->
                         <groupId>org.simplify4u.plugins</groupId>
                         <artifactId>sign-maven-plugin</artifactId>
+                        <version>${version.sign-m-p}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <!-- https://www.simplify4u.org/sign-maven-plugin/sign-mojo.html -->
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>

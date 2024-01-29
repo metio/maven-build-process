@@ -39,6 +39,9 @@ jobs:
       - name: Set release version
         if: steps.commits.outputs.count > 0
         run: mvn --batch-mode --define newVersion=${{ steps.release.outputs.version }} --define generateBackupPoms=false versions:set
+      - name: Set release version for parents
+        if: steps.commits.outputs.count > 0
+        run: mvn --batch-mode --define newVersion=${{ steps.release.outputs.version }} --define generateBackupPoms=false --projects wtf.metio.maven.parents:maven-parents --also-make-dependents versions:set
       - id: gpg
         name: GPG Key
         if: needs.prepare.outputs.commit_count > 0
@@ -53,7 +56,7 @@ jobs:
           mvn
           --batch-mode
           --activate-profiles release
-          --define sign.keyFile=signing.key.asc
+          --define sign.keyFile=${{ github.workspace}}/signing.key.asc
           --define sign.keyPass=${{ secrets.GPG_SECRET_KEY_PASSWORD }}
           deploy
         env:

@@ -63,7 +63,7 @@
 
         <version.m-enforcer-p>3.4.1</version.m-enforcer-p>
         <version.sign-m-p>1.0.1</version.sign-m-p>
-        <version.nexus-stagig-m-p>1.6.13</version.nexus-stagig-m-p>
+        <version.central-publishing-m-p>0.3.0</version.central-publishing-m-p>
         <version.m-pmd-p>3.21.2</version.m-pmd-p>
         <version.m-javadoc-p>3.6.3</version.m-javadoc-p>
         <version.m-dependency-versions-check-p>2.0.4</version.m-dependency-versions-check-p>
@@ -140,6 +140,17 @@
         <!-- https://maven.apache.org/pom.html#plugin-management -->
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <!-- https://central.sonatype.org/publish/publish-portal-maven/ -->
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>${version.central-publishing-m-p}</version>
+                    <configuration>
+                        <publishingServerId>central</publishingServerId>
+                        <tokenEnabled>true</tokenEnabled>
+                    </configuration>
+                </plugin>
+
                 <plugin>
                     <!-- https://maven.apache.org/enforcer/maven-enforcer-plugin/index.html -->
                     <groupId>org.apache.maven.plugins</groupId>
@@ -662,18 +673,6 @@
                         </excludedFilePatterns>
                     </configuration>
                 </plugin>
-
-                <plugin>
-                    <!-- https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin -->
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${version.nexus-stagig-m-p}</version>
-                    <configuration>
-                        <serverId>ossrh</serverId>
-                        <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                    </configuration>
-                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -698,12 +697,6 @@
                 <!-- https://maven.apache.org/plugins/maven-jar-plugin/ -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <!-- https://github.com/sonatype/nexus-maven-plugins/tree/master/staging/maven-plugin -->
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <extensions>true</extensions>
             </plugin>
         </plugins>
     </build>
@@ -736,6 +729,12 @@
                         <!-- https://www.simplify4u.org/sign-maven-plugin/ -->
                         <groupId>org.simplify4u.plugins</groupId>
                         <artifactId>sign-maven-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <!-- https://central.sonatype.org/publish/publish-portal-maven/ -->
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <extensions>true</extensions>
                     </plugin>
                 </plugins>
             </build>
