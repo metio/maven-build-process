@@ -44,7 +44,7 @@ jobs:
         run: mvn --batch-mode --define newVersion=${{ steps.release.outputs.version }} --define generateBackupPoms=false --projects wtf.metio.maven.parents:maven-parents --also-make-dependents versions:set
       - id: gpg
         name: GPG Key
-        if: needs.prepare.outputs.commit_count > 0
+        if: steps.commits.outputs.count > 0
         uses: timheuer/base64-to-file@v1.2
         with:
           fileName: signing.key.asc

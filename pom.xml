@@ -354,6 +354,14 @@
                         <groupId>org.simplify4u.plugins</groupId>
                         <artifactId>sign-maven-plugin</artifactId>
                         <version>${version.sign-m-p}</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <!-- https://www.simplify4u.org/sign-maven-plugin/sign-mojo.html -->
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
