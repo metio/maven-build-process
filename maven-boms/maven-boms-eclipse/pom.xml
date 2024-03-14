@@ -38,7 +38,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.eclipse.jdt.annotation>2.2.800</version.eclipse.jdt.annotation>
+        <version.eclipse.jdt.annotation>2.3.0</version.eclipse.jdt.annotation>
         <version.sisu>0.9.0.M2</version.sisu>
         <version.eclipselink>4.0.2</version.eclipselink>
         <version.eclipse-collections>12.0.0.M3</version.eclipse-collections>
