@@ -40,7 +40,7 @@
     <properties>
         <version.okhttp>2.7.5</version.okhttp>
         <version.javapoet>1.13.0</version.javapoet>
-        <version.retrofit>2.9.0</version.retrofit>
+        <version.retrofit>2.10.0</version.retrofit>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
