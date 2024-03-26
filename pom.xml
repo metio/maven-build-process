@@ -155,7 +155,7 @@
 
         <!-- version declarations -->
         <version.sign-m-p>1.0.1</version.sign-m-p>
-        <version.central-publishing-m-p>0.3.0</version.central-publishing-m-p>
+        <version.central-publishing-m-p>0.4.0</version.central-publishing-m-p>
         <version.m-enforcer-p>3.4.1</version.m-enforcer-p>
         <version.versions-m-p>2.16.2</version.versions-m-p>
     </properties>
@@ -341,11 +341,11 @@
                         <!-- https://central.sonatype.org/publish/publish-portal-maven/ -->
                         <groupId>org.sonatype.central</groupId>
                         <artifactId>central-publishing-maven-plugin</artifactId>
-                        <extensions>true</extensions>
                         <version>${version.central-publishing-m-p}</version>
+                        <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>central</publishingServerId>
-                            <tokenEnabled>true</tokenEnabled>
+                            <tokenAuth>true</tokenAuth>
                         </configuration>
                     </plugin>
 
