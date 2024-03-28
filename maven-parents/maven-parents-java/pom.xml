@@ -91,7 +91,7 @@
         <version.spotbugs-m-p>4.8.3.1</version.spotbugs-m-p>
         <version.m-antrun-p>3.1.0</version.m-antrun-p>
         <version.properties-m-p>1.2.1</version.properties-m-p>
-        <version.cyclonedx-m-p>2.7.11</version.cyclonedx-m-p>
+        <version.cyclonedx-m-p>2.8.0</version.cyclonedx-m-p>
         <version.spdx-m-p>0.7.3</version.spdx-m-p>
     </properties>
 
