@@ -24,6 +24,7 @@
     <!-- https://maven.apache.org/pom.html#More_Project_Information -->
     <name>Maven Parents</name>
     <description>Aggregator project for all Maven based parents</description>
+    <url>https://github.com/metio/maven-build-process</url>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                 MODULES                                 -->
@@ -54,6 +55,17 @@
             <comments>https://spdx.org/licenses/0BSD.html</comments>
         </license>
     </licenses>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!--                                    SCM                                  -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- https://maven.apache.org/pom.html#scm -->
+    <scm>
+        <connection>scm:git:https://github.com/metio/maven-build-process.git</connection>
+        <developerConnection>scm:git:git@github.com:metio/maven-build-process.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/metio/maven-build-process</url>
+    </scm>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!--                                DEVELOPERS                               -->

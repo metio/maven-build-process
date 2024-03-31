@@ -30,7 +30,7 @@
     <!-- https://maven.apache.org/pom.html#more-project-information -->
     <name>Maven Build Process</name>
     <description>Standard Maven Build Process for Java Projects</description>
-    <url>https://maven-build-process.projects.metio.wtf</url>
+    <url>https://github.com/metio/maven-build-process</url>
     <inceptionYear>2020</inceptionYear>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -105,10 +105,10 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#scm -->
     <scm>
-        <connection>scm:git:git://codeberg.org/metio.wtf/maven-build-process.git</connection>
-        <developerConnection>scm:git:git@codeberg.org:metio.wtf/maven-build-process.git</developerConnection>
+        <connection>scm:git:https://github.com/metio/maven-build-process.git</connection>
+        <developerConnection>scm:git:git@github.com:metio/maven-build-process.git</developerConnection>
         <tag>HEAD</tag>
-        <url>https://codeberg.org/metio.wtf/maven-build-process</url>
+        <url>https://github.com/metio/maven-build-process</url>
     </scm>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
@@ -116,8 +116,8 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#issue-management -->
     <issueManagement>
-        <system>codeberg</system>
-        <url>https://codeberg.org/metio.wtf/maven-build-process/issues</url>
+        <system>GitHub</system>
+        <url>https://github.com/metio/maven-build-process/issues</url>
     </issueManagement>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
