@@ -107,7 +107,7 @@
         <version.sign-m-p>1.1.0</version.sign-m-p>
         <version.central-publishing-m-p>0.4.0</version.central-publishing-m-p>
         <version.m-enforcer-p>3.4.1</version.m-enforcer-p>
-        <version.m-artifact-p>3.5.0</version.m-artifact-p>
+        <version.m-artifact-p>3.5.1</version.m-artifact-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
