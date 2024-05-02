@@ -38,7 +38,7 @@
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
-        <version.mustache.java>0.9.11</version.mustache.java>
+        <version.mustache.java>0.9.12</version.mustache.java>
         <version.jmustache>1.16</version.jmustache>
     </properties>
 
