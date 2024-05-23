@@ -79,14 +79,14 @@
         <version.flatten-m-p>1.6.0</version.flatten-m-p>
         <version.templating-m-p>3.0.0</version.templating-m-p>
         <version.native-image-m-p>21.2.0</version.native-image-m-p>
-        <version.native-m-p>0.10.1</version.native-m-p>
+        <version.native-m-p>0.10.2</version.native-m-p>
         <version.appassembler-m-p>2.1.0</version.appassembler-m-p>
         <version.m-assembly-p>3.7.1</version.m-assembly-p>
         <version.checksum-m-p>1.11</version.checksum-m-p>
-        <version.exec-m-p>3.2.0</version.exec-m-p>
+        <version.exec-m-p>3.3.0</version.exec-m-p>
         <version.asciidoctor-m-p>3.0.0</version.asciidoctor-m-p>
         <version.editorconfig-m-p>0.1.3</version.editorconfig-m-p>
-        <version.build-helper-m-p>3.5.0</version.build-helper-m-p>
+        <version.build-helper-m-p>3.6.0</version.build-helper-m-p>
         <version.jmh-m-p>1.0.3</version.jmh-m-p>
         <version.spotbugs-m-p>4.8.5.0</version.spotbugs-m-p>
         <version.m-antrun-p>3.1.0</version.m-antrun-p>
