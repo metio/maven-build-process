@@ -41,7 +41,7 @@
         <version.jool>0.9.15</version.jool>
         <version.vavr>1.0.0-alpha-4</version.vavr>
         <version.faux-pas>0.9.0</version.faux-pas>
-        <version.fugue>5.0.0</version.fugue>
+        <version.fugue>5.0.1</version.fugue>
         <version.protonpack>1.16</version.protonpack>
         <version.lambda>5.5.0</version.lambda>
         <version.streamex>0.8.2</version.streamex>
