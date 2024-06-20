@@ -40,7 +40,7 @@
     <properties>
         <version.jspecify>0.3.0</version.jspecify>
         <version.jetbrains-annotations>24.1.0</version.jetbrains-annotations>
-        <version.spotbugs-annotations>4.8.5</version.spotbugs-annotations>
+        <version.spotbugs-annotations>4.8.6</version.spotbugs-annotations>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
