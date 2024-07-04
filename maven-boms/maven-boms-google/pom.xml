@@ -40,7 +40,7 @@
     <properties>
         <version.auto-value>1.11.0</version.auto-value>
         <version.guava>33.2.1-jre</version.guava>
-        <version.truth>1.4.2</version.truth>
+        <version.truth>1.4.3</version.truth>
         <version.api-client>2.6.0</version.api-client>
         <version.oauth-client>1.36.0</version.oauth-client>
         <version.http-client>1.44.2</version.http-client>
