@@ -157,7 +157,7 @@
         <version.sign-m-p>1.0.1</version.sign-m-p>
         <version.central-publishing-m-p>0.4.0</version.central-publishing-m-p>
         <version.m-enforcer-p>3.5.0</version.m-enforcer-p>
-        <version.versions-m-p>2.17.0</version.versions-m-p>
+        <version.versions-m-p>2.17.1</version.versions-m-p>
     </properties>
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
