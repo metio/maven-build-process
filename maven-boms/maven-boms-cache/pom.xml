@@ -43,7 +43,7 @@
         <version.imcache>0.3.0</version.imcache>
         <version.cache2k>2.6.1.Final</version.cache2k>
         <version.expiringmap>0.5.11</version.expiringmap>
-        <version.chronicle-map>3.26ea0</version.chronicle-map>
+        <version.chronicle-map>3.26ea2</version.chronicle-map>
         <version.cacheonix>2.3.1</version.cacheonix>
     </properties>
 
