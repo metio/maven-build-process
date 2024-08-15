@@ -83,7 +83,7 @@
         <version.appassembler-m-p>2.1.0</version.appassembler-m-p>
         <version.m-assembly-p>3.7.1</version.m-assembly-p>
         <version.checksum-m-p>1.11</version.checksum-m-p>
-        <version.exec-m-p>3.4.0</version.exec-m-p>
+        <version.exec-m-p>3.4.1</version.exec-m-p>
         <version.asciidoctor-m-p>3.0.0</version.asciidoctor-m-p>
         <version.editorconfig-m-p>0.1.3</version.editorconfig-m-p>
         <version.build-helper-m-p>3.6.0</version.build-helper-m-p>
