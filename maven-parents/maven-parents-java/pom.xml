@@ -67,7 +67,7 @@
         <version.m-jar-p>4.0.0-beta-1</version.m-jar-p>
         <version.m-resource-p>4.0.0-beta-1</version.m-resource-p>
         <version.m-clean-p>4.0.0-beta-1</version.m-clean-p>
-        <version.m-surefire-p>3.3.1</version.m-surefire-p>
+        <version.m-surefire-p>3.4.0</version.m-surefire-p>
         <version.m-compiler-p>4.0.0-beta-1</version.m-compiler-p>
         <version.m-source-p>4.0.0-beta-1</version.m-source-p>
         <version.pitest-m-p>1.16.1</version.pitest-m-p>
@@ -75,7 +75,7 @@
         <version.duplicate-finder-m-p>2.0.1</version.duplicate-finder-m-p>
         <version.jacoco-m-p>0.8.12</version.jacoco-m-p>
         <version.dependency-check-m>10.0.3</version.dependency-check-m>
-        <version.m-dependency-p>3.7.1</version.m-dependency-p>
+        <version.m-dependency-p>3.8.0</version.m-dependency-p>
         <version.flatten-m-p>1.6.0</version.flatten-m-p>
         <version.templating-m-p>3.0.0</version.templating-m-p>
         <version.native-image-m-p>21.2.0</version.native-image-m-p>

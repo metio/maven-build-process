@@ -39,7 +39,7 @@
     <!-- https://maven.apache.org/pom.html#Properties -->
     <properties>
         <version.asm>9.7</version.asm>
-        <version.byte-buddy>1.14.18</version.byte-buddy>
+        <version.byte-buddy>1.14.19</version.byte-buddy>
         <version.byteman>4.0.23</version.byteman>
         <version.javassist>3.30.2-GA</version.javassist>
     </properties>
