@@ -51,10 +51,10 @@
         <version.netty>4.1.112.Final</version.netty>
         <version.ebean>15.5.0</version.ebean>
         <version.jdbi>3.45.4</version.jdbi>
-        <version.infinispan>15.1.0.Dev02</version.infinispan>
+        <version.infinispan>15.1.0.Dev03</version.infinispan>
         <version.r2dbc>Borca-SR2</version.r2dbc>
         <version.cucumber>7.18.1</version.cucumber>
-        <version.mockito>5.12.0</version.mockito>
+        <version.mockito>5.13.0</version.mockito>
         <version.log4j>2.23.1</version.log4j>
         <version.jakarta>11.0.0-M4</version.jakarta>
     </properties>
